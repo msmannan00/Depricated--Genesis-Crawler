@@ -1,8 +1,14 @@
 package logManager;
 
+import application.fileHandler;
+import constants.enumeration;
 import constants.preferences;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class logModel
 {
@@ -60,7 +66,7 @@ public class logModel
             sharedInstance.errorDataQueue.remove(0);
             return model;
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             log.print("fuck");
             return null;
@@ -86,7 +92,7 @@ public class logModel
             sharedInstance.requestDataQueue.remove(0);
             return model;
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             log.print("fuck");
             return null;
@@ -106,7 +112,7 @@ public class logModel
             sharedInstance.foundURLDataQueue.remove(0);
             return model;
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             log.print("fuck");
             return null;
@@ -173,4 +179,15 @@ public class logModel
         return sharedInstance.errorDataQueue.size() + sharedInstance.requestDataQueue.size() + sharedInstance.foundURLDataQueue.size();
     }
 
+    public void logMessgeToFile(String message, String messageType, enumeration.logType Type)
+    {
+        try
+        {
+            fileHandler.appendFile("log.txt", message + "\n");
+        }
+        catch (IOException | URISyntaxException ex)
+        {
+            Logger.getLogger(logController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }

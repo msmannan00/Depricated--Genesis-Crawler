@@ -188,17 +188,23 @@ public class nlpParser
     {
         String logoUrl = "";
         Document document = Jsoup.parse(HTML);
-        
+
         Element element = document.head().select("link[href~=.*\\.(ico|png)]").first();
 
-        if(element==null)
+        if (element == null)
         {
-            return "";
+            element = document.head().select("meta[itemprop=image]").first();
+            if (element != null)
+            {
+                logoUrl = element.attr("content");
+            }
         }
         else
         {
-            return element.attr("href");
+            logoUrl = element.attr("href");
         }
+        
+        return logoUrl;
     }
 
     public static String extractTitle(String HTML)

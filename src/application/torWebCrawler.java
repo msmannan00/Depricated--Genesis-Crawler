@@ -2,6 +2,7 @@ package application;
 
 import static java.lang.Thread.sleep;
 import constants.enumeration;
+import constants.eventListner;
 import logManager.log;
 import constants.preferences;
 import constants.status;
@@ -11,10 +12,10 @@ import crawler.retryModel;
 import crawler.urlModel;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.apache.commons.lang.SerializationUtils;
 
 public class torWebCrawler
 {
@@ -44,7 +45,6 @@ public class torWebCrawler
         {
             htmlParser = tempCrawler;
         }
-        backupManager();
     }
 
     /*CRAWLER INITIALIZATION*/
@@ -56,20 +56,11 @@ public class torWebCrawler
             createCrawler();
         }
 
-        threadManager();
+        threadController();
 
     }
 
     /*CRAWLER HELPER METHODS*/
-    public void stopAllThread()
-    {
-        while (!runningThreadQueue.isEmpty())
-        {
-            runningThreadQueue.get(0).stop();
-            runningThreadQueue.remove(0);
-        }
-    }
-
     public void pauseThread(Thread thread)
     {
         runningThreadQueue.remove(thread);
@@ -97,33 +88,48 @@ public class torWebCrawler
         }
     }
 
-    public void backupManager()
+    public boolean backupManager(boolean save_trigger)
     {
-        new Thread()
+        if (!save_trigger)
         {
-            @Override
-            public void run()
+            save_trigger = true;
+            status.appStatus = enumeration.appStatus.paused;
+        }
+        else
+        {
+            if (runningThreadQueue.isEmpty())
             {
-                try
-                {
-                    while (true)
-                    {
-                        sleep(preferences.backupTimer);
-                        //crawler parser = (crawler) SerializationUtils.clone(htmlParser);
-                        //helperMethod.writeObjectToFile(parser,preferences.filepath_queue_manager);
-                        //helperMethod.writeObjectToFile(parser,preferences.filepath_queue_manager_backup+"_"+helperMethod.getCurrentDateTime());
-                    }
-                }
-                catch (InterruptedException ex)
-                {
-                    Logger.getLogger(torWebCrawler.class.getName()).log(Level.SEVERE, null, ex);
-                }
-
+                crawler parser = (crawler) SerializationUtils.clone(htmlParser);
+                helperMethod.writeObjectToFile(parser, preferences.filepath_queue_manager);
+                helperMethod.writeObjectBackupToFile(parser, preferences.filepath_queue_manager_backup + "_" + helperMethod.getCurrentDateTime());
+                save_trigger = false;
+                status.appStatus = enumeration.appStatus.running;
+                eventListner.setBackupState(false);
             }
-        }.start();
+        }
+        return save_trigger;
     }
 
-    public void threadManager()
+    public void threadManager() throws IOException
+    {
+        if (pausedThreadQueue.size() > 0 && status.appStatus == enumeration.appStatus.running && htmlParser.size() > 0)
+        {
+            Thread thread = pausedThreadQueue.get(0);
+            synchronized (thread)
+            {
+                pausedThreadQueue.remove(thread);
+                runningThreadQueue.add(thread);
+                thread.notify();
+            }
+        }
+        log.logThreadCount(runningThreadQueue.size());
+        if (status.appStatus == enumeration.appStatus.running)
+        {
+            htmlParser.validateRetryUrl();
+        }
+    }
+
+    public void threadController()
     {
         new Thread()
         {
@@ -132,27 +138,27 @@ public class torWebCrawler
             {
                 threadInitialization();
                 /*Thread Scheduler*/
+                int counter_tmanager = 0;
+                int counter_bmanager = 0;
+                boolean save_trigger = false;
                 while (true)
                 {
                     try
                     {
-                        if (pausedThreadQueue.size() > 0 && status.appStatus == enumeration.appStatus.running && htmlParser.size() > 0)
+                        sleep(1);
+                        if (counter_tmanager >= preferences.requestTimeGap)
                         {
-                            Thread thread = pausedThreadQueue.get(0);
-                            synchronized (thread)
-                            {
-                                pausedThreadQueue.remove(thread);
-                                runningThreadQueue.add(thread);
-                                thread.notify();
-                            }
+                            threadManager();
+                            counter_tmanager = 0;
                         }
-                        log.logThreadCount(runningThreadQueue.size());
-                        if (status.appStatus == enumeration.appStatus.running)
+                        if (counter_tmanager >= preferences.backupTimer || save_trigger || eventListner.getBackupState())
                         {
-                            htmlParser.validateRetryUrl();
+                            log.logMessage("Saving Crawler Object", "Heart Beat");
+                            save_trigger = backupManager(save_trigger);
+                            counter_bmanager = 0;
                         }
-                        sleep(preferences.requestTimeGap);
-                        //log.print(counterRequest+"");
+                        counter_tmanager++;
+                        counter_bmanager++;
                     }
                     catch (InterruptedException | IOException ex)
                     {
@@ -163,7 +169,6 @@ public class torWebCrawler
         }.start();
     }
 
-    int counterRequest = 0;
     public void createCrawler() throws IOException, InterruptedException
     {
         String threadName = "Thread:" + threadCount;
@@ -184,54 +189,36 @@ public class torWebCrawler
                         {
                             if (!htmlParser.isHostEmpty(host))
                             {
-                                counterRequest++;
                                 urlmodel = htmlParser.getUrl(host);
                                 url = urlmodel.getURL();
-                                log.logMessage(threadName + " : URL REQUEST", url, enumeration.logType.request);
-                                String html = webRequestHandler.getInstance().requestConnection(url);
-                                htmlParser.parse_html(html, url);
-                                counterRequest--;
+                                log.logMessage("Sending Url Request : " + host, "THID : " + this.getId() + " : Thread Status");
+                                String html = webRequestHandler.getInstance().requestConnection(url, String.valueOf(this.getId()));
+                                log.logMessage("Parsing HTML : " + host, "THID : " + this.getId() + " : Thread Status");
+                                htmlParser.parse_html(html, url, String.valueOf(this.getId()));
+                                log.logMessage("Parsing Completed : " + host, "THID : " + this.getId() + " : Thread Status");
                             }
                             else
                             {
-                                lock.lock();
-                                try
-                                {
-                                    host = htmlParser.getKey();
-                                }
-                                finally
-                                {
-                                    lock.unlock();
-                                }
+                                log.logMessage("RE-Fethcing URL", "THID : " + this.getId() + " : Thread Status");
+                                host = lockManager.getInstance().getHtmlParserKey(lock, htmlParser);
+                                log.logMessage("URL Fethched : " + host, "THID : " + this.getId() + " : Thread Status");
                             }
                         }
 
                         if (htmlParser.isHostEmpty(host) || status.appStatus == enumeration.appStatus.paused)
                         {
-                            lock.lock();
-                            try
-                            {
-                                pauseThread(this);
-                            }
-                            finally
-                            {
-                                lock.unlock();
-                            }
+                            lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this);
+                            log.logMessage("Sleep Mode", "THID : " + this.getId() + " : Thread Status");
                             wait();
                         }
                     }
                     catch (Exception ex)
                     {
-                        counterRequest--;
-                        log.print("Error : " + host + " " + ex);
+                        log.logMessage("Thread Error : " + ex.getMessage() + " : " + host, "THID : " + this.getId() + " : Thread Status");
+                        //log.print(ex.getMessage());
                         if (urlmodel != null)
                         {
-                            log.logMessage("Server Error", ex.toString() + "<br> &nbsp &nbsp &nbsp &nbsp Parent URL:" + urlmodel.getParentURL() + "<br> &nbsp &nbsp &nbsp &nbsp Complete URL : " + url, enumeration.logType.error);
                             htmlParser.addToRetryQueue(new retryModel(urlmodel.getParentURL(), urlmodel.getURL()));
-                        }
-                        else
-                        {
-                            log.logMessage("Server Error", ex.toString() + "<br> &nbsp &nbsp &nbsp &nbsp Host:" + host + "<br> &nbsp &nbsp &nbsp &nbsp Complete URL : " + url, enumeration.logType.warning);
                         }
                     }
                 }

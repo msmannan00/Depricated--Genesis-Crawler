@@ -93,19 +93,19 @@ public class queueManager implements Serializable
             if (onionQueuesKeys.size() > 0)
             {
                 host = onionQueuesKeys.get(0);
-                moveToParsedQueues(onionQueues, host);
+                moveToParsingQueues(onionQueues, host);
                 onionQueuesKeys.remove(0);
             }
             else if (onionDataQueuesKeys.size() > 0)
             {
                 host = onionDataQueuesKeys.get(0);
-                moveToParsedQueues(onionDataQueues, host);
+                moveToParsingQueues(onionDataQueues, host);
                 onionDataQueuesKeys.remove(0);
             }
             else if (baseQueuesKeys.size() > 0)
             {
                 host = baseQueuesKeys.get(0);
-                moveToParsedQueues(baseQueues, host);
+                moveToParsingQueues(baseQueues, host);
                 baseQueuesKeys.remove(0);
             }
             return host;
@@ -147,7 +147,7 @@ public class queueManager implements Serializable
         }
     }
 
-    public void moveToParsedQueues(HashMap<String, Queue<urlModel>> queue, String host)
+    public void moveToParsingQueues(HashMap<String, Queue<urlModel>> queue, String host)
     {
         parsingQueues.put(host, queue.get(host));
         queue.remove(host);
@@ -175,39 +175,6 @@ public class queueManager implements Serializable
                 priorityQueue.put(host, tempList);
             }
         }
-    }
-
-    public void validateRetryUrl() throws IOException
-    {
-
-        try
-        {
-            if (retryQueuesKeys.size() > 0)
-            {
-                retryModel rmodel = retryQueues.get(retryQueuesKeys.get(0));
-                if (helperMethod.isDeadlinePassed(rmodel.getDate()) && !onionQueues.containsKey(rmodel.getURL()) && !baseQueues.containsKey(rmodel.getURL()) && !parsingQueues.containsKey(rmodel.getURL()) && !onionDataQueues.containsKey(rmodel.getURL()))
-                {
-                    rmodel.updateRetryModel();
-
-                    if (rmodel.getRetryCount() <= 0)
-                    {
-                        retryQueuesKeys.remove(0);
-                        retryQueues.remove(rmodel.getURL());
-                    }
-                    else
-                    {
-                        retryQueuesKeys.remove(0);
-                        retryQueuesKeys.add(rmodel.getURL());
-                        setUrl(rmodel.getURL(), rmodel.getParentURL());
-                    }
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            log.print(ex.getMessage(),ex);
-        }
-
     }
 
     /*CHECK URL DEPTH TO LIMIT TREE HEIGHT SO THAT CRAWLER DOENST DIVERT INTO URLS THAT DONT CONTAIN INFORMATION REGARDING ONION LINKS*/
@@ -242,6 +209,47 @@ public class queueManager implements Serializable
                 baseQueuesKeys.add(host);
             }
         }
+    }
+
+
+    /*Retry Manager*/
+    public void validateRetryUrl() throws IOException
+    {
+
+        try
+        {
+            if (retryQueuesKeys.size() > 0)
+            {
+                retryModel rmodel = retryQueues.get(retryQueuesKeys.get(0));
+                if(onionQueues==null || baseQueues==null || onionDataQueues==null || parsingQueues==null || rmodel == null)
+                {
+                    System.out.println(retryQueuesKeys.size());
+                }
+                if (helperMethod.isDeadlinePassed(rmodel.getDate()) && !onionQueues.containsKey(rmodel.getURL()) && !baseQueues.containsKey(rmodel.getURL()) && !parsingQueues.containsKey(rmodel.getURL()) && !onionDataQueues.containsKey(rmodel.getURL()))
+                {
+                    rmodel.updateRetryModel();
+
+                    if (rmodel.getRetryCount() <= 0)
+                    {
+                        retryQueuesKeys.remove(0);
+                        retryQueues.remove(rmodel.getURL());
+                        log.logMessage("Removing From Retry Queues : " + rmodel.getURL() + " : " + retryQueuesKeys.size(),"Validating Retry Queues");
+                    }
+                    else
+                    {
+                        retryQueuesKeys.remove(0);
+                        retryQueuesKeys.add(rmodel.getURL());
+                        setUrl(rmodel.getURL(), rmodel.getParentURL());
+                        log.logMessage("ReInitializing Retry Queues : " + rmodel.getURL() + " : Size : " + retryQueuesKeys.size() + " : Retry Count : " + rmodel.getRetryCount(),"Validating Retry Queues");
+                    }
+                }
+            }
+        }
+        catch (IOException ex)
+        {
+            log.print(ex.getMessage(), ex);
+        }
+
     }
 
     public void addToRetryQueue(retryModel rmodel)

@@ -7,8 +7,10 @@ import constants.string;
 import constants.enumeration;
 import application.helperMethod;
 import constants.preferences;
+import java.net.URLEncoder;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import logManager.log;
 import org.apache.commons.validator.UrlValidator;
 
 public class urlHelperMethod
@@ -92,12 +94,13 @@ public class urlHelperMethod
         {
             Description = "Description not found";
         }
-        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URL + "&title=" + Title + "&desc=" + Description + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&key_word=" + keyTypes + "&logo=" + logo;
+        
+        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" + Title + "&desc=" + Description + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&key_word=" + keyTypes + "&logo=" + logo;
 
         return query;
     }
 
-    public static String createDLink(String URL, String Title, String datatype) throws IOException, MalformedURLException, URISyntaxException
+    public static String createDLink(String URL, String Title, String datatype,String currentUrlKey) throws IOException, MalformedURLException, URISyntaxException
     {
         if (datatype.equals(""))
         {
@@ -108,8 +111,7 @@ public class urlHelperMethod
             Title = "Title not found";
         }
 
-        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URL + "&title=" + Title + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate();
-
+        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate()+"&WP_FK="+currentUrlKey;
         return query;
     }
 

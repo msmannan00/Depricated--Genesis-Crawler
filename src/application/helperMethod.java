@@ -5,22 +5,11 @@ import constants.preferences;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Toolkit;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.stream.Stream;
 
 public class helperMethod
 {
@@ -32,7 +21,6 @@ public class helperMethod
             Runtime.getRuntime().exec("kill $(lsof -t -i:8123)");
             Runtime.getRuntime().exec("sudo killall tor");
         }
-
     }
 
     public static String getCurrentDate()
@@ -58,62 +46,24 @@ public class helperMethod
         return dateFormat.format(date);
     }
 
+    public static void writeObjectBackupToFile(Object serObj, String address)
+    {
+        fileHandler.writeObjectBackupToFile(serObj, address);
+    }
+
     public static void writeObjectToFile(Object serObj, String address)
     {
-        try
-        {
-            FileOutputStream fileOut = new FileOutputStream(address);
-            ObjectOutputStream objectOut;
-            objectOut = new ObjectOutputStream(fileOut);
-            objectOut.writeObject(serObj);
-            objectOut.close();
-
-        }
-        catch (IOException ex)
-        {
-            ex.printStackTrace();
-        }
+        fileHandler.writeObjectToFile(serObj, address);
     }
 
     public static int getFileCount(String path)
     {
-        int count = 0;
-        try (Stream<Path> files = Files.list(Paths.get(path)))
-        {
-            count = (int) files.count();
-        }
-        catch (IOException ex)
-        {
-            Logger.getLogger(helperMethod.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return count;
+        return fileHandler.getFileCount(path);
     }
 
     public static Object readObjectFromFile()
     {
-
-        try
-        {
-            if (!new File(preferences.filepath_queue_manager).exists())
-            {
-                return null;
-            }
-
-            FileInputStream fileIn = new FileInputStream(preferences.filepath_queue_manager);
-            ObjectInputStream objectIn;
-            objectIn = new ObjectInputStream(fileIn);
-
-            Object obj = objectIn.readObject();
-
-            objectIn.close();
-            return obj;
-
-        }
-        catch (IOException | ClassNotFoundException ex)
-        {
-            ex.printStackTrace();
-            return null;
-        }
+        return fileHandler.readObjectFromFile(preferences.filepath_queue_manager);
     }
 
     public static logType getErrorMessageType(String errorMessage)
@@ -128,12 +78,12 @@ public class helperMethod
         }
     }
 
-    public static Date addDays(Date date, int days)
+    public static Date addMinutesToDate(Date date, int minutes)
     {
         Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
-        cal.add(Calendar.DATE, days); //minus number would decrement the days
-        return cal.getTime();
+        long t= cal.getTimeInMillis();
+        date=new Date(t + (minutes * 60000));
+        return date;
     }
 
     public static boolean isDeadlinePassed(Date date)

@@ -4,13 +4,15 @@ public class preferences
 {
     /*Crawler Preferences*/
     public static int proxyPort = 9150;
-    public static int maxThreadCount = 20;
+    public static int maxThreadCount = 30;
     public static int requestTimeGap = 1000;
     public static int internetConsumption = 10;
 
     public static int maxDLinkUrlSize = 30;
     public static int retryCount = 10;
-    public static int backupTimer = 300000;
+    public static int retryMinutes = 1440;
+    public static int backupTimer = 46400000;
+    public static int max_backup_files_count = 30;
     public static boolean useTorFromOS = true;
     public static String networkType = "Onion";
 

@@ -10,6 +10,7 @@ import application.webRequestHandler;
 import constants.enumeration.UrlTypes;
 import constants.preferences;
 import constants.status;
+import constants.string;
 import java.io.Serializable;
 import java.util.concurrent.locks.ReentrantLock;
 import logManager.log;
@@ -67,15 +68,19 @@ public class crawler implements Serializable
     }
 
     /*METHOD PARSER*/
-    public void parse_html(String HTML, String Url) throws MalformedURLException, IOException, URISyntaxException, Exception
+    public void parse_html(String HTML, String Url, String threadID) throws MalformedURLException, IOException, URISyntaxException, Exception
     {
         ArrayList<String> urlList = null;
         lock.lock();
         try
         {
+            log.logMessage("Extracting URLS", "THID : " + threadID + " : Thread Status");
             urlList = nlpParser.extractAndSaveUrlsFromContent(HTML, Url);
+            log.logMessage("Extracted URLS : " + urlList.size(), "THID : " + threadID + " : Thread Status");
+            log.logMessage("Extracting Keywords", "THID : " + threadID + " : Thread Status");
             String keyWords = nlpParser.extractKeyWords(Jsoup.parse(HTML).body().text());
-            saveCurrentUrl(HTML, Url, keyWords,urlList);
+            log.logMessage("Saving Current URL : " + Url, "THID : " + threadID + " : Thread Status");
+            saveCurrentUrl(HTML, Url, keyWords, urlList, threadID);
         }
         finally
         {
@@ -83,22 +88,23 @@ public class crawler implements Serializable
         }
     }
 
-    public void saveCurrentUrl(String HTML, String Url, String keywords,ArrayList<String> urlList) throws Exception
+    public void saveCurrentUrl(String HTML, String Url, String keywords, ArrayList<String> urlList, String threadID) throws Exception
     {
         String title = extractTitle(HTML);
         String extractLogo = nlpParser.extractLogo(HTML);
-        saveExtractedUrl(urlList, HTML, Url,title);
+        String currentUrlKey = "";
         if (urlHelperMethod.getNetworkType(Url).equals(enumeration.UrlTypes.onion) && status.cacheStatus)
         {
             String summary = nlpParser.extractSummary(HTML).replace("'", "");
-            String content = urlHelperMethod.createCacheUrl(Url, title, summary, enumeration.UrlDataTypes.all.toString(), keywords,extractLogo);
-            saveUrlToServer(content);
+            String content = urlHelperMethod.createCacheUrl(Url, title, summary, enumeration.UrlDataTypes.all.toString(), keywords, extractLogo);
+            currentUrlKey = saveUrlToServer(content, threadID);
         }
+        saveExtractedUrl(urlList, HTML, Url, title, threadID, currentUrlKey);
     }
 
-    public void saveUrlToServer(String content) throws Exception
+    public String saveUrlToServer(String content, String threadID) throws Exception
     {
-        webRequestHandler.getInstance().updateCache(content);
+        return webRequestHandler.getInstance().updateCache(content, threadID);
     }
 
     public void validateRetryUrl() throws IOException
@@ -111,7 +117,7 @@ public class crawler implements Serializable
         queryManager.addToRetryQueue(rmodel);
     }
 
-    public void saveExtractedUrl(ArrayList<String> urlList, String html, String parentURL,String parentTitle) throws Exception
+    public void saveExtractedUrl(ArrayList<String> urlList, String html, String parentURL, String parentTitle, String threadID, String currentUrlKey) throws Exception
     {
         for (int e = 0; e < urlList.size(); e++)
         {
@@ -119,27 +125,33 @@ public class crawler implements Serializable
             String linkType = urlHelperMethod.getUrlExtension(URLLink);
             UrlTypes urlType = urlHelperMethod.getNetworkType(URLLink);
 
-            if (urlHelperMethod.isUrlValid(URLLink) && duplicateFilter.is_url_duplicate(0, URLLink))
+            if (urlHelperMethod.isUrlValid(URLLink))
             {
-                if (linkType.equals("link"))
+                if (!duplicateFilter.is_url_duplicate(0, URLLink))
                 {
-                    queryManager.setUrl(URLLink, parentURL);
+                    if (linkType.equals("link"))
+                    {
+                        queryManager.setUrl(URLLink, parentURL);
+                    }
+                    else if(!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(enumeration.UrlTypes.onion))
+                    {
+                        String title = "";
+                        if (parentTitle.length() > 45)
+                        {
+                            parentTitle = parentTitle.substring(0, 45) + "...";
+                        }
+                        if (URLLink.length() > preferences.maxDLinkUrlSize)
+                        {
+                            title = URLLink.substring(URLLink.length() - preferences.maxDLinkUrlSize);
+                        }
+                        log.print("FILE " + " URL FOUND" + " " + URLLink);
+                        String content = urlHelperMethod.createDLink(URLLink, parentTitle, urlHelperMethod.getUrlExtension(URLLink), currentUrlKey);
+                        saveUrlToServer(content, threadID);
+                    }
                 }
                 else
                 {
-                    String title = "";
-                    if(parentTitle.length()>45)
-                    {
-                        parentTitle = parentTitle.substring(0,45)+"...";
-                    }
-                    if(URLLink.length()>preferences.maxDLinkUrlSize)
-                    {
-                        title = URLLink .substring(URLLink.length()-preferences.maxDLinkUrlSize);
-                    }
-                    log.print("FILE " + " URL FOUND" + " " + URLLink);
-                    log.logMessage("FILE " + " URL FOUND", URLLink, enumeration.logType.urlFound);
-                    String content = urlHelperMethod.createDLink(URLLink,parentTitle, urlHelperMethod.getUrlExtension(URLLink));
-                    saveUrlToServer(content);
+                    duplicateFilter.addUrl(0, URLLink);
                 }
             }
         }

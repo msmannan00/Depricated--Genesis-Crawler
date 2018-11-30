@@ -1,9 +1,6 @@
 package logManager;
 
-import application.applicationController;
 import application.helperMethod;
-import application.webRequestHandler;
-import constants.enumeration;
 import constants.enumeration.logType;
 import constants.preferences;
 import constants.status;
@@ -690,23 +687,6 @@ public class logViewController extends javax.swing.JFrame
         }
 
         doc.insertAfterEnd(doc.getCharacterElement(doc.getLength()), message);
-    }
-
-    public void resetCrawler() throws InstantiationException, InstantiationException, ClassNotFoundException, ClassNotFoundException, IllegalAccessException, IllegalAccessException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException
-    {
-        try
-        {
-            status.appStatus = enumeration.appStatus.paused;
-            webRequestHandler.getInstance().removeAllRequests();
-            applicationController.stopAllThread();
-            logModel.getInstance().resetQueues();
-            applicationController.main(null);
-        }
-        catch (InterruptedException | IOException | InstantiationException | ParseException ex)
-        {
-            Logger.getLogger(logViewController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        this.dispose();
     }
 
     public void run() throws ParseException

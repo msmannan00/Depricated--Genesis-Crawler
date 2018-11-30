@@ -1,7 +1,12 @@
 package logManager;
 
+import application.fileHandler;
 import constants.enumeration.logType;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class logController
 {
@@ -18,31 +23,7 @@ public class logController
     /*Log message to crawler UI Model*/
     public void logMessage(String message, String messageType, logType Type)
     {
-        lock.lock();
-        try
-        {
-            if (Type != null)
-            {
-                switch (Type)
-                {
-                    case error:
-                        logModel.getInstance().logError(messageType, message);
-                        break;
-                    case request:
-                        logModel.getInstance().logRequest(messageType, message);
-                        break;
-                    case urlFound:
-                        logModel.getInstance().logFoundURL(messageType, message);
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
-        finally
-        {
-            lock.unlock();
-        }
+        logModel.getInstance().logMessgeToFile(message, messageType, Type);
     }
 
     /*Log Thread Count*/

@@ -15,6 +15,7 @@ public class string
     public static String onionLinkRegex = "(?:https?://)?(?:www)?(\\S*?\\.onion)";
     public static String baseLinkRegex = "\\(?(?:(http|https|ftp):\\/\\/)?(?:((?:[^\\W\\s]|\\.|-|[:]{1})+)@{1})?((?:www.)?(?:[^\\W\\s]|\\.|-)+[\\.][^\\W\\s]{2,4}|localhost(?=\\/)|\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})(?::(\\d*))?([\\/]?[^\\s\\?]*[\\/]{1})*(?:\\/?([^\\s\\n\\?\\[\\]\\{\\}\\#]*(?:(?=\\.)){1}|[^\\s\\n\\?\\[\\]\\{\\}\\.\\#]*)?([\\.]{1}[^\\s\\?\\#]*)?)?(?:\\?{1}([^\\s\\n\\#\\[\\]]*))?([\\#][^\\s\\n]*)?\\)?";
     public static String urlHostMacherRegex = "(https?://)([^:^/]*)(:\\d*)?(.*)?";
+    public static String userAgent = "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:63.0) Gecko/20100101 Firefox/63.0";
 
     /*Formating Variables*/
     public static String lineBreak = "\n";
@@ -23,7 +24,7 @@ public class string
 
     /*Testing Variables*/
     public static String hostError = "none";
-    public static String baseLink = "https://ahmia.fi/onions/";
+    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=onion+list&session=07hMPwHftx4eCUDtxhQKUit6u%2B6%2B%2F2DCA4bibgPnVRs%3D&numRows=20&hostLimit=20&template=0";
 
     /*STATUS CODE*/
     public static int statusCode200 = 200;

@@ -24,7 +24,7 @@ public class retryModel implements Serializable
 
     private void updateDate()
     {
-        retryDate = helperMethod.addDays(retryDate,1);
+        retryDate = helperMethod.addMinutesToDate(retryDate,preferences.retryMinutes);
     }
     
     public Date getDate()
@@ -49,6 +49,6 @@ public class retryModel implements Serializable
     public void updateRetryModel()
     {
         retryCount-=1;
-        retryDate = helperMethod.addDays(retryDate,1);
+        retryDate = helperMethod.addMinutesToDate(retryDate,preferences.retryMinutes);
     }
 }
