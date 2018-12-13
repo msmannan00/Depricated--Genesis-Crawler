@@ -72,8 +72,14 @@ public class nlpParser
 
         for (int counter = 0; counter <= links.size() - 1; counter++)
         {
-            String URLLink = links.get(counter).absUrl("href");
+            String URLLink = links.get(counter).attr("href");
+            URLLink = urlHelperMethod.isHRefValid(host, URLLink);
 
+            if(URLLink.equals(string.emptyString))
+            {
+                continue;
+            }
+            
             if (URLLink.length() > 1 && URLLink.charAt(0) == '/' && URLLink.charAt(1) == '/')
             {
                 URLLink = "http:" + URLLink;
@@ -86,6 +92,7 @@ public class nlpParser
 
             if (urlHelperMethod.isUrlValid(URLLink) && (URLLink.contains(".onion") || !urlHelperMethod.getUrlExtension(URLLink).equals("link")))
             {
+                URLLink=URLLink.replace(" ","");
                 urlListFiltered.add(URLLink);
             }
         }
@@ -105,6 +112,7 @@ public class nlpParser
                 URLLink = "http://" + URLLink;
             }
 
+            URLLink=URLLink.replace(" ","");
             urlListFiltered.add(URLLink);
         }
 
@@ -125,6 +133,7 @@ public class nlpParser
 
             if (urlHelperMethod.isUrlValid(URLLink) && (URLLink.contains(".onion") || !urlHelperMethod.getUrlExtension(URLLink).equals("link")))
             {
+                URLLink=URLLink.replace(" ","");
                 urlListFiltered.add(URLLink);
             }
         }
@@ -147,6 +156,7 @@ public class nlpParser
                     }
                     if (linkType.equals("image"))
                     {
+                        currentUrl=currentUrl.replace(" ","");
                         urlListFiltered.add(currentUrl);
                     }
                     currentToken = "";
@@ -287,6 +297,15 @@ public class nlpParser
         if (keyWord.equals(""))
         {
             return "null_null";
+        }
+        
+        if(HTML.contains(" news "))
+        {
+            keyWord = keyWord + "_" + "news";
+        }
+        if(HTML.contains(" money ")||HTML.contains(" finance "))
+        {
+            keyWord = keyWord + "_" + "finance";
         }
 
         return keyWord;

@@ -122,10 +122,9 @@ public class torWebCrawler
                 thread.notify();
             }
         }
-        log.logThreadCount(runningThreadQueue.size());
         if (status.appStatus == enumeration.appStatus.running)
         {
-            htmlParser.validateRetryUrl();
+            //htmlParser.validateRetryUrl();
         }
     }
 
@@ -145,7 +144,7 @@ public class torWebCrawler
                 {
                     try
                     {
-                        sleep(1);
+                        sleep(1000);
                         if (counter_tmanager >= preferences.requestTimeGap)
                         {
                             threadManager();
@@ -159,6 +158,8 @@ public class torWebCrawler
                         }
                         counter_tmanager++;
                         counter_bmanager++;
+                        log.logThreadCount(runningThreadQueue.size());
+
                     }
                     catch (InterruptedException | IOException ex)
                     {
@@ -190,12 +191,15 @@ public class torWebCrawler
                             if (!htmlParser.isHostEmpty(host))
                             {
                                 urlmodel = htmlParser.getUrl(host);
+                                log.logMessage("Fethcing From Same Host", "THID : " + this.getId() + " : Thread Status");
                                 url = urlmodel.getURL();
-                                log.logMessage("Sending Url Request : " + host, "THID : " + this.getId() + " : Thread Status");
+                                log.logMessage("Sending Url Request : " + url, "THID : " + this.getId() + " : Thread Status");
                                 String html = webRequestHandler.getInstance().requestConnection(url, String.valueOf(this.getId()));
-                                log.logMessage("Parsing HTML : " + host, "THID : " + this.getId() + " : Thread Status");
+                                log.logMessage("Parsing HTML : " + url, "THID : " + this.getId() + " : Thread Status");
                                 htmlParser.parse_html(html, url, String.valueOf(this.getId()));
-                                log.logMessage("Parsing Completed : " + host, "THID : " + this.getId() + " : Thread Status");
+                                log.logMessage("Parsing Completed : " + url, "THID : " + this.getId() + " : Thread Status");
+                                lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this);
+                                wait();
                             }
                             else
                             {
@@ -205,7 +209,7 @@ public class torWebCrawler
                             }
                         }
 
-                        if (htmlParser.isHostEmpty(host) || status.appStatus == enumeration.appStatus.paused)
+                        if (status.appStatus == enumeration.appStatus.paused)
                         {
                             lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this);
                             log.logMessage("Sleep Mode", "THID : " + this.getId() + " : Thread Status");
@@ -215,10 +219,19 @@ public class torWebCrawler
                     catch (Exception ex)
                     {
                         log.logMessage("Thread Error : " + ex.getMessage() + " : " + host, "THID : " + this.getId() + " : Thread Status");
-                        //log.print(ex.getMessage());
+                        //log.print("",ex);
                         if (urlmodel != null)
                         {
                             htmlParser.addToRetryQueue(new retryModel(urlmodel.getParentURL(), urlmodel.getURL()));
+                        }
+                        try
+                        {
+                            lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this);
+                            wait();
+                        }
+                        catch (InterruptedException ex1)
+                        {
+                            Logger.getLogger(torWebCrawler.class.getName()).log(Level.SEVERE, null, ex1);
                         }
                     }
                 }

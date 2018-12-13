@@ -23,5 +23,10 @@ public class enumeration
     {
         error, warning, request, urlFound
     }
+    
+    public enum classificationType
+    {
+        news, illegal,finance
+    }
 
 }

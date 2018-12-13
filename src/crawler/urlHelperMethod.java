@@ -7,10 +7,12 @@ import constants.string;
 import constants.enumeration;
 import application.helperMethod;
 import constants.preferences;
+import java.net.URL;
 import java.net.URLEncoder;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import logManager.log;
 import org.apache.commons.validator.UrlValidator;
 
 public class urlHelperMethod
@@ -95,7 +97,7 @@ public class urlHelperMethod
             Description = "Description not found";
         }
         
-        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" + Title + "&desc=" + Description + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&key_word=" + keyTypes + "&logo=" + logo;
+        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" + Title + "&desc=" + URLEncoder.encode(Description) + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&key_word=" + keyTypes + "&logo=" + logo;
 
         return query;
     }
@@ -115,4 +117,18 @@ public class urlHelperMethod
         return query;
     }
 
+    public static String isHRefValid(String host,String url)
+    {
+        try
+        {
+            String URLLink = new URL(new URL(host), url).toString();
+            return URLLink;
+        }
+        catch (MalformedURLException ex)
+        {
+            //Logger.getLogger(urlHelperMethod.class.getName()).log(Level.SEVERE, null, ex);
+            return string.emptyString;
+        }
+    }
+    
 }

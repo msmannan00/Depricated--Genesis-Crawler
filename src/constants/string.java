@@ -24,7 +24,7 @@ public class string
 
     /*Testing Variables*/
     public static String hostError = "none";
-    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=onion+list&session=07hMPwHftx4eCUDtxhQKUit6u%2B6%2B%2F2DCA4bibgPnVRs%3D&numRows=20&hostLimit=20&template=0";
+    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=finance&session=rMuXCBKfxCvG%2Fy2G%2FNGMxabgQLB901ediZE7y6tnztQ%3D&numRows=20&hostLimit=20&template=0";
 
     /*STATUS CODE*/
     public static int statusCode200 = 200;
@@ -32,4 +32,6 @@ public class string
     /*Variable Types*/
     public static String typeOnion = ".onion";
     public static String textOnion = "onion";
+    public static String classifier_url_file = "classifier_url.txt";
+    
 }

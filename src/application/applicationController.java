@@ -1,10 +1,13 @@
 package application;
 
+import constants.status;
 import java.io.FileNotFoundException;
 import logManager.logViewController;
 import logManager.log;
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.UnsupportedLookAndFeelException;
 
 public class applicationController
@@ -12,7 +15,7 @@ public class applicationController
 
     public static torWebCrawler torRequestHandler = null;
     public static logViewController crawlerUI;
-
+    
     public static void preInitialization() throws FileNotFoundException
     {
         fileHandler.clearFile("log.txt");
@@ -25,13 +28,26 @@ public class applicationController
         try
         {
             preInitialization();
-            torRequestHandler = new torWebCrawler();
-            torRequestHandler.initializeCrawler();
-            openUI();
+            if(status.classificationTrainer)
+            {
+                classifierData.getInstance().startClassifier();
+            }
+            else
+            {
+                torRequestHandler = new torWebCrawler();
+                torRequestHandler.initializeCrawler();
+                openUI();
+            }
         }
-        catch (IOException | UnsupportedLookAndFeelException ex)
+        catch (IOException | UnsupportedLookAndFeelException ex )
         {
+            ex.printStackTrace();
             log.logMessage("Global Error : " + ex.getMessage(), "Critical | Exception");
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+            Logger.getLogger(applicationController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

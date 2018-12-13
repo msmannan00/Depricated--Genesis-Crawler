@@ -116,44 +116,46 @@ public class crawler implements Serializable
     {
         queryManager.addToRetryQueue(rmodel);
     }
-
     public void saveExtractedUrl(ArrayList<String> urlList, String html, String parentURL, String parentTitle, String threadID, String currentUrlKey) throws Exception
     {
-        for (int e = 0; e < urlList.size(); e++)
+        lock.lock();
+        try
         {
-            String URLLink = urlList.get(e);
-            String linkType = urlHelperMethod.getUrlExtension(URLLink);
-            UrlTypes urlType = urlHelperMethod.getNetworkType(URLLink);
-
-            if (urlHelperMethod.isUrlValid(URLLink))
+            for (int e = 0; e < urlList.size(); e++)
             {
-                if (!duplicateFilter.is_url_duplicate(0, URLLink))
+                String URLLink = urlList.get(e);
+                String linkType = urlHelperMethod.getUrlExtension(URLLink);
+                UrlTypes urlType = urlHelperMethod.getNetworkType(URLLink);
+                if (urlHelperMethod.isUrlValid(URLLink))
                 {
-                    if (linkType.equals("link"))
+                    if (!duplicateFilter.is_url_duplicate(0, URLLink))
                     {
-                        queryManager.setUrl(URLLink, parentURL);
-                    }
-                    else if(!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(enumeration.UrlTypes.onion))
-                    {
-                        String title = "";
-                        if (parentTitle.length() > 45)
+                        if (linkType.equals("link"))
                         {
-                            parentTitle = parentTitle.substring(0, 45) + "...";
+                            queryManager.setUrl(URLLink, parentURL);
                         }
-                        if (URLLink.length() > preferences.maxDLinkUrlSize)
+                        else if (!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(enumeration.UrlTypes.onion))
                         {
-                            title = URLLink.substring(URLLink.length() - preferences.maxDLinkUrlSize);
+                            String title = "";
+                            if (parentTitle.length() > 45)
+                            {
+                                parentTitle = parentTitle.substring(0, 45) + "...";
+                            }
+                            if (URLLink.length() > preferences.maxDLinkUrlSize)
+                            {
+                                title = URLLink.substring(URLLink.length() - preferences.maxDLinkUrlSize);
+                            }
+                            log.print("FILE " + " URL FOUND" + " " + URLLink);
+                            String content = urlHelperMethod.createDLink(URLLink, parentTitle, urlHelperMethod.getUrlExtension(URLLink), currentUrlKey);
+                            saveUrlToServer(content, threadID);
                         }
-                        log.print("FILE " + " URL FOUND" + " " + URLLink);
-                        String content = urlHelperMethod.createDLink(URLLink, parentTitle, urlHelperMethod.getUrlExtension(URLLink), currentUrlKey);
-                        saveUrlToServer(content, threadID);
                     }
-                }
-                else
-                {
-                    duplicateFilter.addUrl(0, URLLink);
                 }
             }
+        }
+        finally
+        {
+            lock.unlock();
         }
     }
 }

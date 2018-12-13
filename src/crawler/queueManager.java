@@ -14,6 +14,9 @@ import logManager.log;
 public class queueManager implements Serializable
 {
 
+    /*LOCAL VARIABLES*/
+    int size = 0;
+
     /*URL QUEUES*/
     private HashMap<String, Queue<urlModel>> onionQueues;
     private HashMap<String, Queue<urlModel>> onionDataQueues;
@@ -58,7 +61,7 @@ public class queueManager implements Serializable
 
     public int size()
     {
-        return parsingQueues.size() + onionQueues.size() + onionDataQueues.size() + baseQueues.size();
+        return size;
     }
 
     public void clearQueues()
@@ -86,30 +89,28 @@ public class queueManager implements Serializable
 
     public String getKey() throws InterruptedException
     {
-        synchronized (this)
+        String host = "";
+        /*IF REMOVED THREADS WILL COME IN EVEN SYNCRONIZED*/
+        if (onionQueuesKeys.size() > 0)
         {
-            String host = "";
-            /*IF REMOVED THREADS WILL COME IN EVEN SYNCRONIZED*/
-            if (onionQueuesKeys.size() > 0)
-            {
-                host = onionQueuesKeys.get(0);
-                moveToParsingQueues(onionQueues, host);
-                onionQueuesKeys.remove(0);
-            }
-            else if (onionDataQueuesKeys.size() > 0)
-            {
-                host = onionDataQueuesKeys.get(0);
-                moveToParsingQueues(onionDataQueues, host);
-                onionDataQueuesKeys.remove(0);
-            }
-            else if (baseQueuesKeys.size() > 0)
-            {
-                host = baseQueuesKeys.get(0);
-                moveToParsingQueues(baseQueues, host);
-                baseQueuesKeys.remove(0);
-            }
-            return host;
+            host = onionQueuesKeys.get(0);
+            moveToParsingQueues(onionQueues, host);
+            onionQueuesKeys.remove(0);
         }
+        else if (onionDataQueuesKeys.size() > 0)
+        {
+            host = onionDataQueuesKeys.get(0);
+            moveToParsingQueues(onionDataQueues, host);
+            onionDataQueuesKeys.remove(0);
+        }
+        else if (baseQueuesKeys.size() > 0)
+        {
+            host = baseQueuesKeys.get(0);
+            moveToParsingQueues(baseQueues, host);
+            baseQueuesKeys.remove(0);
+        }
+        return host;
+
     }
 
     /*METHOD UPDATE QUEUES AS NEW URL IS FOUND*/
@@ -128,6 +129,7 @@ public class queueManager implements Serializable
                     URL = tempModel.getURL();
                     parentURL = tempModel.getParentURL();
                     removeHostIfParsed(parsingQueues, host);
+                    size--;
                 }
                 return new urlModel(parentURL, host + URL);
             }
@@ -158,14 +160,12 @@ public class queueManager implements Serializable
         subUrl = subUrl + " ";
         if (priorityQueue.containsKey(host))
         {
-            priorityQueue.get(host).clear();
             priorityQueue.get(host).add(new urlModel(parentURL, subUrl));
         }
         else
         {
             if (parsingQueues.containsKey(host))
             {
-                parsingQueues.get(host).clear();
                 parsingQueues.get(host).add(new urlModel(parentURL, subUrl));
             }
             else
@@ -209,6 +209,7 @@ public class queueManager implements Serializable
                 baseQueuesKeys.add(host);
             }
         }
+        size += 1;
     }
 
 
@@ -221,7 +222,7 @@ public class queueManager implements Serializable
             if (retryQueuesKeys.size() > 0)
             {
                 retryModel rmodel = retryQueues.get(retryQueuesKeys.get(0));
-                if(onionQueues==null || baseQueues==null || onionDataQueues==null || parsingQueues==null || rmodel == null)
+                if (onionQueues == null || baseQueues == null || onionDataQueues == null || parsingQueues == null || rmodel == null)
                 {
                     System.out.println(retryQueuesKeys.size());
                 }
@@ -233,14 +234,14 @@ public class queueManager implements Serializable
                     {
                         retryQueuesKeys.remove(0);
                         retryQueues.remove(rmodel.getURL());
-                        log.logMessage("Removing From Retry Queues : " + rmodel.getURL() + " : " + retryQueuesKeys.size(),"Validating Retry Queues");
+                        log.logMessage("Removing From Retry Queues : " + rmodel.getURL() + " : " + retryQueuesKeys.size(), "Validating Retry Queues");
                     }
                     else
                     {
                         retryQueuesKeys.remove(0);
                         retryQueuesKeys.add(rmodel.getURL());
                         setUrl(rmodel.getURL(), rmodel.getParentURL());
-                        log.logMessage("ReInitializing Retry Queues : " + rmodel.getURL() + " : Size : " + retryQueuesKeys.size() + " : Retry Count : " + rmodel.getRetryCount(),"Validating Retry Queues");
+                        log.logMessage("ReInitializing Retry Queues : " + rmodel.getURL() + " : Size : " + retryQueuesKeys.size() + " : Retry Count : " + rmodel.getRetryCount(), "Validating Retry Queues");
                     }
                 }
             }

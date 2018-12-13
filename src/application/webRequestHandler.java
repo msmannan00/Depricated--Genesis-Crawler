@@ -12,8 +12,11 @@ import java.net.Proxy;
 import java.net.SocketAddress;
 import java.net.*;
 import crawler.urlHelperMethod;
+import static java.lang.Thread.sleep;
 import java.util.Scanner;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class webRequestHandler
 {
@@ -33,26 +36,26 @@ public class webRequestHandler
     {
         if (urlHelperMethod.getNetworkType(url).equals(enumeration.UrlTypes.onion))
         {
-            return requestOnionConnection(url,threadID);
+            return requestOnionConnection(url, threadID);
         }
         else
         {
-            return requestBaseConnection(url,threadID);
+            return requestBaseConnection(url, threadID);
         }
     }
 
     /*USE ONION PROXY IF ONION URL F OR FASTER REQUEST*/
     public String requestBaseConnection(String url, String threadID) throws MalformedURLException, IOException, Exception
     {
-        log.logMessage("Reqesting Base URL : " + url, "THID : "+threadID+" : Thread Status");
+        log.logMessage("Reqesting Base URL : " + url, "THID : " + threadID + " : Thread Status");
 
-        System.setProperty("http.agent",string.userAgent);
+        System.setProperty("http.agent", string.userAgent);
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
-        con.setConnectTimeout(100000);
-        con.setReadTimeout(100000);
-        String html = getContent(con, "Base",threadID);
+        con.setConnectTimeout(210000);
+        con.setReadTimeout(210000);
+        String html = getContent(con, "Base", threadID);
 
         if (!html.contains(string.typeOnion) && status.onionFilterStatus)
         {
@@ -64,79 +67,108 @@ public class webRequestHandler
     /*HELPER METHOD USE ONION PROXY IF ONION URL FOR FASTER REQUEST*/
     public String requestOnionConnection(String url, String threadID) throws MalformedURLException, IOException, Exception
     {
-        log.logMessage("Reqesting Onion URL : " + url, "THID : "+threadID+" : Thread Status");
 
-        System.setProperty("http.agent",string.userAgent);
+        System.setProperty("http.agent", string.userAgent);
         System.setProperty("http.maxRedirects", "5");
         SocketAddress addr = new InetSocketAddress(string.proxyIP, preferences.proxyPort);
         Proxy proxy = new Proxy(Proxy.Type.SOCKS, addr);
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection(proxy);
-        con.setConnectTimeout(100000);
-        con.setReadTimeout(100000);
-        String content = getContent(con, string.textOnion,threadID);
+        con.setConnectTimeout(210000);
+        con.setReadTimeout(210000);
+
+        String content = getContent(con, string.textOnion, threadID);
 
         return content;
     }
 
-    public String getContent(HttpURLConnection conn, String networkType, String threadID) throws IOException
+    public Thread scannerTimeOut(Scanner scanner)
     {
+        Thread thread = new Thread()
+        {
+            @Override
+            public void run()
+            {
+                try
+                {
+                    sleep(310000);
+                    scanner.close();
+                }
+                catch (InterruptedException ex)
+                {
+                    Logger.getLogger(webRequestHandler.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        };
+        thread.start();
+        return thread;
+    }
+
+    public String getContent(HttpURLConnection conn, String networkType, String threadID) throws IOException, Exception
+    {
+        String actualURL = conn.getURL().toString();
+        log.logMessage("Reqesting Onion URL : " + conn.getURL(), "THID : " + threadID + " : Thread Status");
         conn.connect();
 
         Scanner scanner = new Scanner(conn.getInputStream());
-        getInstance().lock.lock();
-        try
+        scanner.useDelimiter("\\A");
+        String content = "";
+        Thread thread = scannerTimeOut(scanner);
+        while (scanner.hasNextLine())
         {
-            scanner.useDelimiter("\\A");
-            String content = "";
-            while (scanner.hasNextLine())
-            {
-                content += scanner.nextLine();
-            }
-
-            scanner.close();
-
-            log.print(networkType + " URL FOUND " + conn.getURL());
-            log.logMessage("Found URL : " + conn.getURL(), "THID : "+threadID+" : Thread Status");
-
-            return content;
+            content += scanner.nextLine();
         }
-        finally
+        scanner.close();
+        thread.stop();
+
+        if (!conn.getURL().toString().equals(actualURL))
         {
-            getInstance().lock.unlock();
+            actualURL = " : REDIRECTED TO " + actualURL;
         }
 
+        log.print(networkType + " URL FOUND " + actualURL);
+        log.logMessage("Found URL : " + actualURL, "THID : " + threadID + " : Thread Status");
+
+        return content;
     }
 
     /*UPDATE URL DATABASE*/
     public String updateCache(String url, String threadID) throws MalformedURLException, IOException, URISyntaxException
     {
-        String content = "";
-        url = url.replaceAll(" ", "%20");
-        URL obj = new URL(url);
-        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        con.setConnectTimeout(6000);
-        con.setReadTimeout(6000);
-        con.setRequestMethod("GET");
+        try
+        {
+            String content = "";
+            url = url.replaceAll(" ", "%20");
+            URL obj = new URL(url);
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+            con.setConnectTimeout(6000);
+            con.setReadTimeout(6000);
+            con.setRequestMethod("GET");
 
-        //log.print("__" + url + "__");
-        int responseCode = con.getResponseCode();
-        if (responseCode != HttpURLConnection.HTTP_OK)
-        {
-            log.logMessage("Error Saving Url : " + url, "THID : "+threadID+" : Thread Status");
-        }
-        else
-        {
-            Scanner scanner = new Scanner(con.getInputStream());
-            scanner.useDelimiter("\\A");
-            while (scanner.hasNextLine())
+            //log.print("__" + url + "__");
+            int responseCode = con.getResponseCode();
+            if (responseCode != HttpURLConnection.HTTP_OK)
             {
-                content += scanner.nextLine();
+                log.logMessage("Error Saving Url : " + url, "THID : " + threadID + " : Thread Status");
             }
-            scanner.close();
+            else
+            {
+                Scanner scanner = new Scanner(con.getInputStream());
+                scanner.useDelimiter("\\A");
+                while (scanner.hasNextLine())
+                {
+                    content += scanner.nextLine();
+                }
+                scanner.close();
+            }
+
+            return content;
         }
-        
-        return content;
+        catch (IOException ex)
+        {
+            log.logMessage("ERROR SAVING DATA URL : " + url, "THID : " + threadID + " : Thread Status");
+            return "";
+        }
     }
 }

@@ -1,5 +1,6 @@
 package application;
 
+import constants.enumeration;
 import constants.preferences;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -18,11 +19,15 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
+import logManager.log;
 import org.apache.commons.io.comparator.LastModifiedFileComparator;
+import org.jsoup.Jsoup;
 
 public class fileHandler
 {
@@ -101,6 +106,37 @@ public class fileHandler
             in.close();
             out.close();
         }
+    }
+
+    static int classifierCount = 1;
+
+    public static void saveClassifierData(String html, String title, enumeration.classificationType classifier)
+    {
+        try
+        {
+            html = html.replaceAll("[^a-zA-Z0-9]", " ");
+            html = html.replaceAll("\\s{2,}", " ").trim();
+
+            String content = title + " " + html;
+
+            File file = new File("classifiers/" + classifier + "/class_" + classifierCount + ".csv");
+
+            if (!file.exists())
+            {
+                file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file, false);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(content);
+            bw.close();
+            classifierCount += 1;
+        }
+        catch (IOException ex)
+        {
+            ex.printStackTrace();
+        }
+
     }
 
     public static void writeObjectBackupToFile(Object serObj, String address)
@@ -185,6 +221,42 @@ public class fileHandler
             ex.printStackTrace();
             return null;
         }
+    }
+
+    public static ArrayList readClassifierData(String filepath) throws FileNotFoundException
+    {
+        Scanner s = new Scanner(new File(filepath + ".txt"));
+        ArrayList<String> list = new ArrayList<String>();
+        while (s.hasNext())
+        {
+            list.add(s.next());
+        }
+        s.close();
+        return list;
+    }
+
+    public static void htmlFileToText()
+    {
+        try
+        {
+            Scanner s = new Scanner(new File("html_sample.txt"));
+            String html = "";
+            while (s.hasNext())
+            {
+                html += s.next();
+            }
+            s.close();
+            html = Jsoup.parse(html).body().text();
+            html = html.replaceAll("[^a-zA-Z0-9]", " ");
+            html = html.replaceAll("\\s{2,}", " ").trim();
+            log.print(html);
+            
+        }
+        catch (FileNotFoundException ex)
+        {
+            Logger.getLogger(fileHandler.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
 }

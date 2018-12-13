@@ -17,7 +17,7 @@ public class duplicationFilter implements Serializable
     /*INITIALIZATION*/
     public void Initialize()
     {
-        addUrl(0, "b");
+        is_url_duplicate(0, "b");
     }
 
     /*HELPER METHODS*/
@@ -43,7 +43,7 @@ public class duplicationFilter implements Serializable
         }
     }
 
-    public void addUrl(int index, String URLLink)
+    private void addUrl(int index, String URLLink)
     {
         /*BASE CONDITION*/
         if (index >= URLLink.length())
