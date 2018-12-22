@@ -2,6 +2,7 @@ package application;
 
 import constants.enumeration;
 import constants.preferences;
+import constants.string;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,6 +15,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.io.RandomAccessFile;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -250,7 +252,7 @@ public class fileHandler
             html = html.replaceAll("[^a-zA-Z0-9]", " ");
             html = html.replaceAll("\\s{2,}", " ").trim();
             log.print(html);
-            
+
         }
         catch (FileNotFoundException ex)
         {
@@ -259,4 +261,33 @@ public class fileHandler
 
     }
 
+    public static String readQueueStack() throws IOException
+    {
+        int rowLength = preferences.maxQueueSize - preferences.minQueueSize;
+        String data = "";
+        RandomAccessFile raf = new RandomAccessFile(string.url_stack, "rw");
+        //Initial write position                                             
+        long writePosition = raf.getFilePointer();
+        for(int e=0;e<rowLength;e++)
+        {
+            data += raf.readLine() + "\n";
+        }
+        // Shift the next lines upwards.                                      
+        long readPosition = raf.getFilePointer();
+
+        byte[] buff = new byte[1024];
+        int n;
+        while (-1 != (n = raf.read(buff)))
+        {
+            raf.seek(writePosition);
+            raf.write(buff, 0, n);
+            readPosition += n;
+            writePosition += n;
+            raf.seek(readPosition);
+        }
+        raf.setLength(writePosition);
+        raf.close();
+        
+        return data;
+    }
 }

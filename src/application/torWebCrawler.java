@@ -8,9 +8,9 @@ import constants.preferences;
 import constants.status;
 import constants.string;
 import crawler.crawler;
-import crawler.retryModel;
 import crawler.urlModel;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
@@ -45,6 +45,7 @@ public class torWebCrawler
         {
             htmlParser = tempCrawler;
         }
+        htmlParser.queryManager.clearParsingQueueKey();
     }
 
     /*CRAWLER INITIALIZATION*/
@@ -110,6 +111,14 @@ public class torWebCrawler
         return save_trigger;
     }
 
+    public void queueReload() throws IOException, URISyntaxException, Exception
+    {
+        if (htmlParser.size() <= preferences.minQueueSize)
+        {
+            htmlParser.parse_html("<html><p>" + fileHandler.readQueueStack() + "</p></html>", "", String.valueOf(-1));
+        }
+    }
+
     public void threadManager() throws IOException
     {
         if (pausedThreadQueue.size() > 0 && status.appStatus == enumeration.appStatus.running && htmlParser.size() > 0)
@@ -139,12 +148,18 @@ public class torWebCrawler
                 /*Thread Scheduler*/
                 int counter_tmanager = 0;
                 int counter_bmanager = 0;
+                int counter_qmanager = 0;
                 boolean save_trigger = false;
                 while (true)
                 {
                     try
                     {
                         sleep(1000);
+                        //if (counter_tmanager >= preferences.requestQueueReloadGap && status.appStatus == enumeration.appStatus.running)
+                        //{
+                        //queueReload();
+                        //counter_qmanager = 0;
+                        //}
                         if (counter_tmanager >= preferences.requestTimeGap)
                         {
                             threadManager();
@@ -158,10 +173,15 @@ public class torWebCrawler
                         }
                         counter_tmanager++;
                         counter_bmanager++;
+                        //counter_qmanager++;
                         log.logThreadCount(runningThreadQueue.size());
 
                     }
                     catch (InterruptedException | IOException ex)
+                    {
+                        Logger.getLogger(torWebCrawler.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    catch (Exception ex)
                     {
                         Logger.getLogger(torWebCrawler.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -219,10 +239,10 @@ public class torWebCrawler
                     catch (Exception ex)
                     {
                         log.logMessage("Thread Error : " + ex.getMessage() + " : " + host, "THID : " + this.getId() + " : Thread Status");
-                        //log.print("",ex);
+                        //log.print("", ex);
                         if (urlmodel != null)
                         {
-                            htmlParser.addToRetryQueue(new retryModel(urlmodel.getParentURL(), urlmodel.getURL()));
+                            //htmlParser.addToRetryQueue(new retryModel(urlmodel.getParentURL(), urlmodel.getURL()));
                         }
                         try
                         {

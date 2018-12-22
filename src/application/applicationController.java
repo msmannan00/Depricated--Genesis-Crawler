@@ -1,6 +1,8 @@
 package application;
 
+import constants.language;
 import constants.status;
+import crawler.duplicationFilter;
 import java.io.FileNotFoundException;
 import logManager.logViewController;
 import logManager.log;
@@ -25,6 +27,7 @@ public class applicationController
     /*TRIGGER CRAWLER*/
     public static void main(String[] args) throws InterruptedException, IOException, InstantiationException, InstantiationException, ParseException, ClassNotFoundException, IllegalAccessException, IllegalAccessException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException
     {
+
         try
         {
             preInitialization();
@@ -52,7 +55,7 @@ public class applicationController
     }
 
     public static void openUI() throws ParseException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException
-    {
+    {        
         log.logMessage("Opening User Interface", "Application Status");
         crawlerUI = new logViewController();
         crawlerUI.crawlerObject = torRequestHandler.getHtmlParser();

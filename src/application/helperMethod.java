@@ -81,8 +81,8 @@ public class helperMethod
     public static Date addMinutesToDate(Date date, int minutes)
     {
         Calendar cal = Calendar.getInstance();
-        long t= cal.getTimeInMillis();
-        date=new Date(t + (minutes * 60000));
+        long t = cal.getTimeInMillis();
+        date = new Date(t + (minutes * 60000));
         return date;
     }
 
@@ -97,5 +97,10 @@ public class helperMethod
         {
             return false;
         }
+    }
+
+    public static boolean isNumeric(String str)
+    {
+        return str.matches("-?\\d+(\\.\\d+)?");  //match a number with optional '-' and decimal.
     }
 }

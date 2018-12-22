@@ -7,8 +7,11 @@ public class preferences
     public static int proxyPort = 9150;
     public static int maxThreadCount = 35;
     public static int requestTimeGap = 2;
+    public static int requestQueueReloadGap = 2;
     public static int internetConsumption = 10;
 
+    public static int maxQueueSize = 20000000;
+    public static int minQueueSize = 500;
     public static int maxDLinkUrlSize = 30;
     public static int retryCount = 10;
     public static int retryMinutes = 1666;

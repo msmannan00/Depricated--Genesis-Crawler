@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 import logManager.log;
 
 public class queueManager implements Serializable
@@ -28,6 +29,7 @@ public class queueManager implements Serializable
     private ArrayList<String> onionQueuesKeys;
     private ArrayList<String> onionDataQueuesKeys;
     private ArrayList<String> baseQueuesKeys;
+    private ArrayList<String> parsingQueuesKeys;
     private ArrayList<String> retryQueuesKeys;
 
     /*VARIABLE INITIALIZATION*/
@@ -50,10 +52,18 @@ public class queueManager implements Serializable
         onionDataQueuesKeys = new ArrayList<String>();
         baseQueuesKeys = new ArrayList<String>();
         retryQueuesKeys = new ArrayList<String>();
-
+        parsingQueuesKeys = new ArrayList<String>();
+        
+        
         setUrl(string.baseLink, "");
     }
 
+    public void clearParsingQueueKey()
+    {
+        parsingQueuesKeys.clear();
+        parsingQueuesKeys = new ArrayList(parsingQueues.keySet());
+    }
+    
     public boolean isHostEmpty(String host)
     {
         return !parsingQueues.containsKey(host);
@@ -73,6 +83,7 @@ public class queueManager implements Serializable
         onionQueuesKeys.clear();
         onionDataQueuesKeys.clear();
         baseQueuesKeys.clear();
+        parsingQueuesKeys.clear();
     }
 
     public boolean isUrlPresent()
@@ -108,6 +119,11 @@ public class queueManager implements Serializable
             host = baseQueuesKeys.get(0);
             moveToParsingQueues(baseQueues, host);
             baseQueuesKeys.remove(0);
+        }
+        else if(parsingQueuesKeys.size()>0)
+        {
+            host = parsingQueuesKeys.get(0);
+            parsingQueuesKeys.remove(0);
         }
         return host;
 
