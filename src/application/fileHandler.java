@@ -28,6 +28,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
 import logManager.log;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.comparator.LastModifiedFileComparator;
 import org.jsoup.Jsoup;
 
@@ -41,7 +42,13 @@ public class fileHandler
         file.delete();
     }
 
-    public static void clearFile(String path) throws FileNotFoundException
+    public static void clearFile(String path) throws FileNotFoundException, IOException
+    {
+        File file = new File(path);
+        FileUtils.cleanDirectory(file);
+    }
+
+    public static void clearLogFile(String path) throws FileNotFoundException, IOException
     {
         PrintWriter writer = new PrintWriter(path);
         writer.print("");
@@ -268,9 +275,13 @@ public class fileHandler
         RandomAccessFile raf = new RandomAccessFile(string.url_stack, "rw");
         //Initial write position                                             
         long writePosition = raf.getFilePointer();
-        for(int e=0;e<rowLength;e++)
+        for (int e = 0; e < rowLength; e++)
         {
-            data += raf.readLine() + "\n";
+            String tempData = raf.readLine();
+            if (tempData != null)
+            {
+                data += tempData + "\n";
+            }
         }
         // Shift the next lines upwards.                                      
         long readPosition = raf.getFilePointer();
@@ -287,7 +298,7 @@ public class fileHandler
         }
         raf.setLength(writePosition);
         raf.close();
-        
+
         return data;
     }
 }

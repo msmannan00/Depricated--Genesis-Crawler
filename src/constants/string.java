@@ -1,5 +1,7 @@
 package constants;
 
+import java.util.ArrayList;
+
 public class string
 {
 
@@ -24,7 +26,7 @@ public class string
 
     /*Testing Variables*/
     public static String hostError = "none";
-    public static String baseLink = "https://ahmia.fi/onions/";
+    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=onion+links&session=EiPQIXPyUhzxwsVA48bSiNbNnuvahDmg4W9O3EQYmNo%3D&numRows=20&hostLimit=20&template=0";
 
     /*STATUS CODE*/
     public static int statusCode200 = 200;
@@ -34,5 +36,12 @@ public class string
     public static String textOnion = "onion";
     public static String classifier_url_file = "classifier_url.txt";
     public static String url_stack = "url_stack.txt";
-    
+
+    public static ArrayList<String> fullyParsableUrls = new ArrayList<String>()
+    {
+        {
+            add("http://hss3uro2hsxfogfq.onion/index.php?q=onion+links&session=EiPQIXPyUhzxwsVA48bSiNbNnuvahDmg4W9O3EQYmNo%3D&numRows=20&hostLimit=20&template=0");
+        }
+    };
+
 }

@@ -1,0 +1,336 @@
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/audiencenetwork/success-stories/harape
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/audiencenetwork/success-stories/harape
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/about/privacy/your-info
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/about/privacy/your-info
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/publisher/275495073088478?helpref=uf_permalink
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/publisher/275495073088478?helpref=uf_permalink
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/android-app/186325668085084?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/android-app/186325668085084?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/1415201755421673?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/1415201755421673?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/mobile-touch/213343062033160?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/mobile-touch/213343062033160?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/android-app/1145592148881382?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/android-app/1145592148881382?helpref=related&ref=related
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/business/help/776240779095515?helpref=faq_content
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/business/help/776240779095515?helpref=faq_content
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/189722821075378?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/189722821075378?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/www/972392066266648?helpref=faq_content
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/www/972392066266648?helpref=faq_content
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/android-app/809497125833105?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/android-app/809497125833105?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/130694300342171?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/130694300342171?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/www/915385548593204?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/www/915385548593204?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/www/538433456491590?helpref=faq_content
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/www/538433456491590?helpref=faq_content
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/insights/tools/audience-insights?ref=fbiq_site
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/insights/tools/audience-insights?ref=fbiq_site
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/android-app/387893081608612
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/android-app/387893081608612
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/iq/insights-to-go/46-46-of-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-tend-to-use-a-smartphone-while-in-a-restaurant/
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/iq/insights-to-go/46-46-of-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-tend-to-use-a-smartphone-while-in-a-restaurant/
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/1547895645497795?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/1547895645497795?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+Heart Beat : Saving Crawler Object
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+Heart Beat : Saving Crawler Object
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/business/success/instagram/dfranklin/
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/business/success/instagram/dfranklin/
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/android-app/901690736606156?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/android-app/901690736606156?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/1824001514537829?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/1824001514537829?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/business/help/638274812874211
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/business/help/638274812874211
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/828408313868251?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/828408313868251?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/instagram/1360514080631850?helpref=search&sr=4&query=About+Instagram+Insights
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/instagram/1360514080631850?helpref=search&sr=4&query=About+Instagram+Insights
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/1615627532020480?ref=fbb_get_started_with_messenger
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/1615627532020480?ref=fbb_get_started_with_messenger
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/business/insights/tools
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/business/insights/tools
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/publisher/292794301336717?helpref=faq_content
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/publisher/292794301336717?helpref=faq_content
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/iq/insights-to-go/44-44-of-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-tend-to-use-a-smartphone-while-in-a-bar/
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/iq/insights-to-go/44-44-of-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-tend-to-use-a-smartphone-while-in-a-bar/
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/contact/500898053353352?helpref=faq_content
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/contact/500898053353352?helpref=faq_content
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/news/insights/optimizing-audience-buying-on-facebook-and-instagram
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/news/insights/optimizing-audience-buying-on-facebook-and-instagram
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/business/help/734444503367066
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/business/help/734444503367066
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/www/813406825336025?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/www/813406825336025?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/152457281489359?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/152457281489359?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/business/help/457328234477362
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/business/help/457328234477362
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/408955225828742?helpref=faq_content
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/408955225828742?helpref=faq_content
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/learn/categories/increase-in-store-sales
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/learn/categories/increase-in-store-sales
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/android-app/700371556733730?helpref=faq_content
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/android-app/700371556733730?helpref=faq_content
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/408955225828742?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/408955225828742?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/mobile-touch/?helpref=faq_content
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/mobile-touch/?helpref=faq_content
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/iq/insights-to-go/3-in-10-3-in-10-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-have-used-facebook-while-having-an-alcoholic-drink/
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/iq/insights-to-go/3-in-10-3-in-10-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-have-used-facebook-while-having-an-alcoholic-drink/
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/270942386330392?helpref=faq_content
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/270942386330392?helpref=faq_content
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/148104135383285?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/148104135383285?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/business/help/216283662383974?helpref=uf_permalink
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/business/help/216283662383974?helpref=uf_permalink
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/www/124518907626945?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/www/124518907626945?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/231208473756221?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/231208473756221?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/1625715647696553?ref=fbb_get_started_with_messenger
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/1625715647696553?ref=fbb_get_started_with_messenger
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/www/176200525768249?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/www/176200525768249?helpref=related&ref=related
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/1547895645497795?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/1547895645497795?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/www/212580268774971?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/www/212580268774971?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/iphone-app/149151751822041?helpref=faq_content
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/iphone-app/149151751822041?helpref=faq_content
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/www/333543230019115?helpref=faq_content
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/www/333543230019115?helpref=faq_content
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/iq/insights-to-go/3-in-10-3-in-10-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-have-used-instagram-while-having-an-alcoholic-drink/
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/iq/insights-to-go/3-in-10-3-in-10-people-surveyedacross-the-uk-germany-spain-france-italy-and-saudi-arabia-have-used-instagram-while-having-an-alcoholic-drink/
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/www/331057463663666?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/www/331057463663666?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/1388077314536976?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/1388077314536976?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/iphone-app/188157731232424?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/iphone-app/188157731232424?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/211990645501187?helpref=faq_content
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/211990645501187?helpref=faq_content
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/337995452911154?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/337995452911154?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/iphone-app/121070141307903?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/iphone-app/121070141307903?helpref=related&ref=related
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/1415201755421673?helpref=faq_content
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/1415201755421673?helpref=faq_content
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/iphone-app/211513702214269?helpref=faq_content
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/iphone-app/211513702214269?helpref=faq_content
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/iq/insights-to-go/29-of-people-in-the-uk-say-they-found-out-about-a-new-drink-they-would-like-to-try-via-social-media/
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/iq/insights-to-go/29-of-people-in-the-uk-say-they-found-out-about-a-new-drink-they-would-like-to-try-via-social-media/
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/225861947424289?helpref=uf_permalink
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/225861947424289?helpref=uf_permalink
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/news/workplace
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/news/workplace
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/login/identify?ctx=recover
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/login/identify?ctx=recover
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/securitynotice
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/securitynotice
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/190416214359937?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/190416214359937?helpref=related&ref=related
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/android-app/228307904608701?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/android-app/228307904608701?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/212802592074644?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/212802592074644?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/help/260929950658464?helpref=uf_permalink
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/help/260929950658464?helpref=uf_permalink
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/220628074632498?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/220628074632498?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/196050490547892?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/196050490547892?helpref=related&ref=related
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/news/new-medium-new-rules-video-advertising-in-the-mobile-age
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/news/new-medium-new-rules-video-advertising-in-the-mobile-age
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/iphone-app/211541112212070?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/iphone-app/211541112212070?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/348805468517220?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/348805468517220?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/279152262227223?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/279152262227223?helpref=related&ref=related
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/iphone-app/222935611077438?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/iphone-app/222935611077438?helpref=related&ref=related
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/iphone-app/279614732052951?helpref=related&ref=related
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/iphone-app/279614732052951?helpref=related&ref=related
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/help/android-app/123355624495297?helpref=related&ref=related
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/help/android-app/123355624495297?helpref=related&ref=related
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/business/help/212312988802189?helpref=uf_permalink
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/business/help/212312988802189?helpref=uf_permalink
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/settings/account/?name
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/settings/account/?name
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/help/147031379324519
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/help/147031379324519
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion
+THID : 11 : Thread Status : Fethcing From Same Host
+THID : 11 : Thread Status : Sending Url Request : https://www.facebookcorewwwi.onion/help/162550990475119?helpref=related&ref=related
+THID : 11 : Thread Status : Reqesting Onion URL : https://www.facebookcorewwwi.onion/help/162550990475119?helpref=related&ref=related
+THID : 10 : Thread Status : Thread Error : Connection refused: connect : https://es-la.facebookcorewwwi.onion
+THID : 12 : Thread Status : Fethcing From Same Host
+THID : 12 : Thread Status : Sending Url Request : https://it-it.facebookcorewwwi.onion/help/contact/1417759018475333?helpref=faq_content
+THID : 12 : Thread Status : Reqesting Onion URL : https://it-it.facebookcorewwwi.onion/help/contact/1417759018475333?helpref=faq_content
+THID : 11 : Thread Status : Thread Error : Connection refused: connect : https://www.facebookcorewwwi.onion
+THID : 10 : Thread Status : Fethcing From Same Host
+THID : 10 : Thread Status : Sending Url Request : https://es-la.facebookcorewwwi.onion/business/help/1575448755848995
+THID : 10 : Thread Status : Reqesting Onion URL : https://es-la.facebookcorewwwi.onion/business/help/1575448755848995
+THID : 12 : Thread Status : Thread Error : Connection refused: connect : https://it-it.facebookcorewwwi.onion

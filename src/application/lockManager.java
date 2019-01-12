@@ -26,12 +26,12 @@ public class lockManager
         }
     }
 
-    public void pauseThread(ReentrantLock lock, Thread thread, torWebCrawler parent) throws InterruptedException
+    public void pauseThread(ReentrantLock lock, Thread thread, torWebCrawler parent,String host) throws InterruptedException
     {
         lock.lock();
         try
         {
-            parent.pauseThread(thread);
+            parent.pauseThread(thread,host);
         }
         finally
         {

@@ -15,8 +15,6 @@ import constants.string;
 import java.io.Serializable;
 import java.util.concurrent.locks.ReentrantLock;
 import logManager.log;
-import org.jsoup.Jsoup;
-
 
 public class crawler implements Serializable
 {
@@ -25,14 +23,18 @@ public class crawler implements Serializable
     public queueManager queryManager;
 
     /*VARIABLES DECLARATIONS*/
-    public duplicationFilter duplicateFilter;
     public ReentrantLock lock = new ReentrantLock();
 
     /*INITIALIZATIONS*/
     public crawler() throws IOException
     {
         variable_initalization();
-     }
+    }
+
+    public int queueSize()
+    {
+        return queryManager.queueSize();
+    }
 
     public int size()
     {
@@ -47,8 +49,6 @@ public class crawler implements Serializable
     private void variable_initalization() throws IOException
     {
         queryManager = new queueManager();
-        duplicateFilter = new duplicationFilter();
-        duplicateFilter.Initialize();
     }
 
     public urlModel getUrl(String host) throws InterruptedException
@@ -72,12 +72,12 @@ public class crawler implements Serializable
     /*METHOD PARSER*/
     public void parse_html(String HTML, String Url, String threadID) throws MalformedURLException, IOException, URISyntaxException, Exception
     {
-        ArrayList<String> urlList = null;
+        ArrayList<String> urlList;
         lock.lock();
         try
         {
             log.logMessage("Extracting URLS", "THID : " + threadID + " : Thread Status");
-            urlList = nlpParser.extractAndSaveUrlsFromContent(HTML, Url);
+            urlList = nlpParser.extractAndSaveUrlsFromContent(HTML, Url, threadID);
             log.logMessage("Extracted URLS : " + urlList.size(), "THID : " + threadID + " : Thread Status");
             log.logMessage("Extracting Keywords", "THID : " + threadID + " : Thread Status");
             String keyWords = nlpParser.extractKeyWords(HTML);
@@ -98,7 +98,7 @@ public class crawler implements Serializable
         if (urlHelperMethod.getNetworkType(Url).equals(enumeration.UrlTypes.onion) && status.cacheStatus)
         {
             String summary = nlpParser.extractSummary(HTML).replace("'", "");
-            if(summary.length()>30)
+            if (summary.length() > 30)
             {
                 String content = urlHelperMethod.createCacheUrl(Url, title, summary, enumeration.UrlDataTypes.all.toString(), keywords, extractLogo);
                 currentUrlKey = saveUrlToServer(content, threadID);
@@ -132,13 +132,14 @@ public class crawler implements Serializable
                 String URLLink = urlList.get(e);
                 String linkType = urlHelperMethod.getUrlExtension(URLLink);
                 UrlTypes urlType = urlHelperMethod.getNetworkType(URLLink);
-                if (urlHelperMethod.isUrlValid(URLLink))
+                if (urlHelperMethod.isUrlValid(URLLink) && !linkType.equals(""))
                 {
-                    if (threadID.equals("-1") || !duplicateFilter.is_url_duplicate(0,URLLink))
+
+                    if (threadID.equals("-1") || !duplicationFilter.getInstance().is_url_duplicate(URLLink))
                     {
-                        if (size() > preferences.maxQueueSize)
+                        if (linkType.equals("link") && size() > preferences.maxQueueSize)
                         {
-                            fileHandler.appendFile(string.url_stack,URLLink+"\n");
+                            fileHandler.appendFile(string.url_stack, URLLink + "\n");
                         }
                         else
                         {
@@ -157,7 +158,7 @@ public class crawler implements Serializable
                                 {
                                     title = URLLink.substring(URLLink.length() - preferences.maxDLinkUrlSize);
                                 }
-                                log.print("FILE " + " URL FOUND" + " " + URLLink);
+                                //log.print("FILE " + " URL FOUND" + " " + URLLink);
                                 String content = urlHelperMethod.createDLink(URLLink, title, urlHelperMethod.getUrlExtension(URLLink), currentUrlKey);
                                 saveUrlToServer(content, threadID);
                             }

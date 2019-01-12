@@ -7,12 +7,15 @@ import constants.string;
 import constants.enumeration;
 import application.helperMethod;
 import constants.preferences;
+import java.net.URI;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import logManager.log;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.validator.UrlValidator;
 
 public class urlHelperMethod
@@ -38,9 +41,23 @@ public class urlHelperMethod
 
     public static boolean isUrlValid(String URLLink)
     {
-        URLLink = URLLink.replace(string.textOnion,"com");
+        URLLink = URLLink.replace(string.textOnion, "com");
         UrlValidator urlValidator = new UrlValidator(UrlValidator.ALLOW_ALL_SCHEMES);
         return urlValidator.isValid(URLLink);
+    }
+
+    public static String getUrlWithoutParameters(String url) throws URISyntaxException
+    {
+        if(url.contains("#"))
+        {
+            url = url.split("#")[0];
+        }
+        URI uri = new URI(url);
+        return new URI(uri.getScheme(),
+                uri.getAuthority(),
+                uri.getPath(),
+                null, // Ignore the query part of the input url
+                uri.getFragment()).toString();
     }
 
     public static String getUrlHost(String URLLink)
@@ -67,7 +84,9 @@ public class urlHelperMethod
 
     public static String getUrlExtension(String URLLink)
     {
-        if (URLLink.endsWith(".js") || URLLink.endsWith(".gif") || URLLink.endsWith(".jpg") || URLLink.endsWith(".png") || URLLink.endsWith(".svg") || URLLink.endsWith(".ico"))
+        String ext = FilenameUtils.getExtension(URLLink);
+
+        if (URLLink.endsWith(".gif") || URLLink.endsWith(".jpg") || URLLink.endsWith(".png") || URLLink.endsWith(".svg") || URLLink.endsWith(".ico"))
         {
             return "image";
         }
@@ -75,17 +94,21 @@ public class urlHelperMethod
         {
             return "doc";
         }
-        else if (URLLink.endsWith(".mp4") || URLLink.endsWith(".3gp") || URLLink.endsWith(".mp3") || URLLink.endsWith(".avi") || URLLink.endsWith(".webm"))
+        else if (URLLink.endsWith(".mp4") || URLLink.endsWith(".3gp") || URLLink.endsWith(".mp3") || URLLink.endsWith(".avi") || URLLink.endsWith(".webm") || URLLink.endsWith(".mov"))
         {
             return "video";
         }
-        else
+        else if(URLLink.endsWith(".onion") || URLLink.endsWith(".ajax") || URLLink.endsWith(".php") || URLLink.endsWith(".html")  || URLLink.endsWith(".htm")  || ext.equals(""))
         {
             return "link";
         }
+        else
+        {
+            return "";
+        }
     }
 
-    public static String createCacheUrl(String URL, String Title, String Description, String datatype, String keyTypes,String logo) throws IOException, MalformedURLException, URISyntaxException
+    public static String createCacheUrl(String URL, String Title, String Description, String datatype, String keyTypes, String logo) throws IOException, MalformedURLException, URISyntaxException
     {
         datatype = "all";
         if (Title.equals(""))
@@ -96,13 +119,13 @@ public class urlHelperMethod
         {
             Description = "Description not found";
         }
-        
+
         String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" + Title + "&desc=" + URLEncoder.encode(Description) + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&key_word=" + keyTypes + "&logo=" + logo;
 
         return query;
     }
 
-    public static String createDLink(String URL, String Title, String datatype,String currentUrlKey) throws IOException, MalformedURLException, URISyntaxException
+    public static String createDLink(String URL, String Title, String datatype, String currentUrlKey) throws IOException, MalformedURLException, URISyntaxException
     {
         if (datatype.equals(""))
         {
@@ -113,11 +136,11 @@ public class urlHelperMethod
             Title = "Title not found";
         }
 
-        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate()+"&WP_FK="+currentUrlKey;
+        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&WP_FK=" + currentUrlKey;
         return query;
     }
 
-    public static String isHRefValid(String host,String url)
+    public static String isHRefValid(String host, String url)
     {
         try
         {
@@ -130,5 +153,5 @@ public class urlHelperMethod
             return string.emptyString;
         }
     }
-    
+
 }

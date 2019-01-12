@@ -65,82 +65,119 @@ public class nlpParser
         return keyWords;
     }
 
+    public static String preProcessUrl(String URLLink, int type,String host,String threadId) throws URISyntaxException
+    {
+        if (URLLink.length() > 1 && URLLink.charAt(0) == '/' && URLLink.charAt(1) == '/')
+        {
+            URLLink = "http:" + URLLink;
+        }
+
+        else if (URLLink.indexOf("http") != 0)
+        {
+            URLLink = "http://" + URLLink;
+        }
+        if (URLLink.contains("#"))
+        {
+            URLLink = URLLink.split("#")[0];
+        }
+        URLLink = URLLink.replace(" ", "");
+
+        if (type == 1)
+        {
+            if (urlHelperMethod.isUrlValid(URLLink) && URLLink.contains(".onion") && (!urlHelperMethod.getUrlExtension(URLLink).equals("link") || string.fullyParsableUrls.contains(host) || threadId.equals("-1")))
+            {
+            }
+            else
+            {
+                return "";
+            }
+        }
+        else if (type == 2)
+        {
+            if (urlHelperMethod.isUrlValid(URLLink) && URLLink.contains(".onion"))
+            {
+            }
+            else
+            {
+                return "";
+            }
+        }
+        else
+        {
+            if (urlHelperMethod.isUrlValid(URLLink) && (URLLink.contains(".onion") || !urlHelperMethod.getUrlExtension(URLLink).equals("link")))
+            {
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        String staticPage = urlHelperMethod.getUrlWithoutParameters(URLLink);
+        String dynamicPage = URLLink.replace(staticPage, "");
+        if (staticPage.length() > 500 || dynamicPage.length() > 500)
+        {
+            return "";
+        }
+
+        return URLLink;
+    }
+
     /*THE FOLLOWNG URL FOUNDS URL EMBEDED IN TEXT OR CONTENT OF PAGE*/
-    public static ArrayList<String> extractAndSaveUrlsFromContent(String HTML, String host) throws MalformedURLException, IOException, URISyntaxException, Exception
+    public static ArrayList<String> extractAndSaveUrlsFromContent(String HTML, String host,String threadId) throws MalformedURLException, IOException, URISyntaxException, Exception
     {
         Document doc = Jsoup.parse(HTML);
         ArrayList<String> urlListFiltered = new ArrayList<String>();
 
         Elements links = doc.select("a[href]");
 
+        /*HRef Start*/
         for (int counter = 0; counter <= links.size() - 1; counter++)
         {
             String URLLink = links.get(counter).attr("href");
             URLLink = urlHelperMethod.isHRefValid(host, URLLink);
 
+            URLLink = preProcessUrl(URLLink,2,host,threadId);
             if (URLLink.equals(string.emptyString))
             {
                 continue;
             }
 
-            if (URLLink.length() > 1 && URLLink.charAt(0) == '/' && URLLink.charAt(1) == '/')
-            {
-                URLLink = "http:" + URLLink;
-            }
-
-            else if (URLLink.indexOf("http") != 0)
-            {
-                URLLink = "http://" + URLLink;
-            }
-
-            if (urlHelperMethod.isUrlValid(URLLink) && (URLLink.contains(".onion") || !urlHelperMethod.getUrlExtension(URLLink).equals("link")))
-            {
-                URLLink = URLLink.replace(" ", "");
-                urlListFiltered.add(URLLink);
-            }
+            urlListFiltered.add(URLLink);
         }
+        /*HRef End*/
 
+        /*Images Start*/
         links = doc.select("img[src]");
         for (int counter = 0; counter <= links.size() - 1; counter++)
         {
             String URLLink = links.get(counter).attr("abs:src");
 
-            if (URLLink.length() > 1 && URLLink.charAt(0) == '/' && URLLink.charAt(1) == '/')
+            URLLink = preProcessUrl(URLLink,3,host,threadId);
+            if (URLLink.equals(string.emptyString))
             {
-                URLLink = "http:" + URLLink;
+                continue;
             }
 
-            else if (URLLink.indexOf("http") != 0)
-            {
-                URLLink = "http://" + URLLink;
-            }
-
-            URLLink = URLLink.replace(" ", "");
             urlListFiltered.add(URLLink);
         }
+        /*Images End*/
 
+        /*Text Start*/
         String html = doc.body().text();
         String[] urlList = html.split(" ");
 
         for (String URLLink : urlList)
         {
-            if (URLLink.length() > 1 && URLLink.charAt(0) == '/' && URLLink.charAt(1) == '/')
+            URLLink = preProcessUrl(URLLink,1,host,threadId);
+            if (URLLink.equals(string.emptyString))
             {
-                URLLink = "http:" + URLLink;
+                continue;
             }
-
-            else if (URLLink.indexOf("http") != 0)
-            {
-                URLLink = "http://" + URLLink;
-            }
-
-            if (urlHelperMethod.isUrlValid(URLLink) && (URLLink.contains(".onion") || !urlHelperMethod.getUrlExtension(URLLink).equals("link")))
-            {
-                URLLink = URLLink.replace(" ", "");
-                urlListFiltered.add(URLLink);
-            }
+            urlListFiltered.add(URLLink);
         }
-
+        /*Text End*/
+        /*
         String htmlUnspaced = HTML.replaceAll(" ", "");
         String currentToken = "";
         String currentUrl = "";
@@ -152,14 +189,14 @@ public class nlpParser
             {
                 if (htmlUnspaced.charAt(counter) == ')')
                 {
-                    String linkType = urlHelperMethod.getUrlExtension(currentUrl);
-                    if (!linkType.contains(host))
+                    String URLLink = urlHelperMethod.getUrlExtension(currentUrl);
+                    URLLink = preProcessUrl(URLLink);
+                    if (!URLLink.contains(host))
                     {
                         currentUrl = urlHelperMethod.getUrlHost(host) + "/" + currentUrl;
                     }
-                    if (linkType.equals("image"))
+                    if (URLLink.equals("image"))
                     {
-                        currentUrl = currentUrl.replace(" ", "");
                         urlListFiltered.add(currentUrl);
                     }
                     currentToken = "";
@@ -174,7 +211,6 @@ public class nlpParser
             else if ("background-image:url".equals(currentToken))
             {
                 urlFound = true;
-                continue;
             }
             else if ("background-image:url(".contains(htmlUnspaced.charAt(counter) + ""))
             {
@@ -186,8 +222,7 @@ public class nlpParser
                 currentUrl = "";
                 urlFound = false;
             }
-        }
-
+        }*/
         return urlListFiltered;
     }
 
@@ -202,19 +237,15 @@ public class nlpParser
         String logoUrl = "";
         Document document = Jsoup.parse(HTML);
 
-        Element element = document.head().select("link[href~=.*\\.(ico|png)]").first();
+        Elements element = document.head().select("meta[itemprop=image]");
 
-        if (element == null)
+        if (element != null && element.size()>0)
         {
-            element = document.head().select("meta[itemprop=image]").first();
+            Element item = element.first();
             if (element != null)
             {
                 logoUrl = element.attr("content");
             }
-        }
-        else
-        {
-            logoUrl = element.attr("href");
         }
 
         return logoUrl;
@@ -224,8 +255,9 @@ public class nlpParser
     {
         Document document = Jsoup.parse(HTML);
         String title = document.title();
-        title = title.replaceAll("[\\[\\](){}*$!.\"]", "");
-        title = title.replaceAll("[|:-]", " | ");
+        title = title.replaceAll("[–—\\[\\](){}*$!,></=\"]", " ");
+        title = title.replace("..",".");
+        title = title.replaceAll("[|:~-]", " | ");
         title = title.trim().replaceAll(" +", " ");
 
         if (title.length() > 0 && title.charAt(0) == ' ')
@@ -242,7 +274,7 @@ public class nlpParser
             }
             else
             {
-                title = title.substring(0, index + 2) + title.substring(index + 2).replaceAll("\\|","");
+                title = title.substring(0, index + 2) + title.substring(index + 2).replaceAll("\\|", "");
             }
         }
         if (title.length() > 0)
@@ -254,6 +286,7 @@ public class nlpParser
             return "";
         }
 
+        //log.print(title);
         return title;
     }
 

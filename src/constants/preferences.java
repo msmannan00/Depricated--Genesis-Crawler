@@ -6,11 +6,13 @@ public class preferences
     /*Crawler Preferences*/
     public static int proxyPort = 9150;
     public static int maxThreadCount = 35;
-    public static int requestTimeGap = 2;
-    public static int requestQueueReloadGap = 2;
+    public static int requestTimeGap = 1;
+    public static int requestQueueReloadGap = 1;
     public static int internetConsumption = 10;
 
-    public static int maxQueueSize = 20000000;
+    public static int maxLogLines = 10000;
+    public static int maxLogFiles = 30;
+    public static int maxQueueSize = 5000;
     public static int minQueueSize = 500;
     public static int maxDLinkUrlSize = 30;
     public static int retryCount = 10;

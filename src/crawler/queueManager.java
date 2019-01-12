@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 import logManager.log;
 
 public class queueManager implements Serializable
@@ -53,9 +52,21 @@ public class queueManager implements Serializable
         baseQueuesKeys = new ArrayList<String>();
         retryQueuesKeys = new ArrayList<String>();
         parsingQueuesKeys = new ArrayList<String>();
-        
-        
+
         setUrl(string.baseLink, "");
+    }
+
+    public boolean isUrlInParsingQueue(String url)
+    {
+        String host = urlHelperMethod.getUrlHost(url);
+        if (parsingQueues.containsKey(url))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void clearParsingQueueKey()
@@ -63,7 +74,7 @@ public class queueManager implements Serializable
         parsingQueuesKeys.clear();
         parsingQueuesKeys = new ArrayList(parsingQueues.keySet());
     }
-    
+
     public boolean isHostEmpty(String host)
     {
         return !parsingQueues.containsKey(host);
@@ -72,6 +83,11 @@ public class queueManager implements Serializable
     public int size()
     {
         return size;
+    }
+
+    public int queueSize()
+    {
+        return onionQueuesKeys.size() + onionDataQueuesKeys.size() + baseQueuesKeys.size();
     }
 
     public void clearQueues()
@@ -120,7 +136,7 @@ public class queueManager implements Serializable
             moveToParsingQueues(baseQueues, host);
             baseQueuesKeys.remove(0);
         }
-        else if(parsingQueuesKeys.size()>0)
+        else if (parsingQueuesKeys.size() > 0)
         {
             host = parsingQueuesKeys.get(0);
             parsingQueuesKeys.remove(0);
@@ -147,6 +163,7 @@ public class queueManager implements Serializable
                     removeHostIfParsed(parsingQueues, host);
                     size--;
                 }
+
                 return new urlModel(parentURL, host + URL);
             }
         }
@@ -173,7 +190,6 @@ public class queueManager implements Serializable
 
     public void addToQueue(HashMap<String, Queue<urlModel>> priorityQueue, String host, String subUrl, String parentURL)
     {
-        subUrl = subUrl + " ";
         if (priorityQueue.containsKey(host))
         {
             priorityQueue.get(host).add(new urlModel(parentURL, subUrl));

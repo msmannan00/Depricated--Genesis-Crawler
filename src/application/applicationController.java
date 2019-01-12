@@ -1,12 +1,12 @@
 package application;
 
-import constants.language;
 import constants.status;
 import crawler.duplicationFilter;
 import java.io.FileNotFoundException;
 import logManager.logViewController;
 import logManager.log;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,21 +17,21 @@ public class applicationController
 
     public static torWebCrawler torRequestHandler = null;
     public static logViewController crawlerUI;
-    
-    public static void preInitialization() throws FileNotFoundException
+
+    public static void preInitialization() throws FileNotFoundException, IOException
     {
-        fileHandler.clearFile("log.txt");
+        fileHandler.clearFile("Logs/");
         log.logMessage("Starting Application", "Application Status");
     }
 
     /*TRIGGER CRAWLER*/
-    public static void main(String[] args) throws InterruptedException, IOException, InstantiationException, InstantiationException, ParseException, ClassNotFoundException, IllegalAccessException, IllegalAccessException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException
+    public static void main(String[] args) throws InterruptedException, IOException, InstantiationException, InstantiationException, ParseException, ClassNotFoundException, IllegalAccessException, IllegalAccessException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, UnsupportedLookAndFeelException, URISyntaxException
     {
-
+        
         try
         {
             preInitialization();
-            if(status.classificationTrainer)
+            if (status.classificationTrainer)
             {
                 classifierData.getInstance().startClassifier();
             }
@@ -42,7 +42,7 @@ public class applicationController
                 openUI();
             }
         }
-        catch (IOException | UnsupportedLookAndFeelException ex )
+        catch (IOException | UnsupportedLookAndFeelException ex)
         {
             ex.printStackTrace();
             log.logMessage("Global Error : " + ex.getMessage(), "Critical | Exception");
@@ -55,7 +55,7 @@ public class applicationController
     }
 
     public static void openUI() throws ParseException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException
-    {        
+    {
         log.logMessage("Opening User Interface", "Application Status");
         crawlerUI = new logViewController();
         crawlerUI.crawlerObject = torRequestHandler.getHtmlParser();

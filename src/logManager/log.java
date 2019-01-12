@@ -2,15 +2,19 @@ package logManager;
 
 import application.fileHandler;
 import constants.enumeration.logType;
+import constants.preferences;
 import constants.string;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class log
 {
+
+    private static final ReentrantLock lock = new ReentrantLock();
 
     /*Print Message or Log*/
     public static void print(String message)
@@ -32,18 +36,37 @@ public class log
     /*Log Exceptions Errors and Warnings*/
     public static void logMessage(String message, String messageType, logType logType) throws IOException, MalformedURLException, URISyntaxException
     {
-        logController.getInstance().logMessage(messageType, message,logType);
+        logController.getInstance().logMessage(messageType, message, logType);
     }
 
     public static void logMessage(String message, String messageIdentifier)
     {
+        lock.lock();
         try
         {
-            fileHandler.appendFile("log.txt", messageIdentifier + " : " + message + "\n");
+            if (logController.getInstance().getLogFileCounter() >= preferences.maxLogFiles)
+            {
+                logController.getInstance().resetLogFileCounter();
+                fileHandler.clearLogFile("Logs/log_" + logController.getInstance().getLogFileCounter() + ".txt");
+            }
+            else if (logController.getInstance().getLogCounter() > preferences.maxLogLines)
+            {
+                logController.getInstance().updateLogFileCounter();
+                logController.getInstance().resetLogCounter();
+                fileHandler.clearLogFile("Logs/log_" + logController.getInstance().getLogFileCounter() + ".txt");
+            }
+            logController.getInstance().updateLogCounter();
+            int counter = logController.getInstance().getLogFileCounter();
+            fileHandler.appendFile("Logs/log_" + counter + ".txt", messageIdentifier + " : " + message + "\n");
+
         }
         catch (IOException | URISyntaxException ex)
         {
             Logger.getLogger(log.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        finally
+        {
+            lock.unlock();
         }
     }
 

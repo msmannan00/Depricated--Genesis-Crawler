@@ -21,12 +21,16 @@ public class torWebCrawler
 {
 
     /*INSTANCES DECLARATIONS PRIVATE*/
+    private final ArrayList<Thread> emptyThreadQueue = new ArrayList<Thread>();
     private final ArrayList<Thread> pausedThreadQueue = new ArrayList<Thread>();
     private final ArrayList<Thread> runningThreadQueue = new ArrayList<Thread>();
     private final ReentrantLock lock = new ReentrantLock();
+    private final ReentrantLock pauseUpdateLock = new ReentrantLock();
 
     private crawler htmlParser;
     private int threadCount = 0;
+    private int pausedThreadCounter = 35;
+    
 
     /*INITIALIZATIONS*/
     torWebCrawler() throws IOException, InterruptedException
@@ -62,10 +66,17 @@ public class torWebCrawler
     }
 
     /*CRAWLER HELPER METHODS*/
-    public void pauseThread(Thread thread)
+    public void pauseThread(Thread thread, String host)
     {
         runningThreadQueue.remove(thread);
-        pausedThreadQueue.add(thread);
+        if (host.equals(""))
+        {
+            emptyThreadQueue.add(thread);
+        }
+        else
+        {
+            pausedThreadQueue.add(thread);
+        }
     }
 
     /*GETTER METHODS*/
@@ -115,21 +126,53 @@ public class torWebCrawler
     {
         if (htmlParser.size() <= preferences.minQueueSize)
         {
-            htmlParser.parse_html("<html><p>" + fileHandler.readQueueStack() + "</p></html>", "", String.valueOf(-1));
+            String data = fileHandler.readQueueStack();
+            if (data.length() > 0)
+            {
+                log.print(data);
+                htmlParser.parse_html("" + fileHandler.readQueueStack() + "", "", String.valueOf(-1));
+            }
         }
     }
 
     public void threadManager() throws IOException
     {
-        if (pausedThreadQueue.size() > 0 && status.appStatus == enumeration.appStatus.running && htmlParser.size() > 0)
+        if ((emptyThreadQueue.size()>0 || pausedThreadQueue.size() > 0 ) && status.appStatus == enumeration.appStatus.running)
         {
-            Thread thread = pausedThreadQueue.get(0);
-            synchronized (thread)
+            new Thread()
             {
-                pausedThreadQueue.remove(thread);
-                runningThreadQueue.add(thread);
-                thread.notify();
-            }
+                @Override
+                public void run()
+                {
+                    Thread thread;
+                    if (emptyThreadQueue.size() > 0 && htmlParser.queueSize() > 0)
+                    {
+                        thread = emptyThreadQueue.get(0);
+                        emptyThreadQueue.remove(thread);
+                    }
+                    else if (pausedThreadQueue.size() > 0)
+                    {
+                        thread = pausedThreadQueue.get(0);
+                        pausedThreadQueue.remove(thread);
+                    }
+                    else if (emptyThreadQueue.size() > 0 && htmlParser.queueSize() > 0 || pausedThreadCounter>0)
+                    {
+                        thread = emptyThreadQueue.get(0);
+                        emptyThreadQueue.remove(thread);
+                    }
+                    else
+                    {
+                        return;
+                    }
+                    runningThreadQueue.add(thread);
+
+                    synchronized (thread)
+                    {
+                        thread.notify();
+                    }
+                }
+            }.start();
+
         }
         if (status.appStatus == enumeration.appStatus.running)
         {
@@ -155,17 +198,17 @@ public class torWebCrawler
                     try
                     {
                         sleep(1000);
-                        //if (counter_tmanager >= preferences.requestQueueReloadGap && status.appStatus == enumeration.appStatus.running)
-                        //{
-                        //queueReload();
-                        //counter_qmanager = 0;
-                        //}
+                        if (counter_qmanager >= preferences.requestQueueReloadGap && status.appStatus == enumeration.appStatus.running)
+                        {
+                            queueReload();
+                            counter_qmanager = 0;
+                        }
                         if (counter_tmanager >= preferences.requestTimeGap)
                         {
                             threadManager();
                             counter_tmanager = 0;
                         }
-                        if (counter_tmanager >= preferences.backupTimer || save_trigger || eventListner.getBackupState())
+                        if (counter_bmanager >= preferences.backupTimer || save_trigger || eventListner.getBackupState())
                         {
                             log.logMessage("Saving Crawler Object", "Heart Beat");
                             save_trigger = backupManager(save_trigger);
@@ -173,16 +216,18 @@ public class torWebCrawler
                         }
                         counter_tmanager++;
                         counter_bmanager++;
-                        //counter_qmanager++;
+                        counter_qmanager++;
                         log.logThreadCount(runningThreadQueue.size());
 
                     }
                     catch (InterruptedException | IOException ex)
                     {
+                        ex.printStackTrace();
                         Logger.getLogger(torWebCrawler.class.getName()).log(Level.SEVERE, null, ex);
                     }
                     catch (Exception ex)
                     {
+                        ex.printStackTrace();
                         Logger.getLogger(torWebCrawler.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
@@ -190,50 +235,62 @@ public class torWebCrawler
         }.start();
     }
 
+    public void updatePauseCounter(int count)
+    {
+        pauseUpdateLock.lock();
+        try
+        {
+            pausedThreadCounter+=count;
+        }
+        finally
+        {
+            pauseUpdateLock.unlock();
+        }
+    }
+    
     public void createCrawler() throws IOException, InterruptedException
     {
-        String threadName = "Thread:" + threadCount;
         Thread thread = new Thread()
         {
+            String host = string.emptyString;
+
             @Override
             synchronized public void run()
             {
-                String host = string.emptyString;
-                String url = "";
                 urlModel urlmodel = new urlModel("", "");
 
                 while (true)
                 {
                     try
                     {
+                        lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this, host);
+                        wait();
+
                         if (status.appStatus == enumeration.appStatus.running)
                         {
-                            if (!htmlParser.isHostEmpty(host))
+                            if (htmlParser.isHostEmpty(host))
+                            {
+                                updatePauseCounter(-1);
+                                log.logMessage("RE-Fethcing URL", "THID : " + this.getId() + " : Thread Status");
+                                host = lockManager.getInstance().getHtmlParserKey(lock, htmlParser);
+                                log.logMessage("URL Fethched : " + host, "THID : " + this.getId() + " : Thread Status");
+                            }
+                            if (!host.equals(string.emptyString))
                             {
                                 urlmodel = htmlParser.getUrl(host);
                                 log.logMessage("Fethcing From Same Host", "THID : " + this.getId() + " : Thread Status");
-                                url = urlmodel.getURL();
+                                String url = urlmodel.getURL();
+                                                                
                                 log.logMessage("Sending Url Request : " + url, "THID : " + this.getId() + " : Thread Status");
                                 String html = webRequestHandler.getInstance().requestConnection(url, String.valueOf(this.getId()));
                                 log.logMessage("Parsing HTML : " + url, "THID : " + this.getId() + " : Thread Status");
                                 htmlParser.parse_html(html, url, String.valueOf(this.getId()));
                                 log.logMessage("Parsing Completed : " + url, "THID : " + this.getId() + " : Thread Status");
-                                lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this);
-                                wait();
                             }
                             else
                             {
-                                log.logMessage("RE-Fethcing URL", "THID : " + this.getId() + " : Thread Status");
-                                host = lockManager.getInstance().getHtmlParserKey(lock, htmlParser);
-                                log.logMessage("URL Fethched : " + host, "THID : " + this.getId() + " : Thread Status");
+                                updatePauseCounter(1);
                             }
-                        }
-
-                        if (status.appStatus == enumeration.appStatus.paused)
-                        {
-                            lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this);
-                            log.logMessage("Sleep Mode", "THID : " + this.getId() + " : Thread Status");
-                            wait();
                         }
                     }
                     catch (Exception ex)
@@ -243,15 +300,6 @@ public class torWebCrawler
                         if (urlmodel != null)
                         {
                             //htmlParser.addToRetryQueue(new retryModel(urlmodel.getParentURL(), urlmodel.getURL()));
-                        }
-                        try
-                        {
-                            lockManager.getInstance().pauseThread(lock, this, torWebCrawler.this);
-                            wait();
-                        }
-                        catch (InterruptedException ex1)
-                        {
-                            Logger.getLogger(torWebCrawler.class.getName()).log(Level.SEVERE, null, ex1);
                         }
                     }
                 }

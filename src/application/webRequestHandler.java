@@ -117,7 +117,7 @@ public class webRequestHandler
         Thread thread = scannerTimeOut(scanner);
         while (scanner.hasNextLine())
         {
-            content += scanner.nextLine();
+            content += scanner.nextLine() + " ";
         }
         scanner.close();
         thread.stop();
@@ -167,6 +167,7 @@ public class webRequestHandler
         }
         catch (IOException ex)
         {
+            log.print("URL SAVE ERROR : " + url + " : " + ex.getMessage());
             log.logMessage("ERROR SAVING DATA URL : " + url, "THID : " + threadID + " : Thread Status");
             return "";
         }

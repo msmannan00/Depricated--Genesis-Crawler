@@ -1,18 +1,16 @@
 package logManager;
 
-import application.fileHandler;
 import constants.enumeration.logType;
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class logController
 {
 
     /*Shared Instance*/
     private static final logController sharedInstance = new logController();
+    private int logFileCounter = 0;
+    private int logCounter = 0;
+
     ReentrantLock lock = new ReentrantLock();
 
     public static logController getInstance()
@@ -30,6 +28,36 @@ public class logController
     public void logThreadCount(int threadCount)
     {
         logModel.getInstance().setThreadCount(threadCount);
+    }
+
+    public int getLogFileCounter()
+    {
+        return logFileCounter;
+    }
+    
+    public void updateLogFileCounter()
+    {
+        logFileCounter+=1;
+    }
+
+    public void resetLogFileCounter()
+    {
+        logFileCounter=0;
+    }
+    
+    public int getLogCounter()
+    {
+        return logCounter;
+    }
+
+    public void updateLogCounter()
+    {
+        logCounter+=1;
+    }
+    
+    public void resetLogCounter()
+    {
+        logCounter=0;
     }
 
 }
