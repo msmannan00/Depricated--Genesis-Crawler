@@ -1,6 +1,6 @@
 package crawler;
 
-import application.fileHandler;
+import application.FileHandler;
 import static crawler.nlpParser.extractTitle;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -139,7 +139,7 @@ public class crawler implements Serializable
                     {
                         if (linkType.equals("link") && size() > preferences.maxQueueSize)
                         {
-                            fileHandler.appendFile(string.url_stack, URLLink + "\n");
+                            FileHandler.appendFile(string.url_stack, URLLink + "\n");
                         }
                         else
                         {

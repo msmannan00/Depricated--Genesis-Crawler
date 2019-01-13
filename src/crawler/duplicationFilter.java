@@ -12,6 +12,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import logManager.log;
+import org.apache.commons.lang.StringUtils;
 
 public class duplicationFilter
 {
@@ -45,10 +46,12 @@ public class duplicationFilter
     public boolean is_url_duplicate(String URLLink) throws URISyntaxException
     {
 
-        if (!status.mySqlStatus)
+        if (!status.mySqlStatus || StringUtils.countMatches("a.b.c.d", ".")>6)
         {
             return false;
         }
+        
+        
         String staticBytes = urlHelperMethod.getUrlWithoutParameters(URLLink);
         String dynamicBytes = URLLink.replace(staticBytes, "");
 

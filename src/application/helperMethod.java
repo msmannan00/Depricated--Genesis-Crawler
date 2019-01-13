@@ -51,22 +51,22 @@ public class helperMethod
 
     public static void writeObjectBackupToFile(Object serObj, String address)
     {
-        fileHandler.writeObjectBackupToFile(serObj, address);
+        FileHandler.writeObjectBackupToFile(serObj, address);
     }
 
     public static void writeObjectToFile(Object serObj, String address)
     {
-        fileHandler.writeObjectToFile(serObj, address);
+        FileHandler.writeObjectToFile(serObj, address);
     }
 
     public static int getFileCount(String path)
     {
-        return fileHandler.getFileCount(path);
+        return FileHandler.getFileCount(path);
     }
 
     public static Object readObjectFromFile()
     {
-        return fileHandler.readObjectFromFile(preferences.filepath_queue_manager);
+        return FileHandler.readObjectFromFile(preferences.filepath_queue_manager);
     }
 
     public static logType getErrorMessageType(String errorMessage)

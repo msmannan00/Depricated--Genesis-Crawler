@@ -1,6 +1,6 @@
 package logManager;
 
-import application.fileHandler;
+import application.FileHandler;
 import constants.enumeration.logType;
 import constants.preferences;
 import constants.string;
@@ -47,17 +47,17 @@ public class log
             if (logController.getInstance().getLogFileCounter() >= preferences.maxLogFiles)
             {
                 logController.getInstance().resetLogFileCounter();
-                fileHandler.clearLogFile("Logs/log_" + logController.getInstance().getLogFileCounter() + ".txt");
+                FileHandler.clearFile("Logs/log_" + logController.getInstance().getLogFileCounter() + ".txt");
             }
             else if (logController.getInstance().getLogCounter() > preferences.maxLogLines)
             {
                 logController.getInstance().updateLogFileCounter();
                 logController.getInstance().resetLogCounter();
-                fileHandler.clearLogFile("Logs/log_" + logController.getInstance().getLogFileCounter() + ".txt");
+                FileHandler.clearFile("Logs/log_" + logController.getInstance().getLogFileCounter() + ".txt");
             }
             logController.getInstance().updateLogCounter();
             int counter = logController.getInstance().getLogFileCounter();
-            fileHandler.appendFile("Logs/log_" + counter + ".txt", messageIdentifier + " : " + message + "\n");
+            FileHandler.appendFile("Logs/log_" + counter + ".txt", messageIdentifier + " : " + message + "\n");
 
         }
         catch (IOException | URISyntaxException ex)

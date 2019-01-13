@@ -1,6 +1,6 @@
 package logManager;
 
-import application.fileHandler;
+import application.FileHandler;
 import constants.enumeration;
 import constants.preferences;
 import java.io.IOException;
@@ -183,7 +183,7 @@ public class logModel
     {
         try
         {
-            fileHandler.appendFile("log.txt", message + "\n");
+            FileHandler.appendFile("log.txt", message + "\n");
         }
         catch (IOException | URISyntaxException ex)
         {

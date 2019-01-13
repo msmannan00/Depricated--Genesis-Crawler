@@ -10,11 +10,8 @@ import constants.preferences;
 import java.net.URI;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import logManager.log;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.validator.UrlValidator;
 
