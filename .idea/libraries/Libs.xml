@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="Libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Libs/opennlp-maxent-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/apache-httpcomponents-httpcore.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/src0_82.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/synthetica.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpcomponents-httpcore-4.4.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/okhttp-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/syntheticaAluOxide.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/org-apache-commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpcore-4.3-beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/opennlp-tools-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpcore-4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/commons-validator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/mysql-connector.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpclient-4.3-beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/jsoup-1.11.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpclient-4.3.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/apache-httpcomponents-httpclient.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpcore-4.4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/protobuf-java-3.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

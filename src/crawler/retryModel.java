@@ -1,7 +1,7 @@
 package crawler;
 
-import application.helperMethod;
-import constants.preferences;
+import Shared.helperMethod;
+import Constants.preferences;
 import java.io.Serializable;
 import java.util.Date;
 

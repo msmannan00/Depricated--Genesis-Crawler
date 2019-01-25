@@ -1,10 +1,6 @@
 package logManager;
 
-import constants.enumeration.logType;
-import java.text.ParseException;
-import java.util.concurrent.locks.ReentrantLock;
-import javax.swing.UnsupportedLookAndFeelException;
-import static application.ApplicationController.crawler;
+import Constants.enumeration.logType;
 
 public class logController
 {
@@ -12,24 +8,18 @@ public class logController
     /*Shared Instance*/
     private static final logController sharedInstance = new logController();
 
-    /*Objects Declaration*/
-    private static logViewController viewController;
-
     /*Variable Declaration*/
     private int logFileCounter = 0;
     private int logCounter = 0;
-
-    ReentrantLock lock = new ReentrantLock();
 
     public static logController getInstance()
     {
         return sharedInstance;
     }
 
-    public void showLogUI() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException, ParseException
-    {
-        viewController = new logViewController();
-        viewController.crawlerObject = crawler.getHtmlParser();
+    public void showLogUI() throws Exception {
+        /*Objects Declaration*/
+        logViewController viewController = new logViewController();
         viewController.run();
     }
     
@@ -45,32 +35,32 @@ public class logController
         logModel.getInstance().setThreadCount(threadCount);
     }
 
-    public int getLogFileCounter()
+    int getLogFileCounter()
     {
         return logFileCounter;
     }
     
-    public void updateLogFileCounter()
+    void updateLogFileCounter()
     {
         logFileCounter+=1;
     }
 
-    public void resetLogFileCounter()
+    void resetLogFileCounter()
     {
         logFileCounter=0;
     }
     
-    public int getLogCounter()
+    int getLogCounter()
     {
         return logCounter;
     }
 
-    public void updateLogCounter()
+    void updateLogCounter()
     {
         logCounter+=1;
     }
     
-    public void resetLogCounter()
+    void resetLogCounter()
     {
         logCounter=0;
     }

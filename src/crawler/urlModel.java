@@ -4,23 +4,23 @@ import java.io.Serializable;
 
 public class urlModel implements Serializable
 {
-    private final String parentURL;
     private final String URL;
+    private final int urlDepth;
+
     
-    public urlModel(String parentURL,String URL)
+    public urlModel(String URL,int urlDepth)
     {
-        this.parentURL = parentURL;
         this.URL = URL;
+        this.urlDepth = urlDepth;
     }
-    
-    public String getParentURL()
-    {
-        return parentURL;
-    }
-    
+
     public String getURL()
     {
         return URL;
     }
-    
+
+    public int getDepth()
+    {
+        return urlDepth;
+    }
 }

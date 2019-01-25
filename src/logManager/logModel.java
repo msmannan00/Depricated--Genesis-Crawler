@@ -1,8 +1,8 @@
 package logManager;
 
-import application.FileHandler;
-import constants.enumeration;
-import constants.preferences;
+import Shared.fileHandler;
+import Constants.enumeration;
+import Constants.preferences;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -18,9 +18,9 @@ public class logModel
     private ReentrantLock lock = new ReentrantLock();
 
     /*Queue Initialization*/
-    private final ArrayList<logMessageModel> errorDataQueue = new ArrayList<logMessageModel>();
-    private final ArrayList<logMessageModel> requestDataQueue = new ArrayList<logMessageModel>();
-    private final ArrayList<logMessageModel> foundURLDataQueue = new ArrayList<logMessageModel>();
+    private final ArrayList<logMessageModel> errorDataQueue = new ArrayList<>();
+    private final ArrayList<logMessageModel> requestDataQueue = new ArrayList<>();
+    private final ArrayList<logMessageModel> foundURLDataQueue = new ArrayList<>();
 
     /*Data Initialization*/
     private int totalRunningThread = 0;
@@ -183,7 +183,7 @@ public class logModel
     {
         try
         {
-            FileHandler.appendFile("log.txt", message + "\n");
+            fileHandler.appendFile("log.txt", message + "\n");
         }
         catch (IOException | URISyntaxException ex)
         {

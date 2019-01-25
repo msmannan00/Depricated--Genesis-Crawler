@@ -1,22 +1,18 @@
 package logManager;
 
-import application.helperMethod;
-import constants.enumeration.logType;
-import constants.preferences;
-import constants.status;
-import constants.string;
-import crawler.crawler;
+import Constants.*;
+import Shared.helperMethod;
+import Constants.enumeration.logType;
+import Shared.sessionManager;
 import de.javasoft.plaf.synthetica.SyntheticaAluOxideLookAndFeel;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Point;
-import java.awt.Toolkit;
+
+import java.awt.*;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.URL;
 import java.text.ParseException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
+import java.util.concurrent.Callable;
+import javax.swing.*;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.html.HTMLDocument;
 
@@ -24,45 +20,29 @@ public class logViewController extends javax.swing.JFrame
 {
 
     /*Variable Declaration*/
-    public crawler crawlerObject;
     public logEvents eventManager = new logEvents();
 
     /*Initialization*/
-    public logViewController() throws ClassNotFoundException, InstantiationException, InstantiationException, IllegalAccessException, IllegalAccessException, UnsupportedLookAndFeelException
-    {
+    public logViewController() throws Exception {
         initComponents();
         initialization();
     }
 
-    private void initialization()
-    {
+    private void initialization() throws Exception {
         initializeStyle();
         initializeDefaultText();
         initializeLoggingThread();
         eventManager.Initialize(this);
+        setLogo();
     }
 
-    public void initializeLoggingThread()
+    public void invokeThread()
     {
-        new Thread()
-        {
-            @Override
-            public void run()
-            {
-                while (true)
-                {
-                    try
-                    {
-                        jUpdateLogBtnHidden.doClick();
-                        sleep(1000);
-                    }
-                    catch (InterruptedException ex)
-                    {
-                        Logger.getLogger(logViewController.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                }
-            }
-        }.start();
+        jUpdateLogBtnHidden.doClick();
+    }
+
+    public void initializeLoggingThread() throws Exception {
+        sessionManager.getInstance().createSession(this, "invokeThread", 500,true,null,null);
     }
 
     public void initializeStyle()
@@ -689,6 +669,11 @@ public class logViewController extends javax.swing.JFrame
         doc.insertAfterEnd(doc.getCharacterElement(doc.getLength()), message);
     }
 
+    public void setLogo()
+    {
+        this.setIconImage(new ImageIcon("Icons/logo.png").getImage());
+    }
+
     public void run() throws ParseException
     {
         java.awt.EventQueue.invokeLater(() ->
@@ -697,17 +682,13 @@ public class logViewController extends javax.swing.JFrame
             {
                 initializeTheme();
                 logViewController crawler = new logViewController();
-                crawler.crawlerObject = crawlerObject;
                 crawler.setVisible(true);
-                Point point = helperMethod.centreDimension(crawler.getSize().width, crawler.getSize().height);
+                Point point = helperMethod.getCentreDimension(crawler.getSize().width, crawler.getSize().height);
                 crawler.setLocation(point);
                 crawler.getContentPane().setBackground(new Color(249, 248, 248));
-
             }
-            catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex)
-            {
-                Logger.getLogger(logViewController.class
-                        .getName()).log(Level.SEVERE, null, ex);
+            catch (Exception e) {
+                e.printStackTrace();
             }
         });
     }

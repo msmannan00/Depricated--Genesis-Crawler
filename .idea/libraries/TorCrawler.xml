@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TorCrawler">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/TorCrawler.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,17 +1,17 @@
 package crawler;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import constants.string;
-import constants.enumeration;
-import application.helperMethod;
-import constants.preferences;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLEncoder;
+import java.net.*;
+
+import Constants.string;
+import Constants.enumeration;
+import Shared.helperMethod;
+import Constants.preferences;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import logManager.log;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.validator.UrlValidator;
 
@@ -19,14 +19,14 @@ public class urlHelperMethod
 {
 
     /*CHECK TYPE OF URL ONION OR BASEURL OR SAME HOST URL*/
-    public static enumeration.UrlTypes getNetworkType(String URLLink)
+    static enumeration.UrlTypes getNetworkType(String URLLink)
     {
         String hostURL = getUrlHost(URLLink);
         if (hostURL.contains(string.typeOnion))
         {
             return enumeration.UrlTypes.onion;
         }
-        else if (!hostURL.equals(string.hostError))
+        else if (!hostURL.equals(string.none))
         {
             return enumeration.UrlTypes.base;
         }
@@ -36,14 +36,15 @@ public class urlHelperMethod
         }
     }
 
-    public static boolean isUrlValid(String URLLink)
+    @SuppressWarnings("deprecation")
+    static boolean isUrlValid(String URLLink)
     {
         URLLink = URLLink.replace(string.textOnion, "com");
         UrlValidator urlValidator = new UrlValidator(UrlValidator.ALLOW_ALL_SCHEMES);
         return urlValidator.isValid(URLLink);
     }
 
-    public static String getUrlWithoutParameters(String url) throws URISyntaxException
+    static String getUrlWithoutParameters(String url) throws URISyntaxException
     {
         if(url.contains("#"))
         {
@@ -57,7 +58,7 @@ public class urlHelperMethod
                 uri.getFragment()).toString();
     }
 
-    public static String getUrlHost(String URLLink)
+    static String getUrlHost(String URLLink)
     {
         try
         {
@@ -74,40 +75,41 @@ public class urlHelperMethod
         }
     }
 
-    public static String getSubUrl(String URLLink)
+    static String getSubUrl(String URLLink)
     {
         return URLLink.replace(getUrlHost(URLLink), "");
     }
 
-    public static String getUrlExtension(String URLLink)
+    static enumeration.UrlDataTypes getUrlExtension(String URLLink)
     {
         String ext = FilenameUtils.getExtension(URLLink);
 
         if (URLLink.endsWith(".gif") || URLLink.endsWith(".jpg") || URLLink.endsWith(".png") || URLLink.endsWith(".svg") || URLLink.endsWith(".ico"))
         {
-            return "image";
+            return enumeration.UrlDataTypes.image;
         }
         else if (URLLink.endsWith(".pdf") || URLLink.endsWith(".doc") || URLLink.endsWith(".ppt"))
         {
-            return "doc";
+            return enumeration.UrlDataTypes.doc;
         }
         else if (URLLink.endsWith(".mp4") || URLLink.endsWith(".3gp") || URLLink.endsWith(".mp3") || URLLink.endsWith(".avi") || URLLink.endsWith(".webm") || URLLink.endsWith(".mov"))
         {
-            return "video";
+            return enumeration.UrlDataTypes.video;
         }
         else if(URLLink.endsWith(".onion") || URLLink.endsWith(".ajax") || URLLink.endsWith(".php") || URLLink.endsWith(".html")  || URLLink.endsWith(".htm")  || ext.equals(""))
         {
-            return "link";
+            return enumeration.UrlDataTypes.link;
         }
         else
         {
-            return "";
+            return enumeration.UrlDataTypes.none;
         }
     }
 
-    public static String createCacheUrl(String URL, String Title, String Description, String datatype, String keyTypes, String logo) throws IOException, MalformedURLException, URISyntaxException
+    @SuppressWarnings("deprecation")
+    static String createCacheUrl(String URL, String Title, String Description, String logo,String keyword) throws IOException
     {
-        datatype = "all";
+
         if (Title.equals(""))
         {
             Title = "Title not found";
@@ -117,38 +119,63 @@ public class urlHelperMethod
             Description = "Description not found";
         }
 
-        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" + Title + "&desc=" + URLEncoder.encode(Description) + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&key_word=" + keyTypes + "&logo=" + logo;
-
-        return query;
+        String url = "url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" +URLEncoder.encode(Title) + "&desc=" + URLEncoder.encode(Description, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + "all" + "&live_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&key_word="+URLEncoder.encode(keyword, "UTF-8")+"&update_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&logo=" + URLEncoder.encode(logo, "UTF-8");
+        return url;
     }
 
-    public static String createDLink(String URL, String Title, String datatype, String currentUrlKey) throws IOException, MalformedURLException, URISyntaxException
-    {
+    static String createDLink(String URL, String datatype, String currentUrlKey) throws IOException {
         if (datatype.equals(""))
         {
             return "";
         }
-        if (Title.equals(""))
-        {
-            Title = "Title not found";
-        }
-
-        String query = "http://localhost/BoogleSearch/public/update_cache?url=" + URLEncoder.encode(URL, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + helperMethod.getCurrentDate() + "&update_date=" + helperMethod.getCurrentDate() + "&WP_FK=" + currentUrlKey;
-        return query;
+        return "url=" + URLEncoder.encode(URL, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&update_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&WP_FK=" + currentUrlKey;
     }
 
-    public static String isHRefValid(String host, String url)
+    public static HttpURLConnection createHTTPConnection(String url) throws IOException {
+
+        HttpURLConnection con;
+        URL obj = new URL(url);
+
+        if (urlHelperMethod.getNetworkType(url).equals(enumeration.UrlTypes.onion))
+        {
+            SocketAddress addr = new InetSocketAddress(string.proxyIP, preferences.proxyPort);
+            Proxy proxy = new Proxy(Proxy.Type.SOCKS, addr);
+            con = (HttpURLConnection) obj.openConnection(proxy);
+        }
+        else
+        {
+            con = (HttpURLConnection) obj.openConnection();
+        }
+
+        con.setConnectTimeout(preferences.connectionTimeOut);
+        con.setReadTimeout(preferences.readTimeOut);
+
+        return con;
+    }
+
+    static String isHRefValid(String host, String url)
     {
         try
         {
-            String URLLink = new URL(new URL(host), url).toString();
-            return URLLink;
+            return new URL(new URL(host), url).toString();
         }
         catch (MalformedURLException ex)
         {
-            //Logger.getLogger(urlHelperMethod.class.getName()).log(Level.SEVERE, null, ex);
             return string.emptyString;
         }
+    }
+
+    public static String createBackupLink(String URLLink,String parentURL,int Depth)
+    {
+        if(urlHelperMethod.getUrlHost(URLLink).equals(urlHelperMethod.getUrlHost(parentURL)))
+        {
+            URLLink = "1"+String.valueOf(Depth+1)+URLLink;
+        }
+        else
+        {
+            URLLink = "0"+String.valueOf(3)+URLLink;
+        }
+        return URLLink+"\n";
     }
 
 }

@@ -1,4 +1,4 @@
-package constants;
+package Constants;
 
 public class enumeration
 {
@@ -11,7 +11,7 @@ public class enumeration
 
     public enum UrlDataTypes
     {
-        all, image, video, doc, finance, news
+        all, image, video, doc, finance, news, link,none
     }
 
     public enum appStatus
@@ -23,10 +23,16 @@ public class enumeration
     {
         error, warning, request, urlFound
     }
-    
+
     public enum classificationType
     {
         news, illegal,finance
     }
+
+    public enum threadHandlerId
+    {
+        logViewController, base, none
+    }
+
 
 }

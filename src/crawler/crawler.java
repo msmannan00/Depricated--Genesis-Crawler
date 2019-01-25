@@ -1,17 +1,13 @@
 package crawler;
 
-import application.FileHandler;
-import static crawler.nlpParser.extractTitle;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
-import constants.enumeration;
-import application.webRequestHandler;
-import constants.enumeration.UrlTypes;
-import constants.preferences;
-import constants.status;
-import constants.string;
+import Constants.enumeration;
+import Constants.preferences;
+import Shared.fileHandler;
+import Shared.webRequestHandler;
+import Constants.enumeration.UrlTypes;
+import Constants.status;
+import Constants.string;
 import java.io.Serializable;
 import java.util.concurrent.locks.ReentrantLock;
 import logManager.log;
@@ -20,16 +16,106 @@ public class crawler implements Serializable
 {
 
     /*URL QUEUES*/
-    public queueManager queryManager;
+    private queueManager queryManager;
 
     /*VARIABLES DECLARATIONS*/
-    public ReentrantLock lock = new ReentrantLock();
+    private ReentrantLock lock;
 
     /*INITIALIZATIONS*/
-    public crawler() throws IOException
-    {
-        variable_initalization();
+    public crawler() {
+        variable_initialization();
+        lock = new ReentrantLock();
     }
+
+    private void variable_initialization() {
+        queryManager = new queueManager();
+    }
+
+    /*METHOD PARSER*/
+    public void parse_html(String HTML, urlModel uModel, String threadID) throws Exception
+    {
+        ArrayList<String> urlList;
+        lock.lock();
+        try
+        {
+            log.logMessage("Extracting URLS", "THID : " + threadID + " : Thread Status");
+            webPageModel webdata = nlpParser.getInstance().extractData(HTML,uModel,threadID);
+            log.logMessage("Extracted URLS : " + webdata.urlList.size(), "THID : " + threadID + " : Thread Status");
+            log.logMessage("Saving Current URL : " + uModel, "THID : " + threadID + " : Thread Status");
+            saveCurrentUrl(uModel,threadID,webdata);
+        }
+        finally
+        {
+            lock.unlock();
+        }
+    }
+
+    private void saveCurrentUrl( urlModel uModel, String threadID,webPageModel webdata) throws Exception
+    {
+        String currentUrlKey = "";
+        if (urlHelperMethod.getNetworkType(uModel.getURL()).equals(enumeration.UrlTypes.onion) && status.cacheStatus)
+        {
+            if (webdata.summary.length() > 30)
+            {
+                String content = urlHelperMethod.createCacheUrl(uModel.getURL(), webdata.title, webdata.summary, webdata.logo,webdata.keyword);
+                currentUrlKey = webRequestHandler.getInstance().updateCache(content, threadID);
+            }
+        }
+        queueExtractedUrl(webdata.urlList,  uModel,  threadID, currentUrlKey);
+    }
+
+    public void saveBackupURL(String URLLink,int isParentSame,int depth)
+    {
+        urlModel pModel;
+        if(isParentSame==1)
+        {
+            pModel = new urlModel(urlHelperMethod.getUrlHost(URLLink),depth+1);
+        }
+        else
+        {
+            pModel = new urlModel(urlHelperMethod.getUrlHost(URLLink),3);
+        }
+        queryManager.setUrl(URLLink, pModel);
+    }
+
+    private void queueExtractedUrl(ArrayList<String> urlList, urlModel pModel, String threadID, String currentUrlKey) throws Exception
+    {
+        lock.lock();
+        try
+        {
+            for (String URLLink : urlList)
+            {
+                enumeration.UrlDataTypes urlType = urlHelperMethod.getUrlExtension(URLLink);
+                if (urlHelperMethod.isUrlValid(URLLink) && !urlType.equals(enumeration.UrlDataTypes.none))
+                {
+                    if (!duplicationFilter.getInstance().is_url_duplicate(URLLink))
+                    {
+                        if(queryManager.size()> preferences.maxQueueSize && urlType.equals(enumeration.UrlDataTypes.link))
+                        {
+                            fileHandler.appendFile(string.url_stack,urlHelperMethod.createBackupLink(URLLink,pModel.getURL(),pModel.getDepth()));
+                            continue;
+                        }
+
+                        if (urlType.equals(enumeration.UrlDataTypes.link))
+                        {
+                            queryManager.setUrl(URLLink, pModel);
+                        }
+                        else if (!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(UrlTypes.onion))
+                        {
+                            String content = urlHelperMethod.createDLink(URLLink, urlHelperMethod.getUrlExtension(URLLink).toString(), currentUrlKey);
+                            webRequestHandler.getInstance().updateCache(content, threadID);
+                        }
+                    }
+                }
+            }
+        }
+        finally
+        {
+            lock.unlock();
+        }
+    }
+
+    /*Helper Method*/
 
     public int queueSize()
     {
@@ -41,22 +127,12 @@ public class crawler implements Serializable
         return queryManager.size();
     }
 
-    public void clearQueues()
-    {
-        queryManager.clearQueues();
-    }
-
-    private void variable_initalization() throws IOException
-    {
-        queryManager = new queueManager();
-    }
-
-    public urlModel getUrl(String host) throws InterruptedException
+    public urlModel getUrl(String host)
     {
         return queryManager.getUrl(host);
     }
 
-    public String getKey() throws InterruptedException
+    public String getKey()
     {
         synchronized (this)
         {
@@ -64,112 +140,9 @@ public class crawler implements Serializable
         }
     }
 
-    public boolean isHostEmpty(String host) throws InterruptedException
+    public boolean isHostEmpty(String host)
     {
         return queryManager.isHostEmpty(host);
     }
 
-    /*METHOD PARSER*/
-    public void parse_html(String HTML, String Url, String threadID) throws MalformedURLException, IOException, URISyntaxException, Exception
-    {
-        ArrayList<String> urlList;
-        lock.lock();
-        try
-        {
-            log.logMessage("Extracting URLS", "THID : " + threadID + " : Thread Status");
-            urlList = nlpParser.extractAndSaveUrlsFromContent(HTML, Url, threadID);
-            log.logMessage("Extracted URLS : " + urlList.size(), "THID : " + threadID + " : Thread Status");
-            log.logMessage("Extracting Keywords", "THID : " + threadID + " : Thread Status");
-            String keyWords = nlpParser.extractKeyWords(HTML);
-            log.logMessage("Saving Current URL : " + Url, "THID : " + threadID + " : Thread Status");
-            saveCurrentUrl(HTML, Url, keyWords, urlList, threadID);
-        }
-        finally
-        {
-            lock.unlock();
-        }
-    }
-
-    public void saveCurrentUrl(String HTML, String Url, String keywords, ArrayList<String> urlList, String threadID) throws Exception
-    {
-        String title = extractTitle(HTML);
-        String extractLogo = nlpParser.extractLogo(HTML);
-        String currentUrlKey = "";
-        if (urlHelperMethod.getNetworkType(Url).equals(enumeration.UrlTypes.onion) && status.cacheStatus)
-        {
-            String summary = nlpParser.extractSummary(HTML).replace("'", "");
-            if (summary.length() > 30)
-            {
-                String content = urlHelperMethod.createCacheUrl(Url, title, summary, enumeration.UrlDataTypes.all.toString(), keywords, extractLogo);
-                currentUrlKey = saveUrlToServer(content, threadID);
-            }
-        }
-        saveExtractedUrl(urlList, HTML, Url, title, threadID, currentUrlKey);
-    }
-
-    public String saveUrlToServer(String content, String threadID) throws Exception
-    {
-        return webRequestHandler.getInstance().updateCache(content, threadID);
-    }
-
-    public void validateRetryUrl() throws IOException
-    {
-        queryManager.validateRetryUrl();
-    }
-
-    public void addToRetryQueue(retryModel rmodel)
-    {
-        queryManager.addToRetryQueue(rmodel);
-    }
-
-    public void saveExtractedUrl(ArrayList<String> urlList, String html, String parentURL, String parentTitle, String threadID, String currentUrlKey) throws Exception
-    {
-        lock.lock();
-        try
-        {
-            for (int e = 0; e < urlList.size(); e++)
-            {
-                String URLLink = urlList.get(e);
-                String linkType = urlHelperMethod.getUrlExtension(URLLink);
-                UrlTypes urlType = urlHelperMethod.getNetworkType(URLLink);
-                if (urlHelperMethod.isUrlValid(URLLink) && !linkType.equals(""))
-                {
-
-                    if (threadID.equals("-1") || !duplicationFilter.getInstance().is_url_duplicate(URLLink))
-                    {
-                        if (linkType.equals("link") && size() > preferences.maxQueueSize)
-                        {
-                            FileHandler.appendFile(string.url_stack, URLLink + "\n");
-                        }
-                        else
-                        {
-                            if (linkType.equals("link"))
-                            {
-                                queryManager.setUrl(URLLink, parentURL);
-                            }
-                            else if (!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(enumeration.UrlTypes.onion))
-                            {
-                                String title = "";
-                                if (parentTitle.length() > 45)
-                                {
-                                    parentTitle = parentTitle.substring(0, 45) + "...";
-                                }
-                                if (URLLink.length() > preferences.maxDLinkUrlSize)
-                                {
-                                    title = URLLink.substring(URLLink.length() - preferences.maxDLinkUrlSize);
-                                }
-                                //log.print("FILE " + " URL FOUND" + " " + URLLink);
-                                String content = urlHelperMethod.createDLink(URLLink, title, urlHelperMethod.getUrlExtension(URLLink), currentUrlKey);
-                                saveUrlToServer(content, threadID);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        finally
-        {
-            lock.unlock();
-        }
-    }
 }

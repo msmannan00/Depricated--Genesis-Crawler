@@ -1,26 +1,27 @@
-package constants;
+package Constants;
 
-import application.webRequestHandler;
+import Shared.webRequestHandler;
 
 public class eventListner
 {
-    /*Event Listners*/
+    /*Event Identifiers*/
     private static boolean backupTrigger = false;
 
     /*Shared Instance*/
-    private static final webRequestHandler sharedInstance = new webRequestHandler();
+    private static final eventListner sharedInstance = new eventListner();
 
-    public static webRequestHandler getInstance()
+    /*Event Listners*/
+    public static eventListner getInstance()
     {
         return sharedInstance;
     }
     
-    public static boolean getBackupState()
+    public boolean getBackupState()
     {
         return backupTrigger;
     }
 
-    public static void setBackupState(boolean state)
+    public void setBackupState(boolean state)
     {
         backupTrigger = state;
     }
