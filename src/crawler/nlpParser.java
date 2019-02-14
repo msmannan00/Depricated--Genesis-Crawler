@@ -2,7 +2,10 @@ package crawler;
 
 import java.net.URISyntaxException;
 
+import Constants.enumeration;
+import Constants.preferences;
 import Shared.helperMethod;
+import Shared.wordChecker;
 import logManager.log;
 import org.jetbrains.annotations.NotNull;
 import org.jsoup.Jsoup;
@@ -10,6 +13,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import Constants.string;
+
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 class nlpParser
@@ -28,10 +34,25 @@ class nlpParser
         Document doc = Jsoup.parse(HTML);
         String title = extractTitle(doc);
         String extractLogo = extractLogo(doc);
-        String summary = extractSummary(doc).replace("'", "");
+        String summary = extractSummary(doc);
         ArrayList<String> urlList = extractAndSaveUrlsFromContent(doc, host, threadId);
-        String keywords = (doc.title() + " " + doc.body().text()).toLowerCase();
+        String keywords = extractKeyword(doc.text())+" none";
         return new webPageModel(title,extractLogo,summary,keywords,urlList);
+    }
+
+    public String extractKeyword(String doc)
+    {
+        String desc[] = doc.split(" ");
+        String final_desc = "";
+
+        for(int e=0;e<desc.length;e++)
+        {
+            if(helperMethod.isAlpha(desc[e]) && desc[e].length()>2 && wordChecker.getInstance().isWordValid(desc[e]))
+            {
+                final_desc = final_desc + " " + desc[e];
+            }
+        }
+        return final_desc;
     }
 
     private String extractLogo(Document document)
@@ -57,11 +78,24 @@ class nlpParser
                 .toLowerCase();
         title = helperMethod.toCapital(title);
         title = helperMethod.removeSymbolsAtEnd(title,"|");
-        return title;
+
+        String titlelist[] = title.split(" ");
+        String final_list = "";
+
+        for(int e=0;e<titlelist.length;e++)
+        {
+            if(helperMethod.isAlpha(titlelist[e]) && titlelist[e].length()>2)
+            {
+                final_list = final_list + " " + titlelist[e];
+            }
+        }
+
+        return final_list;
     }
 
     private String extractSummary(Document document)
     {
+        float isNotAlphaCount = 0;
         String description = document.title();
 
         Elements metaTags = document.getElementsByTag("meta");
@@ -101,23 +135,27 @@ class nlpParser
 
         description = description + " " + document.text();
 
-        description = trimTitle(description.replaceAll("/n", description)
-                .replaceAll("[^a-zA-Z0-9\\s+]", "")
-                .toLowerCase());
-        description = helperMethod.toCapital(description);
+        //description = trimTitle(description.replaceAll("/n", description)
+        //        .replaceAll("[^a-zA-Z0-9\\s+]", "")
+        //        .toLowerCase());
+        //description = helperMethod.toCapital(description);
 
         String preprocess = "";
         String[] split = description.split(" ");
         for(int e=0;e<split.length&&preprocess.length()<1050;e++)
         {
-            if(!helperMethod.isNumeric(split[e]))
+            if(helperMethod.isAlpha(split[e]))
             {
                 preprocess = preprocess + " " + split[e];
             }
+            else
+            {
+                isNotAlphaCount++;
+            }
         }
-        description = preprocess;
 
-        log.print(" : "+description);
+        description = preprocess.replace("'", "").toLowerCase();
+        description = helperMethod.toCapital(description);
         return description;
     }
 
@@ -146,7 +184,7 @@ class nlpParser
         /*Images End*/
 
         /*Depth Breaker*/
-        if(host.getDepth()>2)
+        if(host.getDepth()>= preferences.maxUrlDepth)
         {
             return urlListFiltered;
         }
@@ -169,6 +207,11 @@ class nlpParser
         }
         /*HRef End*/
 
+        if(!host.getURL().equals(string.baseLink) || (host.getCatagory().equals(enumeration.UrlDataTypes.news) || host.getCatagory().equals(enumeration.UrlDataTypes.finance)) && !host.getURL().equals("finance.onion") && !host.getURL().equals("news.onion"))
+        {
+            return urlListFiltered;
+        }
+
         /*Text Start*/
         String html = document.body().text();
         String[] urlList = html.split(" ");
@@ -182,14 +225,13 @@ class nlpParser
             }
             urlListFiltered.add(URLLink);
         }
-        /*Text End*/
         return urlListFiltered;
     }
 
     public String preProcessUrl(String urlLink, int type, String host, String threadId) throws URISyntaxException
     {
         String subUrl = urlHelperMethod.getSubUrl(urlLink);
-        if (urlLink.contains("#") | subUrl.length()<=3 || urlLink.length()>600 || urlLink.length() < 2)
+        if (urlLink.contains("#") | (subUrl.length()<=3 && subUrl.length()>1) || urlLink.length()>600 || urlLink.length() < 2)
         {
             return "";
         }

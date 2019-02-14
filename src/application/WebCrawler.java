@@ -52,6 +52,7 @@ public class webCrawler
         htmlParser = (crawler) helperMethod.readObjectFromFile();
         threadInitialization();
         threadController();
+        htmlParser.queueURLInitialization();
     }
 
     private void threadInitialization()
@@ -98,28 +99,35 @@ public class webCrawler
 
                         if (status.appStatus == enumeration.appStatus.running)
                         {
+                            /*
                             updatePauseCounter(-1);
                             if (htmlParser.isHostEmpty(host))
                             {
+                                htmlParser.removeFromHostIfParsed(host);
                                 log.logMessage("RE-Fethcing URL", "THID : " + this.getId() + " : Thread Status");
                                 host = lockManager.getInstance().getHtmlParserKey(lock, htmlParser);
                                 log.logMessage("URL Fethched : " + host, "THID : " + this.getId() + " : Thread Status");
                             }
+
                             urlmodel = htmlParser.getUrl(host);
                             log.logMessage("Fethcing From Same Host", "THID : " + this.getId() + " : Thread Status");
                             String url = urlmodel.getURL();
                             log.logMessage("Sending Url Request : " + url, "THID : " + this.getId() + " : Thread Status");
-                            String html = webRequestHandler.getInstance().requestConnection(url, String.valueOf(this.getId()));
+                            accessedURLModel model = webRequestHandler.getInstance().requestConnection(url, String.valueOf(this.getId()));
+                            String html = model.getContent();
+                            urlmodel.setURL(model.getAccessedURL());
                             log.logMessage("Parsing HTML : " + url, "THID : " + this.getId() + " : Thread Status");
                             htmlParser.parse_html(html, urlmodel, String.valueOf(this.getId()));
                             log.logMessage("Parsing Completed : " + url, "THID : " + this.getId() + " : Thread Status");
                             updatePauseCounter(1);
+                            */
                         }
                     }
                     catch (Exception ex)
                     {
                         updatePauseCounter(1);
-                        log.print("", ex);
+                        //log.print("", ex);
+                        //ex.printStackTrace();
                         log.logMessage("Thread Error : " + ex.getMessage() + " : " + host, "THID : " + this.getId() + " : Thread Status");
                     }
                 }
@@ -160,7 +168,7 @@ public class webCrawler
     public void queueReloadInvoke() throws Exception
     {
         log.logThreadCount(runningThreadQueue.size());
-        if (htmlParser.size() <= preferences.minQueueSize && status.appStatus == enumeration.appStatus.running)
+        if (htmlParser.getOnionQueuesSize()<=1 && status.appStatus == enumeration.appStatus.running)
         {
             ArrayList<String> data = fileHandler.readQueueStack();
             for(int counter=0;counter<data.size();counter++)
@@ -174,7 +182,6 @@ public class webCrawler
     @SuppressWarnings("SynchronizationOnLocalVariableOrMethodParameter")
     public void threadManagerInvoke()
     {
-
         if ((emptyThreadQueue.size()>0 || pausedThreadQueue.size() > 0 ) && status.appStatus == enumeration.appStatus.running)
         {
             Thread thread;
@@ -208,6 +215,16 @@ public class webCrawler
 
     /*Helper Method*/
 
+    public int getOnionThreads()
+    {
+        return htmlParser.getOnionThreads();
+    }
+
+    public int getParsingThreads()
+    {
+        return htmlParser.getParsingThreads();
+    }
+    
     public int getQueueSize()
     {
         return htmlParser.size();
@@ -239,4 +256,24 @@ public class webCrawler
             pauseUpdateLock.unlock();
         }
     }
+
+    public int getOnionQueuesSize()
+    {
+        return htmlParser.getOnionQueuesSize();
+    }
+
+    public int getParsingQueuesSize()
+    {
+        return htmlParser.getParsingQueuesSize();
+    }
+
+    public String priorityQueueLogs()
+    {
+        return htmlParser.priorityQueueLogs();
+    }
+    public String onionQueueLogs()
+    {
+        return htmlParser.onionQueueLogs();
+    }
+
 }

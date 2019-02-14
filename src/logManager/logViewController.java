@@ -119,6 +119,10 @@ public class logViewController extends javax.swing.JFrame
         jMaxThread = new javax.swing.JLabel();
         jDefaultLinkLbl = new javax.swing.JLabel();
         jDefaultLink = new javax.swing.JLabel();
+        jCurrentNetworkLbl1 = new javax.swing.JLabel();
+        onionQueues = new javax.swing.JLabel();
+        jRunningThreadLbl1 = new javax.swing.JLabel();
+        ParsingQueues = new javax.swing.JLabel();
         jServerErrorPaneScroller = new javax.swing.JScrollPane();
         jServerErrorPane = new javax.swing.JTextPane();
         jSystemProgressPaneScroller = new javax.swing.JScrollPane();
@@ -375,6 +379,32 @@ public class logViewController extends javax.swing.JFrame
         jDefaultLink.setOpaque(true);
         jDefaultLink.setPreferredSize(new java.awt.Dimension(0, 22));
 
+        jCurrentNetworkLbl1.setBackground(javax.swing.UIManager.getDefaults().getColor("FormattedTextField.selectionBackground"));
+        jCurrentNetworkLbl1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jCurrentNetworkLbl1.setForeground(new java.awt.Color(255, 255, 255));
+        jCurrentNetworkLbl1.setText("  Onion Queues");
+        jCurrentNetworkLbl1.setOpaque(true);
+        jCurrentNetworkLbl1.setPreferredSize(new java.awt.Dimension(0, 22));
+
+        onionQueues.setBackground(new java.awt.Color(245, 241, 241));
+        onionQueues.setText("  0");
+        onionQueues.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(222, 222, 222), 1, true));
+        onionQueues.setOpaque(true);
+        onionQueues.setPreferredSize(new java.awt.Dimension(0, 22));
+
+        jRunningThreadLbl1.setBackground(javax.swing.UIManager.getDefaults().getColor("FormattedTextField.selectionBackground"));
+        jRunningThreadLbl1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jRunningThreadLbl1.setForeground(new java.awt.Color(255, 255, 255));
+        jRunningThreadLbl1.setText("  Parsing Queues");
+        jRunningThreadLbl1.setOpaque(true);
+        jRunningThreadLbl1.setPreferredSize(new java.awt.Dimension(0, 22));
+
+        ParsingQueues.setBackground(new java.awt.Color(245, 241, 241));
+        ParsingQueues.setText("  0");
+        ParsingQueues.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(222, 222, 222), 1, true));
+        ParsingQueues.setOpaque(true);
+        ParsingQueues.setPreferredSize(new java.awt.Dimension(0, 22));
+
         javax.swing.GroupLayout jPropertiesPaneLayout = new javax.swing.GroupLayout(jPropertiesPane);
         jPropertiesPane.setLayout(jPropertiesPaneLayout);
         jPropertiesPaneLayout.setHorizontalGroup(
@@ -385,28 +415,36 @@ public class logViewController extends javax.swing.JFrame
                     .addGroup(jPropertiesPaneLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jCurrentNetworkLbl1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jDefaultLinkLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
                             .addComponent(jCurrentNetworkLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jThreadCountLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPauseThreadLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(2, 2, 2)
                         .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jDefaultLink, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPropertiesPaneLayout.createSequentialGroup()
                                 .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jThread, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
-                                    .addComponent(pausedThread, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jCurrentUrlFound, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jRunningThreadLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jMaxUrlThreadLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
-                                    .addComponent(jStatusLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPropertiesPaneLayout.createSequentialGroup()
+                                        .addComponent(onionQueues, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jRunningThreadLbl1, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE))
+                                    .addGroup(jPropertiesPaneLayout.createSequentialGroup()
+                                        .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(jThread, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
+                                            .addComponent(pausedThread, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jCurrentUrlFound, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(jRunningThreadLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jMaxUrlThreadLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                                            .addComponent(jStatusLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                                 .addGap(2, 2, 2)
                                 .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jMaxThread, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(runningThread, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jStatus, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)))
-                            .addComponent(jDefaultLink, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(jStatus, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
+                                    .addComponent(ParsingQueues, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPropertiesPaneLayout.setVerticalGroup(
@@ -427,7 +465,7 @@ public class logViewController extends javax.swing.JFrame
                     .addComponent(jMaxUrlThreadLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPropertiesPaneLayout.createSequentialGroup()
-                        .addGap(7, 7, 7)
+                        .addGap(5, 5, 5)
                         .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(runningThread, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -436,10 +474,19 @@ public class logViewController extends javax.swing.JFrame
                     .addGroup(jPropertiesPaneLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCurrentUrlFound, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(4, 4, 4)
+                .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(ParsingQueues, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jRunningThreadLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(onionQueues, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPropertiesPaneLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jCurrentNetworkLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(5, 5, 5)
                 .addGroup(jPropertiesPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jDefaultLinkLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(jDefaultLink, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jDefaultLinkLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jDefaultLink, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -694,9 +741,11 @@ public class logViewController extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JLabel ParsingQueues;
     public javax.swing.JButton jBackupBtn;
     public javax.swing.JButton jClearBtn;
     public javax.swing.JLabel jCurrentNetworkLbl;
+    public javax.swing.JLabel jCurrentNetworkLbl1;
     public javax.swing.JLabel jCurrentUrlFound;
     public javax.swing.JLabel jDefaultLink;
     public javax.swing.JLabel jDefaultLinkLbl;
@@ -714,6 +763,7 @@ public class logViewController extends javax.swing.JFrame
     public javax.swing.JPanel jPropertiesPane;
     public javax.swing.JButton jRestartBtn;
     public javax.swing.JLabel jRunningThreadLbl;
+    public javax.swing.JLabel jRunningThreadLbl1;
     public javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JScrollPane jScrollPane5;
     public javax.swing.JLabel jServerErrorLbl;
@@ -736,6 +786,7 @@ public class logViewController extends javax.swing.JFrame
     public javax.swing.JScrollPane jUrlFoundPaneScroller;
     public javax.swing.JTextPane jWarningPane;
     public javax.swing.JScrollPane jWarningPaneScroller;
+    public javax.swing.JLabel onionQueues;
     public javax.swing.JLabel pausedThread;
     public javax.swing.JLabel runningThread;
     // End of variables declaration//GEN-END:variables

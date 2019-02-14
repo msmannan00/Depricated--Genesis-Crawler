@@ -6,7 +6,8 @@ public class string
     /*Network*/
     public static String proxyIP = "127.0.0.1";
     public static String userAgent = "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:63.0) Gecko/20100101 Firefox/63.0";
-    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=onion+links&session=EiPQIXPyUhzxwsVA48bSiNbNnuvahDmg4W9O3EQYmNo%3D&numRows=20&hostLimit=20&template=0";
+    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=onion+links&session=ylo%2BaWe53pinhJ19IIYhijYXOowAu%2BUA6OGB4zYxixY%3D&numRows=20&hostLimit=20&template=0";
+    //public static String baseLink = "http://msydqstlz2kzerdg.onion/onions/";
     public static String tempLink = "http://tempLink.php";
 
     /*Constants*/
@@ -24,7 +25,10 @@ public class string
     public static String filepath_queue_manager = "queue_manager";
     public static String filepath_queue_manager_backup = "queue_backup//queue_manager_";
     public static String logDirectory = "Logs/";
+    public static String dictionary = "Dictionary/wordlist.txt";
     public static String url_stack = "url_stack.txt";
+    public static String financial_file = "CatagorizedURL/finance.txt";
+    public static String news_file = "CatagorizedURL/news.txt";
 
 
     /*SQLConnections*/
@@ -32,5 +36,5 @@ public class string
     public static String driverString = "jdbc:sqlserver://localhost:1433;characterEncoding=utf-8;databaseName=TorCrawler;user=msmannan00;password=imammehdi0";
 
     /*Post Data Strings*/
-    public static String postUrl = "http://localhost/BoogleSearch/public/update_cache";
+    public static String postUrl = "http://boogle.store/update_cache";
 }

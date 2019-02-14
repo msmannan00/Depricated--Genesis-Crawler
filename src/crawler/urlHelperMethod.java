@@ -84,11 +84,11 @@ public class urlHelperMethod
     {
         String ext = FilenameUtils.getExtension(URLLink);
 
-        if (URLLink.endsWith(".gif") || URLLink.endsWith(".jpg") || URLLink.endsWith(".png") || URLLink.endsWith(".svg") || URLLink.endsWith(".ico"))
+        if (URLLink.endsWith(".gif") || URLLink.endsWith(".jpg") || URLLink.endsWith(".png") || URLLink.endsWith(".svg") || URLLink.endsWith(".ico") || URLLink.endsWith(".jpeg"))
         {
             return enumeration.UrlDataTypes.image;
         }
-        else if (URLLink.endsWith(".pdf") || URLLink.endsWith(".doc") || URLLink.endsWith(".ppt"))
+        else if (URLLink.endsWith(".pdf") || URLLink.endsWith(".doc") || URLLink.endsWith(".ppt") || URLLink.endsWith(".txt"))
         {
             return enumeration.UrlDataTypes.doc;
         }
@@ -96,7 +96,11 @@ public class urlHelperMethod
         {
             return enumeration.UrlDataTypes.video;
         }
-        else if(URLLink.endsWith(".onion") || URLLink.endsWith(".ajax") || URLLink.endsWith(".php") || URLLink.endsWith(".html")  || URLLink.endsWith(".htm")  || ext.equals(""))
+        else if(URLLink.endsWith(".zip"))
+        {
+            return enumeration.UrlDataTypes.none;
+        }
+        else if(urlHelperMethod.getUrlHost(URLLink).endsWith(".onion") || URLLink.endsWith(".onion") || URLLink.endsWith(".ajax") || URLLink.endsWith(".php") || URLLink.endsWith(".html")  || URLLink.endsWith(".htm")  || ext.equals(""))
         {
             return enumeration.UrlDataTypes.link;
         }
@@ -107,7 +111,7 @@ public class urlHelperMethod
     }
 
     @SuppressWarnings("deprecation")
-    static String createCacheUrl(String URL, String Title, String Description, String logo,String keyword) throws IOException
+    static String createCacheUrl(String URL, String Title, String Description, String logo, String keyword, enumeration.UrlDataTypes utype) throws IOException
     {
 
         if (Title.equals(""))
@@ -119,7 +123,7 @@ public class urlHelperMethod
             Description = "Description not found";
         }
 
-        String url = "url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" +URLEncoder.encode(Title) + "&desc=" + URLEncoder.encode(Description, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + "all" + "&live_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&key_word="+URLEncoder.encode(keyword, "UTF-8")+"&update_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&logo=" + URLEncoder.encode(logo, "UTF-8");
+        String url = "url=" + URLEncoder.encode(URL, "UTF-8") + "&title=" +URLEncoder.encode(Title) + "&desc=" + URLEncoder.encode(Description, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + utype.toString() + "&live_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&key_word="+URLEncoder.encode(keyword, "UTF-8")+"&update_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&logo=" + URLEncoder.encode(logo, "UTF-8");
         return url;
     }
 

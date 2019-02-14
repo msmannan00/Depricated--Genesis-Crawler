@@ -4,9 +4,7 @@ import logManager.log;
 import Constants.string;
 import Constants.preferences;
 
-import java.io.BufferedReader;
 import java.io.DataOutputStream;
-import java.io.InputStreamReader;
 import java.net.*;
 import crawler.urlHelperMethod;
 
@@ -24,24 +22,22 @@ public class webRequestHandler
         return sharedInstance;
     }
 
-    public String requestConnection(String url, String threadID) throws Exception
+    public accessedURLModel requestConnection(String url, String threadID) throws Exception
     {
         return requestOnionConnection(url, threadID);
     }
 
     /*HELPER METHOD USE ONION PROXY IF ONION URL FOR FASTER REQUEST*/
-    private String requestOnionConnection(String url, String threadID) throws Exception
+    private accessedURLModel requestOnionConnection(String url, String threadID) throws Exception
     {
         log.logMessage("Reqesting Onion URL : " + url, "THID : " + threadID + " : Thread Status");
         HttpURLConnection con = urlHelperMethod.createHTTPConnection(url);
         con.connect();
-
         String content = getContent(con);
-
         log.print(string.textOnion + " URL FOUND " + con.getURL());
         log.logMessage("Found URL : " + con.getURL(), "THID : " + threadID + " : Thread Status");
-
-        return content;
+        accessedURLModel model = new accessedURLModel(con.getURL().toString(),content);
+        return model;
     }
 
     @SuppressWarnings("deprecation")
@@ -74,7 +70,6 @@ public class webRequestHandler
 
         String urlParameters = postData;
         byte[] postUrl = urlParameters.getBytes(StandardCharsets.UTF_8);
-
         try (DataOutputStream wr = new DataOutputStream(con.getOutputStream())) {
             wr.write(postUrl);
         }
@@ -82,7 +77,7 @@ public class webRequestHandler
         int responseCode = con.getResponseCode();
         if (responseCode != HttpURLConnection.HTTP_OK)
         {
-            log.print("Error Response Code : " + responseCode);
+            log.print("Error Response Code : " + responseCode + " - " + postData);
             log.logMessage("Error Saving Url : " + postData, "THID : " + threadID + " : Thread Status");
         }
         else

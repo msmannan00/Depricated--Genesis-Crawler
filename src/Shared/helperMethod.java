@@ -2,6 +2,7 @@ package Shared;
 
 import Constants.preferences;
 import Constants.string;
+import logManager.log;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -16,6 +17,7 @@ import java.util.Date;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 
 public class helperMethod
 {
@@ -60,6 +62,18 @@ public class helperMethod
             str = str.substring(0, 1050);
         }
         return str;
+    }
+
+    public  static boolean isAlpha(String word)
+    {
+        if(! Pattern.matches(".*[a-zA-Z]+.*", word))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
     public static String removeSymbolsAtEnd(String str,String symbol)

@@ -36,46 +36,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/crawler/nlpParser.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application/webCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="114" column="57" selection-start-line="114" selection-start-column="57" selection-end-line="114" selection-end-column="57" />
+            <state relative-caret-position="309">
+              <caret line="118" selection-start-line="115" selection-end-line="118" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#7929#7930#0" expanded="true" />
+                <element signature="e#8024#8025#0" expanded="true" />
+                <element signature="e#8105#8106#0" expanded="true" />
+                <element signature="e#8825#8826#0" expanded="true" />
+                <element signature="e#8926#8927#0" expanded="true" />
+                <element signature="e#9024#9025#0" expanded="true" />
+                <element signature="e#9115#9116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Application/catagorizedCrawler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="757">
+              <caret line="107" column="95" selection-start-line="107" selection-start-column="95" selection-end-line="107" selection-end-column="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Constants/string.java">
+        <entry file="file://$PROJECT_DIR$/src/Shared/webRequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="180" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="180" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Constants/status.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="44" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Shared/Summarizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="154" column="36" selection-start-line="154" selection-start-column="36" selection-end-line="154" selection-end-column="36" />
+            <state relative-caret-position="302">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#358#375#0" expanded="true" />
-                <element signature="e#2878#2886#0" expanded="true" />
-                <element signature="e#6291#6299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,37 +93,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HTML</find>
-      <find>threadID</find>
-      <find>getString</find>
-      <find>preProcessUrl</find>
-      <find>url</find>
-      <find>getResponseCode</find>
-      <find>ssl</find>
-      <find>User-Agent</find>
-      <find>backupManagerInvoke</find>
+      <find>addto</find>
+      <find>parsingQueuesKeys.add</find>
+      <find>addToParsingQueues</find>
+      <find>hasHostBackupLimitReached</find>
+      <find>addt</find>
+      <find>parsingQueues.put</find>
+      <find>parsingqueues.s</find>
+      <find>size+</find>
+      <find>add</find>
+      <find>removefrom</find>
+      <find>onionQue</find>
       <find>size</find>
-      <find>back</find>
-      <find>url_stack</find>
-      <find>backupManagerForcedInvoke</find>
-      <find>href</find>
-      <find>currentUrlKey</find>
-      <find>pModel</find>
-      <find>parentURL</find>
+      <find>parsingQueueSize</find>
+      <find>onionQueueSize</find>
+      <find>whi</find>
+      <find>forea</find>
       <find>queueReloadInvoke</find>
-      <find>ke</find>
-      <find>keyw</find>
-      <find>keyword</find>
-      <find>webdata</find>
-      <find>stop</find>
-      <find>http://opnju4nyz7wbypme.onion/weblog/archives/2013/11/index.html</find>
-      <find>filePath</find>
-      <find>•</find>
-      <find>log.</find>
-      <find>http://opnju4nyz7wbypme.onion/weblog/</find>
-      <find>metaTags</find>
-      <find>description</find>
+      <find>running</find>
+      <find>host</find>
+      <find>filepath_queue_manager</find>
+      <find>read</find>
+      <find>Object</find>
+      <find>readObjectFromFile</find>
+      <find>invoke</find>
+      <find>threadManagerInvoke</find>
+      <find>parsingQueuesKeys</find>
+      <find>parsingKeysInitialization</find>
+      <find>super wow</find>
+      <find>super</find>
+      <find>SUPE</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Workspace\Git Projects\Tor Crawler</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,32 +146,38 @@
         <option value="$PROJECT_DIR$/src/Shared/HelperMethod.java" />
         <option value="$PROJECT_DIR$/src/Constants/Demo.java" />
         <option value="$PROJECT_DIR$/src/logManager/logMessageModel.java" />
-        <option value="$PROJECT_DIR$/src/logManager/logModel.java" />
         <option value="$PROJECT_DIR$/src/Shared/sessionManager.java" />
-        <option value="$PROJECT_DIR$/src/logManager/logEvents.java" />
-        <option value="$PROJECT_DIR$/src/logManager/log.java" />
         <option value="$PROJECT_DIR$/src/logManager/logController.java" />
         <option value="$PROJECT_DIR$/src/Constants/enumeration.java" />
         <option value="$PROJECT_DIR$/src/logManager/logViewController.java" />
         <option value="$PROJECT_DIR$/src/crawler/duplicationFilter.java" />
         <option value="$PROJECT_DIR$/src/crawler/sqlQueryManager.java" />
         <option value="$PROJECT_DIR$/src/crawler/webPageData.java" />
-        <option value="$PROJECT_DIR$/src/Shared/helperMethod.java" />
         <option value="$PROJECT_DIR$/src/crawler/webPageModel.java" />
-        <option value="$PROJECT_DIR$/src/Application/applicationController.java" />
-        <option value="$PROJECT_DIR$/src/Shared/webRequestHandler.java" />
-        <option value="$PROJECT_DIR$/src/Shared/fileHandler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/urlModel.java" />
-        <option value="$PROJECT_DIR$/src/crawler/queueManager.java" />
-        <option value="$PROJECT_DIR$/src/Application/webCrawler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/urlHelperMethod.java" />
-        <option value="$PROJECT_DIR$/src/crawler/crawler.java" />
-        <option value="$PROJECT_DIR$/src/Constants/preferences.java" />
         <option value="$PROJECT_DIR$/src/TextSummarizer/Main.java" />
         <option value="$PROJECT_DIR$/src/Shared/Summarizer.java" />
-        <option value="$PROJECT_DIR$/src/Constants/status.java" />
-        <option value="$PROJECT_DIR$/src/Constants/string.java" />
+        <option value="$PROJECT_DIR$/src/Shared/JazzySpellChecker.java" />
+        <option value="$PROJECT_DIR$/src/Shared/wordChecker.java" />
+        <option value="$PROJECT_DIR$/src/crawler/catagorizedCrawler.java" />
+        <option value="$PROJECT_DIR$/src/logManager/logModel.java" />
+        <option value="$PROJECT_DIR$/src/Shared/orchidClient.java" />
+        <option value="$PROJECT_DIR$/src/Shared/accessedURLModel.java" />
+        <option value="$PROJECT_DIR$/src/crawler/urlModel.java" />
+        <option value="$PROJECT_DIR$/src/crawler/urlHelperMethod.java" />
         <option value="$PROJECT_DIR$/src/crawler/nlpParser.java" />
+        <option value="$PROJECT_DIR$/src/Constants/status.java" />
+        <option value="$PROJECT_DIR$/src/crawler/crawler.java" />
+        <option value="$PROJECT_DIR$/src/Shared/helperMethod.java" />
+        <option value="$PROJECT_DIR$/src/logManager/logEvents.java" />
+        <option value="$PROJECT_DIR$/src/Constants/preferences.java" />
+        <option value="$PROJECT_DIR$/src/Constants/string.java" />
+        <option value="$PROJECT_DIR$/src/Application/applicationController.java" />
+        <option value="$PROJECT_DIR$/src/Shared/fileHandler.java" />
+        <option value="$PROJECT_DIR$/src/logManager/log.java" />
+        <option value="$PROJECT_DIR$/src/crawler/queueManager.java" />
+        <option value="$PROJECT_DIR$/src/Application/webCrawler.java" />
+        <option value="$PROJECT_DIR$/src/Application/catagorizedCrawler.java" />
+        <option value="$PROJECT_DIR$/src/Shared/webRequestHandler.java" />
       </list>
     </option>
   </component>
@@ -178,9 +187,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="100" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="820" />
   </component>
@@ -189,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -236,27 +246,31 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548354493437" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550081800218" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Libs/Orchid/slf4j-api-1.7.20.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Workspace\Git Projects\Tor Crawler\src" />
-      <recent name="C:\Workspace\Git Projects\Tor Crawler\Icons" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Application" />
       <recent name="Shared" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Workspace\Git Projects\Tor Crawler\src\Shared" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Workspace\Git Projects\Tor Crawler\src" />
+      <recent name="C:\Workspace\Git Projects\Tor Crawler\Icons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,17 +337,32 @@
       <workItem from="1548145678671" duration="1324000" />
       <workItem from="1548164253268" duration="1264000" />
       <workItem from="1548231532950" duration="13150000" />
+      <workItem from="1549187874277" duration="23000" />
+      <workItem from="1549303191443" duration="1779000" />
+      <workItem from="1549305317862" duration="8593000" />
+      <workItem from="1549359718019" duration="5879000" />
+      <workItem from="1549367849344" duration="2020000" />
+      <workItem from="1549379000229" duration="23057000" />
+      <workItem from="1549479591287" duration="26378000" />
+      <workItem from="1549572377463" duration="3460000" />
+      <workItem from="1549629551168" duration="467000" />
+      <workItem from="1549630248105" duration="2327000" />
+      <workItem from="1549634471467" duration="2484000" />
+      <workItem from="1549640294489" duration="39816000" />
+      <workItem from="1549791135121" duration="12162000" />
+      <workItem from="1549820778645" duration="4326000" />
+      <workItem from="1550049604730" duration="3111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131873000" />
+    <option name="totallyTimeSpent" value="267755000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27249357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24807198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -374,11 +403,27 @@
       <configuration name="Application">
         <watch expression="urlHelperMethod.getNetworkType(url)" language="JAVA" />
         <watch expression="urlHelperMethod.getNetworkType(url).equals(enumeration.UrlTypes.onion)" language="JAVA" />
+        <watch expression="dict.get(&quot;DHEA&quot;)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>dict.get(&quot;DHEA&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dict.get(&quot;AS&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dict.get(word)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>urlHelperMethod.getNetworkType(url).equals(enumeration.UrlTypes.onion)</expression-string>
         <language-id>JAVA</language-id>
@@ -392,11 +437,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Shared/logMessageModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/logViewController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/log.java" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/logController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/logEvents.java" />
     <entry file="file://$PROJECT_DIR$/src/Shared/logModel.java" />
     <entry file="file://$PROJECT_DIR$/src/Shared/logViewController.form" />
     <entry file="file://$PROJECT_DIR$/nbproject/build-impl.xml">
@@ -444,87 +484,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/retryModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logManager/logMessageModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/lockManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logManager/logController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logManager/logModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding>
-            <element signature="e#2264#2265#0" expanded="true" />
-            <element signature="e#2329#2330#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="e#4067#4068#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/dist/lib/sqljdbc41.jar!/com/microsoft/sqlserver/jdbc/SQLServerStatement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logManager/log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/sessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logManager/logEvents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logManager/logViewController.form">
@@ -540,39 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logManager/logViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="673" column="47" selection-start-line="673" selection-start-column="47" selection-end-line="673" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2672#2761#0" expanded="true" />
-            <element signature="e#39165#39166#0" expanded="true" />
-            <element signature="e#39242#39243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/sqlQueryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/duplicationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/net/www/protocol/http/HttpURLConnection.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -583,83 +512,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/applicationController.java">
+    <entry file="file://$PROJECT_DIR$/src/TextSummarizer/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/Shared/JazzySpellChecker.java" />
+    <entry file="file://$PROJECT_DIR$/src/Shared/orchidClient.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="413">
+          <caret line="977" column="25" selection-start-line="977" selection-start-column="25" selection-end-line="977" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/webRequestHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/Constants/status.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3024#3025#0" expanded="true" />
-            <element signature="e#3055#3056#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/webCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="74" column="108" selection-start-line="74" selection-start-column="108" selection-end-line="74" selection-end-column="108" />
-          <folding>
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/urlHelperMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
-          <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/fileHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/queueManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="155" column="42" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/urlModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants/enumeration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Constants/eventListner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="226">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="e#331#332#0" expanded="true" />
@@ -670,92 +542,370 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/crawler.java">
+    <entry file="file://$PROJECT_DIR$/src/Constants/string.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+        <state relative-caret-position="289">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constants/preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/applicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="34" column="149" selection-start-line="34" selection-start-column="149" selection-end-line="34" selection-end-column="149" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-            <element signature="e#4351#4352#0" expanded="true" />
-            <element signature="e#4380#4381#0" expanded="true" />
-            <element signature="e#4422#4423#0" expanded="true" />
-            <element signature="e#4469#4470#0" expanded="true" />
-            <element signature="e#4517#4518#0" expanded="true" />
-            <element signature="e#4698#4699#0" expanded="true" />
-            <element signature="e#4751#4752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constants/enumeration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/retryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/sqlQueryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/urlHelperMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/urlModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/crawler/webPageModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="179">
           <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shared/accessedURLModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shared/fileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="200" column="29" lean-forward="true" selection-start-line="200" selection-start-column="29" selection-end-line="200" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Shared/helperMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        <state relative-caret-position="243">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
           <folding>
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants/preferences.java">
+    <entry file="file://$PROJECT_DIR$/src/Shared/lockManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="267">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TextSummarizer/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Shared/sessionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants/string.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="180" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="180" />
+        <state relative-caret-position="124">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Shared/Summarizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="154" column="36" selection-start-line="154" selection-start-column="36" selection-end-line="154" selection-end-column="36" />
+        <state relative-caret-position="292">
+          <caret line="147" column="27" selection-start-line="147" selection-start-column="27" selection-end-line="147" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#358#375#0" expanded="true" />
-            <element signature="e#2878#2886#0" expanded="true" />
-            <element signature="e#6291#6299#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants/status.java">
+    <entry file="file://$PROJECT_DIR$/src/Shared/wordChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="267">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logManager/log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logManager/logController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logManager/logEvents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logManager/logMessageModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logManager/logModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="118" column="26" lean-forward="true" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logManager/logViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="783" column="32" lean-forward="true" selection-start-line="783" selection-start-column="32" selection-end-line="783" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/crawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#4706#4707#0" expanded="true" />
+            <element signature="e#4748#4749#0" expanded="true" />
+            <element signature="e#5222#5223#0" expanded="true" />
+            <element signature="e#5280#5281#0" expanded="true" />
+            <element signature="e#5427#5428#0" expanded="true" />
+            <element signature="e#5483#5484#0" expanded="true" />
+            <element signature="e#5528#5529#0" expanded="true" />
+            <element signature="e#5586#5587#0" expanded="true" />
+            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#5686#5687#0" expanded="true" />
+            <element signature="e#5727#5728#0" expanded="true" />
+            <element signature="e#5779#5780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/duplicationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/crawler/nlpParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="114" column="57" selection-start-line="114" selection-start-column="57" selection-end-line="114" selection-end-column="57" />
+        <state relative-caret-position="243">
+          <caret line="224" column="13" lean-forward="true" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/queueManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/webCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="118" selection-start-line="115" selection-end-line="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7929#7930#0" expanded="true" />
+            <element signature="e#8024#8025#0" expanded="true" />
+            <element signature="e#8105#8106#0" expanded="true" />
+            <element signature="e#8825#8826#0" expanded="true" />
+            <element signature="e#8926#8927#0" expanded="true" />
+            <element signature="e#9024#9025#0" expanded="true" />
+            <element signature="e#9115#9116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shared/webRequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/catagorizedCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="107" column="95" selection-start-line="107" selection-start-column="95" selection-end-line="107" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Tor Crawler</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Okio</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

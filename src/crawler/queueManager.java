@@ -3,6 +3,8 @@ package crawler;
 import Constants.enumeration;
 import Constants.preferences;
 import Constants.string;
+import logManager.log;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,7 +15,8 @@ class queueManager implements Serializable
 {
 
     /*LOCAL VARIABLES*/
-    private int size;
+    private int onionQueueSize;
+    private int parsingQueueSize;
 
     /*URL QUEUES*/
     private HashMap<String, Queue<urlModel>> onionQueues;
@@ -30,7 +33,7 @@ class queueManager implements Serializable
     /*INITIALIZATIONS*/
     queueManager() {
         variable_initialization();
-        size = 1;
+        onionQueueSize = 1;
     }
 
     private void variable_initialization() {
@@ -42,16 +45,34 @@ class queueManager implements Serializable
         onionQueuesKeys = new ArrayList<>();
         onionDataQueuesKeys = new ArrayList<>();
         baseQueuesKeys = new ArrayList<>();
-        parsingQueuesKeys = new ArrayList<>();
-
-        setUrl(string.baseLink, new urlModel("",0));
-
     }
 
-    String getKey() {
+    public void parsingKeysInitialization()
+    {
+        if(parsingQueues.keySet().size()>0)
+        {
+            ArrayList<String> temp = new ArrayList<>();
+            temp.addAll(parsingQueues.keySet());
+            parsingQueuesKeys = temp;
+        }
+    }
+
+    public void urlInitialization()
+    {
+        setUrl(string.baseLink, new urlModel("",0,enumeration.UrlDataTypes.all));
+        parsingKeysInitialization();
+    }
+
+    String getKey()
+    {
         String host = "";
         /*IF REMOVED THREADS WILL COME IN EVEN SYNCRONIZED*/
-        if (onionQueuesKeys.size() > 0)
+        if (parsingQueuesKeys!=null && parsingQueuesKeys.size() > 0)
+        {
+            host = parsingQueuesKeys.get(0);
+            parsingQueuesKeys.remove(0);
+        }
+        else if (onionQueuesKeys.size() > 0)
         {
             host = onionQueuesKeys.get(0);
             addToParsingQueues(onionQueues, host);
@@ -69,12 +90,6 @@ class queueManager implements Serializable
             addToParsingQueues(baseQueues, host);
             baseQueuesKeys.remove(0);
         }
-        else if (parsingQueuesKeys.size() > 0)
-        {
-            host = parsingQueuesKeys.get(0);
-            parsingQueuesKeys.remove(0);
-        }
-
 
         return host;
 
@@ -83,6 +98,8 @@ class queueManager implements Serializable
     /*METHOD UPDATE QUEUES AS NEW URL IS FOUND*/
     urlModel getUrl(String host) {
         String URL = string.emptyString;
+        int depth = 1;
+        enumeration.UrlDataTypes urlTypes = enumeration.UrlDataTypes.all;
 
         try
         {
@@ -93,10 +110,11 @@ class queueManager implements Serializable
                     urlModel tempModel = parsingQueues.get(host).poll();
 
                     URL = tempModel.getURL();
-                    removeFromParsingQueues(parsingQueues, host);
-                    size--;
+                    depth = tempModel.getDepth();
+                    urlTypes = tempModel.getCatagory();
+                    parsingQueueSize-=1;
                 }
-                return new urlModel(host + URL,1);
+                return new urlModel(host + URL,depth,urlTypes);
             }
         }
         catch (Exception ex)
@@ -105,23 +123,25 @@ class queueManager implements Serializable
         }
     }
 
-    private void removeFromParsingQueues(HashMap<String, Queue<urlModel>> queue, String host)
+    public void removeFromParsingQueues(String host)
     {
-        if (queue.get(host).isEmpty())
+        if (parsingQueues!=null && !parsingQueues.isEmpty() && parsingQueues.get(host)!=null && parsingQueues.get(host).isEmpty() && !host.equals(string.emptyString))
         {
-            queue.remove(host);
+            parsingQueues.remove(host);
         }
     }
 
     private void addToParsingQueues(HashMap<String, Queue<urlModel>> queue, String host)
     {
+        onionQueueSize -=queue.get(host).size();
+        parsingQueueSize += queue.get(host).size();
         parsingQueues.put(host, queue.get(host));
         queue.remove(host);
     }
 
     public int getUrlDepth(String host, urlModel parentURL)
     {
-        if(urlHelperMethod.getUrlHost(parentURL.getURL()).equals(host))
+        if(!urlHelperMethod.getUrlHost(parentURL.getURL()).equals(host))
         {
             return preferences.maxUrlDepth;
         }
@@ -135,26 +155,40 @@ class queueManager implements Serializable
     {
         if (priorityQueue.containsKey(host))
         {
+            //log.print("1 adding url : " + subUrl);
             int depth = getUrlDepth(host,parentURL);
-            priorityQueue.get(host).add(new urlModel(subUrl,depth));
+            priorityQueue.get(host).add(new urlModel(subUrl,depth,parentURL.getCatagory()));
+            onionQueueSize++;
         }
         else if (parsingQueues.containsKey(host))
         {
+            //log.print("2 adding url : " + subUrl);
+            parsingQueueSize+=1;
             int depth = getUrlDepth(host,parentURL);
-            parsingQueues.get(host).add(new urlModel(subUrl,depth));
+            parsingQueues.get(host).add(new urlModel(subUrl,depth,parentURL.getCatagory()));
         }
         else
         {
             Queue<urlModel> tempList = new LinkedList();
-            if(subUrl.length()<=0 || (host+subUrl).equals(string.baseLink))
+
+            if(parentURL.getCatagory().equals(enumeration.UrlDataTypes.finance) || parentURL.getCatagory().equals(enumeration.UrlDataTypes.news))
             {
-                tempList.add(new urlModel(subUrl,1));
+                //log.print("3 adding url : " + subUrl);
+                tempList.add(new urlModel(subUrl,parentURL.getDepth()+1,parentURL.getCatagory()));
+                onionQueueSize++;
+            }
+            else if(subUrl.length()<=0 || (host+subUrl).equals(string.baseLink))
+            {
+                //log.print("4 adding url : " + subUrl);
+                tempList.add(new urlModel(subUrl,1,parentURL.getCatagory()));
+                onionQueueSize++;
             }
             else
             {
-                tempList.add(new urlModel(subUrl,3));
-                tempList.add(new urlModel(host,1));
-                size++;
+                //log.print("5 adding url : " + subUrl + " -> " + host);
+                tempList.add(new urlModel(host,1,parentURL.getCatagory()));
+                tempList.add(new urlModel(subUrl,preferences.maxUrlDepth-1,parentURL.getCatagory()));
+                onionQueueSize+=2;
             }
             priorityQueue.put(host, tempList);
         }
@@ -166,6 +200,7 @@ class queueManager implements Serializable
 
         String host = urlHelperMethod.getUrlHost(URLLink);
         String subUrl = urlHelperMethod.getSubUrl(URLLink);
+
         if (type == enumeration.UrlTypes.onion)
         {
             addToQueue(onionQueues, host, subUrl, pModel);
@@ -190,19 +225,18 @@ class queueManager implements Serializable
                 baseQueuesKeys.add(host);
             }
         }
-        size += 1;
     }
 
     /*Helper Method*/
 
     boolean isHostEmpty(String host)
     {
-        return host.length()<=0 || !parsingQueues.containsKey(host);
+        return host.length()<=0 || !parsingQueues.containsKey(host) || parsingQueues.get(host).size()<=0;
     }
 
     int size()
     {
-        return size;
+        return onionQueueSize + parsingQueueSize;
     }
 
     int queueSize()
@@ -210,6 +244,72 @@ class queueManager implements Serializable
         return onionQueuesKeys.size() + onionDataQueuesKeys.size() + baseQueuesKeys.size();
     }
 
+    int getOnionQueuesSize()
+    {
+        return onionQueueSize-1;
+    }
 
+    int getParsingQueuesSize()
+    {
+        return parsingQueueSize;
+    }
+
+    public boolean hasHostBackupLimitReached(String host)
+    {
+        host = urlHelperMethod.getUrlHost(host);
+        boolean parseHostExists = parsingQueues.containsKey(host);
+        boolean onionHostExists = onionQueues.containsKey(host);
+
+        if(parseHostExists && parsingQueues.get(host).size()>=preferences.maxQueueSize)
+        {
+            return true;
+        }
+        else if(onionHostExists && onionQueues.get(host).size()>=preferences.maxQueueSize)
+        {
+            return true;
+        }
+        else if((onionQueuesKeys.size() + parsingQueues.keySet().size())>=preferences.maxThreadCount*4 && !parseHostExists && !onionHostExists)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public int getOnionThreads()
+    {
+        return onionQueues.keySet().size();
+    }
+
+    public int getParsingThreads()
+    {
+        return parsingQueues.keySet().size();
+    }
+
+    public String priorityQueueLogs()
+    {
+        String logs = "";
+
+        for (String link : parsingQueues.keySet())
+        {
+            logs += link + " : " + parsingQueues.get(link).size() + "<br>";
+        }
+
+        return logs;
+    }
+
+    public String onionQueueLogs()
+    {
+        String logs = string.emptyString;
+
+        for (String link : onionQueues.keySet())
+        {
+            logs += link + " : " + onionQueues.get(link).size() + "<br>";
+        }
+
+        return logs;
+    }
 
 }

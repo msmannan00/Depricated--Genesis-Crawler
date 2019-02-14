@@ -11,6 +11,7 @@ import Constants.string;
 import java.io.Serializable;
 import java.util.concurrent.locks.ReentrantLock;
 import logManager.log;
+import logManager.logController;
 
 public class crawler implements Serializable
 {
@@ -20,11 +21,17 @@ public class crawler implements Serializable
 
     /*VARIABLES DECLARATIONS*/
     private ReentrantLock lock;
+    private ReentrantLock lockParser;
 
     /*INITIALIZATIONS*/
     public crawler() {
         variable_initialization();
         lock = new ReentrantLock();
+    }
+
+    public void queueURLInitialization()
+    {
+        queryManager.urlInitialization();
     }
 
     private void variable_initialization() {
@@ -35,19 +42,11 @@ public class crawler implements Serializable
     public void parse_html(String HTML, urlModel uModel, String threadID) throws Exception
     {
         ArrayList<String> urlList;
-        lock.lock();
-        try
-        {
-            log.logMessage("Extracting URLS", "THID : " + threadID + " : Thread Status");
-            webPageModel webdata = nlpParser.getInstance().extractData(HTML,uModel,threadID);
-            log.logMessage("Extracted URLS : " + webdata.urlList.size(), "THID : " + threadID + " : Thread Status");
-            log.logMessage("Saving Current URL : " + uModel, "THID : " + threadID + " : Thread Status");
-            saveCurrentUrl(uModel,threadID,webdata);
-        }
-        finally
-        {
-            lock.unlock();
-        }
+        log.logMessage("Extracting URLS", "THID : " + threadID + " : Thread Status");
+        webPageModel webdata = nlpParser.getInstance().extractData(HTML,uModel,threadID);
+        log.logMessage("Extracted URLS : " + webdata.urlList.size(), "THID : " + threadID + " : Thread Status");
+        log.logMessage("Saving Current URL : " + uModel, "THID : " + threadID + " : Thread Status");
+        saveCurrentUrl(uModel,threadID,webdata);
     }
 
     private void saveCurrentUrl( urlModel uModel, String threadID,webPageModel webdata) throws Exception
@@ -57,7 +56,7 @@ public class crawler implements Serializable
         {
             if (webdata.summary.length() > 30)
             {
-                String content = urlHelperMethod.createCacheUrl(uModel.getURL(), webdata.title, webdata.summary, webdata.logo,webdata.keyword);
+                String content = urlHelperMethod.createCacheUrl(uModel.getURL(), webdata.title, webdata.summary, webdata.logo,webdata.keyword,uModel.getCatagory());
                 currentUrlKey = webRequestHandler.getInstance().updateCache(content, threadID);
             }
         }
@@ -69,11 +68,11 @@ public class crawler implements Serializable
         urlModel pModel;
         if(isParentSame==1)
         {
-            pModel = new urlModel(urlHelperMethod.getUrlHost(URLLink),depth+1);
+            pModel = new urlModel(urlHelperMethod.getUrlHost(URLLink),depth+1, enumeration.UrlDataTypes.all);
         }
         else
         {
-            pModel = new urlModel(urlHelperMethod.getUrlHost(URLLink),3);
+            pModel = new urlModel(urlHelperMethod.getUrlHost(URLLink),3,enumeration.UrlDataTypes.all);
         }
         queryManager.setUrl(URLLink, pModel);
     }
@@ -88,9 +87,9 @@ public class crawler implements Serializable
                 enumeration.UrlDataTypes urlType = urlHelperMethod.getUrlExtension(URLLink);
                 if (urlHelperMethod.isUrlValid(URLLink) && !urlType.equals(enumeration.UrlDataTypes.none))
                 {
-                    if (!duplicationFilter.getInstance().is_url_duplicate(URLLink))
+                    if (!duplicationFilter.getInstance().is_url_duplicate(URLLink) || ((pModel.getCatagory().equals(enumeration.UrlDataTypes.news) || pModel.getCatagory().equals(enumeration.UrlDataTypes.finance)) && urlType.equals(enumeration.UrlDataTypes.link)))
                     {
-                        if(queryManager.size()> preferences.maxQueueSize && urlType.equals(enumeration.UrlDataTypes.link))
+                        if((queryManager.hasHostBackupLimitReached(URLLink)) && urlType.equals(enumeration.UrlDataTypes.link))
                         {
                             fileHandler.appendFile(string.url_stack,urlHelperMethod.createBackupLink(URLLink,pModel.getURL(),pModel.getDepth()));
                             continue;
@@ -100,7 +99,7 @@ public class crawler implements Serializable
                         {
                             queryManager.setUrl(URLLink, pModel);
                         }
-                        else if (!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(UrlTypes.onion))
+                        else if (!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(UrlTypes.onion)&&!URLLink.equals("base.onion"))
                         {
                             String content = urlHelperMethod.createDLink(URLLink, urlHelperMethod.getUrlExtension(URLLink).toString(), currentUrlKey);
                             webRequestHandler.getInstance().updateCache(content, threadID);
@@ -140,9 +139,43 @@ public class crawler implements Serializable
         }
     }
 
+    public int getOnionThreads()
+    {
+        return queryManager.getOnionThreads();
+    }
+
+    public int getParsingThreads()
+    {
+        return queryManager.getParsingThreads();
+    }
+
+    public void removeFromHostIfParsed(String host)
+    {
+        queryManager.removeFromParsingQueues(host);
+    }
+
     public boolean isHostEmpty(String host)
     {
         return queryManager.isHostEmpty(host);
+    }
+
+    public int getOnionQueuesSize()
+    {
+        return queryManager.getOnionQueuesSize();
+    }
+
+    public int getParsingQueuesSize()
+    {
+        return queryManager.getParsingQueuesSize();
+    }
+
+    public String priorityQueueLogs()
+    {
+        return queryManager.priorityQueueLogs();
+    }
+    public String onionQueueLogs()
+    {
+        return queryManager.onionQueueLogs();
     }
 
 }

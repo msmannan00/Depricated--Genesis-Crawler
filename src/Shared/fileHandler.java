@@ -2,31 +2,19 @@ package Shared;
 
 import Constants.preferences;
 import Constants.string;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.io.RandomAccessFile;
+
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import crawler.crawler;
 import logManager.log;
 import org.apache.commons.io.FileUtils;
@@ -119,6 +107,37 @@ public class fileHandler
         }
     }
 
+    public static Map<String, Boolean> readDictFromFile()
+    {
+        Map<String, Boolean> dict = new HashMap<String, Boolean>();
+        try (BufferedReader br = new BufferedReader(new FileReader(string.dictionary))) {
+            String line;
+            while ((line = br.readLine()) != null)
+            {
+                dict.put(line,true);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        log.print("DICT LOADED");
+        return dict;
+    }
+
+    public static String readCatagoryFromFile(String path)
+    {
+        String list = new String();
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line;
+            while ((line = br.readLine()) != null)
+            {
+                list += " " + line ;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
     public static void writeObjectBackupToFile(Object serObj, String address)
     {
         File files_in_directory = new File("queue_backup//");
@@ -137,7 +156,7 @@ public class fileHandler
     {
         try
         {
-            FileOutputStream fileOut = new FileOutputStream(address);
+            FileOutputStream fileOut = new FileOutputStream(string.filepath_queue_manager);
             ObjectOutputStream objectOut;
             objectOut = new ObjectOutputStream(fileOut);
             objectOut.writeObject(serObj);
@@ -233,7 +252,7 @@ public class fileHandler
     public static ArrayList<String> readQueueStack() throws IOException
     {
         ArrayList<String> backedURLList = new ArrayList<String>();
-        int rowLength = preferences.maxQueueSize - preferences.minQueueSize;
+        int rowLength = 2000;
         //Initial write position
         try (RandomAccessFile raf = new RandomAccessFile(string.url_stack, "rw"))
         {

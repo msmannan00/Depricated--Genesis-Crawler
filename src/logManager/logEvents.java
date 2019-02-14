@@ -6,6 +6,8 @@ import Constants.eventListner;
 import Constants.status;
 import java.awt.Color;
 
+import static java.lang.Thread.sleep;
+
 public class logEvents
 {
 
@@ -41,31 +43,49 @@ public class logEvents
         view.jWarningPane.setText("");
     }
 
+    int sleepCounter=0;
     void onUpdateLogs()
     {
         new Thread(() -> {
-            view.pausedThread.setText("  " + logModel.getInstance().getPausedThread());
-            view.runningThread.setText("  " + logModel.getInstance().getRunningThread());
-            view.jCurrentUrlFound.setText("  " + webCrawler.getInstance().getQueueSize());
-            view.jStatus.setText("  " + status.appStatus);
-            if (eventListner.getInstance().getBackupState())
-            {
-                setButtonState(false);
-            }
-            else
-            {
-                setButtonState(true);
-                if(status.appStatus == enumeration.appStatus.paused)
+            try {
+                view.pausedThread.setText("  " + logModel.getInstance().getPausedThread());
+                view.runningThread.setText("  " + logModel.getInstance().getRunningThread());
+                view.jCurrentUrlFound.setText("  O:" + webCrawler.getInstance().getOnionQueuesSize() + "-P:" + webCrawler.getInstance().getParsingQueuesSize());
+                view.ParsingQueues.setText("  " + webCrawler.getInstance().getParsingThreads());
+                view.onionQueues.setText("  " + webCrawler.getInstance().getOnionThreads());
+
+                view.jStatus.setText("  " + status.appStatus);
+                if (eventListner.getInstance().getBackupState())
                 {
-                    view.jPauseBtn.setEnabled(false);
-                    view.jStartBtn.setEnabled(true);
+                    setButtonState(false);
                 }
-                else if(status.appStatus == enumeration.appStatus.running)
+                else
                 {
-                    view.jPauseBtn.setEnabled(true);
-                    view.jStartBtn.setEnabled(false);
+                    setButtonState(true);
+                    if(status.appStatus == enumeration.appStatus.paused)
+                    {
+                        view.jPauseBtn.setEnabled(false);
+                        view.jStartBtn.setEnabled(true);
+                    }
+                    else if(status.appStatus == enumeration.appStatus.running)
+                    {
+                        view.jPauseBtn.setEnabled(true);
+                        view.jStartBtn.setEnabled(false);
+                    }
                 }
+
+                if(sleepCounter==10)
+                {
+                    sleepCounter = 0;
+                    view.jSystemProgressPane.setText(webCrawler.getInstance().priorityQueueLogs());
+                    view.jServerErrorPane.setText(webCrawler.getInstance().onionQueueLogs());
+                }
+                sleep(100);
+                sleepCounter++;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+
         }).start();
     }
 

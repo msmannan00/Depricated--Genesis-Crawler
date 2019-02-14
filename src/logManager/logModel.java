@@ -68,7 +68,6 @@ public class logModel
         }
         catch (Exception e)
         {
-            log.print("fuck");
             return null;
         }
         finally
@@ -94,7 +93,6 @@ public class logModel
         }
         catch (Exception e)
         {
-            log.print("fuck");
             return null;
         }
         finally
@@ -114,7 +112,6 @@ public class logModel
         }
         catch (Exception e)
         {
-            log.print("fuck");
             return null;
         }
         finally
