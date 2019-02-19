@@ -14,7 +14,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import crawler.crawler;
 import logManager.log;
 import org.apache.commons.io.FileUtils;

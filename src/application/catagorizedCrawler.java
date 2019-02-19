@@ -35,7 +35,7 @@ public class catagorizedCrawler
         initializeReScedular();
     }
 
-    public void initializeParser()
+    public void  initializeParser()
     {
         String finance_list = fileHandler.readCatagoryFromFile(string.financial_file);
         String news_list = fileHandler.readCatagoryFromFile(string.news_file);
@@ -60,7 +60,9 @@ public class catagorizedCrawler
             {
                 while (true)
                 {
-                    try { if (status.appStatus == enumeration.appStatus.running)
+                    try
+                    {
+                        if (status.appStatus == enumeration.appStatus.running)
                         {
                             if(!isCatagorizerRunning)
                             {
@@ -71,7 +73,10 @@ public class catagorizedCrawler
                             }
                             sleep(Long.parseLong("16400000"));
                         }
-                        sleep(Long.parseLong("2000"));
+                        else
+                        {
+                            sleep(Long.parseLong("2000"));
+                        }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

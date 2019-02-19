@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import logManager.log;
 
 public class wordChecker

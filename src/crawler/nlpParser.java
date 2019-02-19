@@ -207,7 +207,7 @@ class nlpParser
         }
         /*HRef End*/
 
-        if(!host.getURL().equals(string.baseLink) || (host.getCatagory().equals(enumeration.UrlDataTypes.news) || host.getCatagory().equals(enumeration.UrlDataTypes.finance)) && !host.getURL().equals("finance.onion") && !host.getURL().equals("news.onion"))
+        if((!host.getCatagory().equals(enumeration.UrlDataTypes.news) && !host.getCatagory().equals(enumeration.UrlDataTypes.finance) && !host.getURL().equals(string.baseLink)) || (host.getCatagory().equals(enumeration.UrlDataTypes.news) || host.getCatagory().equals(enumeration.UrlDataTypes.finance)) && !host.getURL().equals("finance.onion") && !host.getURL().equals("news.onion"))
         {
             return urlListFiltered;
         }

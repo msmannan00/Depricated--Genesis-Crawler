@@ -1,10 +1,10 @@
 Application Status : Starting Application
 Application Status : Opening User Interface
 THID : -2 : Thread Status : Extracting URLS
-THID : -2 : Thread Status : Extracted URLS : 0
-THID : -2 : Thread Status : Saving Current URL : crawler.urlModel@6e66d3ef
+THID : -2 : Thread Status : Extracted URLS : 7
+THID : -2 : Thread Status : Saving Current URL : crawler.urlModel@26f1a815
 THID : -2 : Thread Status : Extracting URLS
-THID : -2 : Thread Status : Extracted URLS : 0
-THID : -2 : Thread Status : Saving Current URL : crawler.urlModel@4ac32b92
-THID : -2 : Thread Status : Reqesting Onion URL : 
-THID : -2 : Thread Status : Reqesting Onion URL : 
+THID : -2 : Thread Status : Extracted URLS : 14
+THID : -2 : Thread Status : Saving Current URL : crawler.urlModel@7717cca4
+THID : -2 : Thread Status : Reqesting Onion URL : http://deepdot35wvmeyd5.onion/category/deepdot-news/
+THID : -2 : Thread Status : Reqesting Onion URL : http://torbrokerge7zxgq.onion/
