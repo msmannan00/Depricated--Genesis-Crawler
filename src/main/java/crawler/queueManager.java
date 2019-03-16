@@ -3,6 +3,8 @@ package crawler;
 import Constants.enumeration;
 import Constants.preferences;
 import Constants.string;
+import logManager.log;
+
 import java.io.Serializable;
 import java.util.*;
 

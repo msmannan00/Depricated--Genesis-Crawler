@@ -6,7 +6,7 @@ public class string
     /*Network*/
     public static String proxyIP = "127.0.0.1";
     public static String userAgent = "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:63.0) Gecko/20100101 Firefox/63.0";
-    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=onion+links&session=ylo%2BaWe53pinhJ19IIYhijYXOowAu%2BUA6OGB4zYxixY%3D&numRows=20&hostLimit=20&template=0";
+    public static String baseLink = "http://msydqstlz2kzerdg.onion/search/?q=onion+links";
     //public static String baseLink = "http://msydqstlz2kzerdg.onion/onions/";
 
     /*Constants*/
@@ -32,7 +32,7 @@ public class string
 
     /*SQLConnections*/
     public static String connectionString = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    public static String driverString = "jdbc:sqlserver://localhost:1433;characterEncoding=utf-8;databaseName=TorCrawler;user=toor;password=toor";
+    public static String driverString = "jdbc:sqlserver://localhost:1433;characterEncoding=utf-8;databaseName=TorCrawler;user=msmannan00;password=imammehdi0";
 
     /*Post Data Strings*/
     public static String postUrl = "http://boogle.store/update_cache";
