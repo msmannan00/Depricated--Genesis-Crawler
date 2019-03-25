@@ -1,2 +1,212 @@
 Application Status : Starting Application
 Application Status : Opening User Interface
+THID : 21 : Thread Status : RE-Fethcing URL
+THID : 21 : Thread Status : URL Fethched : http://msydqstlz2kzerdg.onion
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://msydqstlz2kzerdg.onion/search/?q=onion+links
+THID : 21 : Thread Status : Reqesting Onion URL : http://msydqstlz2kzerdg.onion/search/?q=onion+links
+THID : -2 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : RE-Fethcing URL
+THID : 20 : Thread Status : URL Fethched : http://vfqndlfeq5rdpkix.onion
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://vfqndlfeq5rdpkix.onion
+THID : 20 : Thread Status : Reqesting Onion URL : http://vfqndlfeq5rdpkix.onion
+THID : -2 : Thread Status : Extracted URLS : 7
+THID : -2 : Thread Status : Saving Current URL : crawler.urlModel@8857c
+THID : 22 : Thread Status : RE-Fethcing URL
+THID : 22 : Thread Status : URL Fethched : http://cpplqliows33tnpg.onion
+THID : 22 : Thread Status : Fethcing From Same Host
+THID : 22 : Thread Status : Sending Url Request : http://cpplqliows33tnpg.onion
+THID : 22 : Thread Status : Reqesting Onion URL : http://cpplqliows33tnpg.onion
+THID : -2 : Thread Status : Extracting URLS
+THID : -2 : Thread Status : Extracted URLS : 14
+THID : -2 : Thread Status : Saving Current URL : crawler.urlModel@6ca5b833
+THID : 24 : Thread Status : RE-Fethcing URL
+THID : 24 : Thread Status : URL Fethched : http://leomakjul7ovb633.onion
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://leomakjul7ovb633.onion
+THID : 24 : Thread Status : Reqesting Onion URL : http://leomakjul7ovb633.onion
+THID : 25 : Thread Status : RE-Fethcing URL
+THID : 25 : Thread Status : URL Fethched : http://7n4zo5om3r2y3fsq.onion
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://7n4zo5om3r2y3fsq.onion
+THID : 25 : Thread Status : Reqesting Onion URL : http://7n4zo5om3r2y3fsq.onion
+THID : -2 : Thread Status : Reqesting Onion URL : http://deepdot35wvmeyd5.onion/category/deepdot-news/
+THID : -2 : Thread Status : Reqesting Onion URL : http://torbrokerge7zxgq.onion/
+THID : 26 : Thread Status : RE-Fethcing URL
+THID : 26 : Thread Status : URL Fethched : http://elherbowqceg7vvs.onion
+THID : 26 : Thread Status : Fethcing From Same Host
+THID : 26 : Thread Status : Sending Url Request : http://elherbowqceg7vvs.onion
+THID : 26 : Thread Status : Reqesting Onion URL : http://elherbowqceg7vvs.onion
+THID : 32 : Thread Status : RE-Fethcing URL
+THID : 32 : Thread Status : URL Fethched : http://fbom3sid5tfy32u7.onion
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://fbom3sid5tfy32u7.onion
+THID : 32 : Thread Status : Reqesting Onion URL : http://fbom3sid5tfy32u7.onion
+THID : 34 : Thread Status : RE-Fethcing URL
+THID : 34 : Thread Status : URL Fethched : http://xogi6uahupzfx2kx.onion
+THID : 34 : Thread Status : Fethcing From Same Host
+THID : 34 : Thread Status : Sending Url Request : http://xogi6uahupzfx2kx.onion
+THID : 34 : Thread Status : Reqesting Onion URL : http://xogi6uahupzfx2kx.onion
+THID : 31 : Thread Status : RE-Fethcing URL
+THID : 31 : Thread Status : URL Fethched : http://sourcel3zg2kzu4k.onion
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://sourcel3zg2kzu4k.onion
+THID : 31 : Thread Status : Reqesting Onion URL : http://sourcel3zg2kzu4k.onion
+THID : 29 : Thread Status : RE-Fethcing URL
+THID : 29 : Thread Status : URL Fethched : http://by5cptxw44znwsbn.onion
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://by5cptxw44znwsbn.onion
+THID : 29 : Thread Status : Reqesting Onion URL : http://by5cptxw44znwsbn.onion
+THID : 21 : Thread Status : Found URL : http://msydqstlz2kzerdg.onion/search/?q=onion+links
+THID : 21 : Thread Status : Parsing HTML : http://msydqstlz2kzerdg.onion/search/?q=onion+links
+THID : 21 : Thread Status : Extracting URLS
+THID : 21 : Thread Status : Extracted URLS : 476
+THID : 21 : Thread Status : Saving Current URL : crawler.urlModel@17fbd75
+THID : 30 : Thread Status : RE-Fethcing URL
+THID : 30 : Thread Status : URL Fethched : http://xe6uu7qqtrj4a4zd.onion
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://xe6uu7qqtrj4a4zd.onion
+THID : 30 : Thread Status : Reqesting Onion URL : http://xe6uu7qqtrj4a4zd.onion
+THID : 13 : Thread Status : RE-Fethcing URL
+THID : 13 : Thread Status : URL Fethched : http://paradise2xfc44o7.onion
+THID : 13 : Thread Status : Fethcing From Same Host
+THID : 13 : Thread Status : Sending Url Request : http://paradise2xfc44o7.onion
+THID : 13 : Thread Status : Reqesting Onion URL : http://paradise2xfc44o7.onion
+THID : 33 : Thread Status : RE-Fethcing URL
+THID : 33 : Thread Status : URL Fethched : http://onionzzfs7sat2zr.onion
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://onionzzfs7sat2zr.onion
+THID : 33 : Thread Status : Reqesting Onion URL : http://onionzzfs7sat2zr.onion
+THID : 36 : Thread Status : RE-Fethcing URL
+THID : 36 : Thread Status : URL Fethched : http://5unpiweicewpepsn.onion
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://5unpiweicewpepsn.onion
+THID : 36 : Thread Status : Reqesting Onion URL : http://5unpiweicewpepsn.onion
+THID : 37 : Thread Status : RE-Fethcing URL
+THID : 37 : Thread Status : URL Fethched : http://creditbo5mtpmv4z.onion
+THID : 37 : Thread Status : Fethcing From Same Host
+THID : 37 : Thread Status : Sending Url Request : http://creditbo5mtpmv4z.onion
+THID : 37 : Thread Status : Reqesting Onion URL : http://creditbo5mtpmv4z.onion
+THID : 38 : Thread Status : RE-Fethcing URL
+THID : 38 : Thread Status : URL Fethched : http://bitrowshakyhmhjd.onion
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://bitrowshakyhmhjd.onion
+THID : 38 : Thread Status : Reqesting Onion URL : http://bitrowshakyhmhjd.onion
+THID : 39 : Thread Status : RE-Fethcing URL
+THID : 39 : Thread Status : URL Fethched : http://comsearchrs37lpw.onion
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://comsearchrs37lpw.onion
+THID : 39 : Thread Status : Reqesting Onion URL : http://comsearchrs37lpw.onion
+THID : 20 : Thread Status : Found URL : http://vfqndlfeq5rdpkix.onion
+THID : 20 : Thread Status : Parsing HTML : http://vfqndlfeq5rdpkix.onion
+THID : 20 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Extracted URLS : 5
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@14c2baad
+THID : 40 : Thread Status : RE-Fethcing URL
+THID : 40 : Thread Status : URL Fethched : http://onicoyceokzquk4i.onion
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://onicoyceokzquk4i.onion
+THID : 40 : Thread Status : Reqesting Onion URL : http://onicoyceokzquk4i.onion
+THID : 41 : Thread Status : RE-Fethcing URL
+THID : 41 : Thread Status : URL Fethched : http://bzcan7s7awrmjbam.onion
+THID : 41 : Thread Status : Fethcing From Same Host
+THID : 41 : Thread Status : Sending Url Request : http://bzcan7s7awrmjbam.onion
+THID : 41 : Thread Status : Reqesting Onion URL : http://bzcan7s7awrmjbam.onion
+THID : 42 : Thread Status : RE-Fethcing URL
+THID : 42 : Thread Status : URL Fethched : http://giwfim7bpy6ett6p.onion
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://giwfim7bpy6ett6p.onion
+THID : 42 : Thread Status : Reqesting Onion URL : http://giwfim7bpy6ett6p.onion
+THID : 27 : Thread Status : RE-Fethcing URL
+THID : 27 : Thread Status : URL Fethched : http://hjossecvv22autvp.onion
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : http://hjossecvv22autvp.onion
+THID : 27 : Thread Status : Reqesting Onion URL : http://hjossecvv22autvp.onion
+THID : 23 : Thread Status : RE-Fethcing URL
+THID : 23 : Thread Status : URL Fethched : http://mxpp3nwz5kxc46tk.onion
+THID : 23 : Thread Status : Fethcing From Same Host
+THID : 23 : Thread Status : Sending Url Request : http://mxpp3nwz5kxc46tk.onion
+THID : 23 : Thread Status : Reqesting Onion URL : http://mxpp3nwz5kxc46tk.onion
+THID : 20 : Thread Status : Parsing Completed : http://vfqndlfeq5rdpkix.onion
+THID : 28 : Thread Status : RE-Fethcing URL
+THID : 28 : Thread Status : URL Fethched : http://eeyovhjzsemrevss.onion
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://eeyovhjzsemrevss.onion
+THID : 28 : Thread Status : Reqesting Onion URL : http://eeyovhjzsemrevss.onion
+THID : 35 : Thread Status : RE-Fethcing URL
+THID : 35 : Thread Status : URL Fethched : http://ppccpwtty2ev54h4.onion
+THID : 35 : Thread Status : Fethcing From Same Host
+THID : 35 : Thread Status : Sending Url Request : http://ppccpwtty2ev54h4.onion
+THID : 35 : Thread Status : Reqesting Onion URL : http://ppccpwtty2ev54h4.onion
+THID : 17 : Thread Status : RE-Fethcing URL
+THID : 17 : Thread Status : URL Fethched : http://ufkezqtxcffenzdi.onion
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : http://ufkezqtxcffenzdi.onion
+THID : 17 : Thread Status : Reqesting Onion URL : http://ufkezqtxcffenzdi.onion
+THID : 16 : Thread Status : RE-Fethcing URL
+THID : 16 : Thread Status : URL Fethched : http://n63fmf5psim3othm.onion
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://n63fmf5psim3othm.onion
+THID : 16 : Thread Status : Reqesting Onion URL : http://n63fmf5psim3othm.onion
+THID : 18 : Thread Status : RE-Fethcing URL
+THID : 18 : Thread Status : URL Fethched : http://owgdfx6pr35op7e7.onion
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://owgdfx6pr35op7e7.onion
+THID : 18 : Thread Status : Reqesting Onion URL : http://owgdfx6pr35op7e7.onion
+THID : 14 : Thread Status : RE-Fethcing URL
+THID : 14 : Thread Status : URL Fethched : http://qhfzuufza3qarov3.onion
+THID : 14 : Thread Status : Fethcing From Same Host
+THID : 14 : Thread Status : Sending Url Request : http://qhfzuufza3qarov3.onion
+THID : 14 : Thread Status : Reqesting Onion URL : http://qhfzuufza3qarov3.onion
+THID : 15 : Thread Status : RE-Fethcing URL
+THID : 15 : Thread Status : URL Fethched : http://upwaxokx5zi6uhpr.onion
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://upwaxokx5zi6uhpr.onion
+THID : 15 : Thread Status : Reqesting Onion URL : http://upwaxokx5zi6uhpr.onion
+THID : 19 : Thread Status : RE-Fethcing URL
+THID : 19 : Thread Status : URL Fethched : http://dncm476ogr64eybd.onion
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://dncm476ogr64eybd.onion
+THID : 19 : Thread Status : Reqesting Onion URL : http://dncm476ogr64eybd.onion
+THID : 20 : Thread Status : RE-Fethcing URL
+THID : 20 : Thread Status : URL Fethched : http://qmnmrba4s4a3py6z.onion
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://qmnmrba4s4a3py6z.onion
+THID : 20 : Thread Status : Reqesting Onion URL : http://qmnmrba4s4a3py6z.onion
+THID : 41 : Thread Status : Found URL : http://bzcan7s7awrmjbam.onion
+THID : 41 : Thread Status : Parsing HTML : http://bzcan7s7awrmjbam.onion
+THID : 41 : Thread Status : Extracting URLS
+THID : 41 : Thread Status : Extracted URLS : 1
+THID : 41 : Thread Status : Saving Current URL : crawler.urlModel@ae7c7ef
+THID : 28 : Thread Status : Found URL : http://eeyovhjzsemrevss.onion
+THID : 28 : Thread Status : Parsing HTML : http://eeyovhjzsemrevss.onion
+THID : 28 : Thread Status : Extracting URLS
+THID : 28 : Thread Status : Extracted URLS : 12
+THID : 28 : Thread Status : Saving Current URL : crawler.urlModel@78acc489
+THID : 35 : Thread Status : Found URL : http://ppccpwtty2ev54h4.onion
+THID : 35 : Thread Status : Parsing HTML : http://ppccpwtty2ev54h4.onion
+THID : 35 : Thread Status : Extracting URLS
+THID : 35 : Thread Status : Extracted URLS : 5
+THID : 35 : Thread Status : Saving Current URL : crawler.urlModel@4f9f6f26
+THID : 21 : Thread Status : Error Saving Url : url=http%3A%2F%2Fmsydqstlz2kzerdg.onion%2Fsearch%2Fsearch%2Fredirect%3Fsearch_term%3Donionlinks%26redirect_url%3Dhttp%3A%2F%2Fxsold3pvbxt4xblv.onion%2FLiberTORian%2520Issue%252004.txt&type=onion&n_type=Onion&s_type=doc&live_date=Mon+Mar+25+10%3A56%3A53+PKT+2019&update_date=Mon+Mar+25+10%3A56%3A53+PKT+2019&WP_FK=165813 
+THID : 21 : Thread Status : Parsing Completed : http://msydqstlz2kzerdg.onion/search/?q=onion+links
+THID : 28 : Thread Status : Parsing Completed : http://eeyovhjzsemrevss.onion
+THID : 41 : Thread Status : Parsing Completed : http://bzcan7s7awrmjbam.onion
+THID : 35 : Thread Status : Parsing Completed : http://ppccpwtty2ev54h4.onion
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://msydqstlz2kzerdg.onion/search/?q=onion+links&d=all
+THID : 21 : Thread Status : Reqesting Onion URL : http://msydqstlz2kzerdg.onion/search/?q=onion+links&d=all
+THID : 28 : Thread Status : RE-Fethcing URL
+THID : 28 : Thread Status : URL Fethched : http://q7f5xnv2sdukiw7x.onion
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://q7f5xnv2sdukiw7x.onion
+THID : 28 : Thread Status : Reqesting Onion URL : http://q7f5xnv2sdukiw7x.onion
+THID : 41 : Thread Status : Fethcing From Same Host
+THID : 41 : Thread Status : Sending Url Request : http://bzcan7s7awrmjbam.onion/manual
+THID : 41 : Thread Status : Reqesting Onion URL : http://bzcan7s7awrmjbam.onion/manual
+THID : 35 : Thread Status : RE-Fethcing URL
+THID : 35 : Thread Status : URL Fethched : http://mg4qw3ybl4zacwrg.onion
+THID : 35 : Thread Status : Fethcing From Same Host
+THID : 35 : Thread Status : Sending Url Request : http://mg4qw3ybl4zacwrg.onion
+THID : 35 : Thread Status : Reqesting Onion URL : http://mg4qw3ybl4zacwrg.onion

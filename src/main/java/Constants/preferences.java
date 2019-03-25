@@ -26,7 +26,7 @@ public class preferences
     public static int max_backup_files_count = 30;
 
     /*Network*/
-    public static int proxyPort = 9050;
+    public static int proxyPort = 9150;
     public static String networkType = "Onion";
     public static int connectionTimeOut = 210000;
     public static int readTimeOut = 210000;
