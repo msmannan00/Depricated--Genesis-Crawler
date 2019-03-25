@@ -7,6 +7,7 @@ import logManager.log;
 
 import java.io.Serializable;
 import java.util.*;
+import java.util.concurrent.locks.ReentrantLock;
 
 class queueManager implements Serializable
 {
@@ -14,6 +15,7 @@ class queueManager implements Serializable
     /*LOCAL VARIABLES*/
     private int onionQueueSize;
     private int parsingQueueSize;
+    private ReentrantLock lock;
 
     /*URL QUEUES*/
     private HashMap<String, Queue<urlModel>> onionQueues;
@@ -31,6 +33,7 @@ class queueManager implements Serializable
     queueManager() {
         variable_initialization();
         onionQueueSize = 1;
+        lock = new ReentrantLock();
     }
 
     private void variable_initialization() {
@@ -226,6 +229,28 @@ class queueManager implements Serializable
 
     /*Helper Method*/
 
+    public ArrayList<String> getQueueKeys()
+    {
+        ArrayList<String> list = onionQueuesKeys;
+        if(parsingQueuesKeys!=null)
+        {
+            list.addAll(parsingQueuesKeys);
+        }
+        return list;
+    }
+
+    public boolean isQueueInitialized()
+    {
+        if(onionQueuesKeys==null)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
     boolean isHostEmpty(String host)
     {
         return host.length()<=0 || !parsingQueues.containsKey(host) || parsingQueues.get(host).size()<=0;
@@ -275,6 +300,26 @@ class queueManager implements Serializable
         }
     }
 
+    public int getHostBackupLimit(String host)
+    {
+        host = urlHelperMethod.getUrlHost(host);
+        boolean parseHostExists = parsingQueues.containsKey(host);
+        boolean onionHostExists = onionQueues.containsKey(host);
+
+        if(parseHostExists)
+        {
+            return parsingQueues.get(host).size();
+        }
+        else if(onionHostExists)
+        {
+            return onionQueues.get(host).size();
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
     public int getOnionThreads()
     {
         return onionQueues.keySet().size();
@@ -299,6 +344,7 @@ class queueManager implements Serializable
 
     public String onionQueueLogs()
     {
+        lock.lock();
         String logs = string.emptyString;
         Set<String> keyset = onionQueues.keySet();
 
@@ -307,6 +353,7 @@ class queueManager implements Serializable
             logs += link + " : " + onionQueues.get(link).size() + "<br>";
         }
 
+        lock.unlock();
         return logs;
     }
 

@@ -42,19 +42,19 @@ public class logModel
     public void logRequest(String messageType, String message)
     {
         logMessageModel model = new logMessageModel(message, messageType);
-        sharedInstance.requestDataQueue.add(model);
+        requestDataQueue.add(model);
     }
 
     public void logError(String messageType, String message)
     {
         logMessageModel model = new logMessageModel(message, messageType);
-        sharedInstance.errorDataQueue.add(model);
+        errorDataQueue.add(model);
     }
 
     public void logFoundURL(String messageType, String message)
     {
         logMessageModel model = new logMessageModel(message, messageType);
-        sharedInstance.foundURLDataQueue.add(model);
+        foundURLDataQueue.add(model);
     }
 
     public logMessageModel logErrorModel()
@@ -62,8 +62,8 @@ public class logModel
         lock.lock();
         try
         {
-            logMessageModel model = sharedInstance.errorDataQueue.get(0);
-            sharedInstance.errorDataQueue.remove(0);
+            logMessageModel model = errorDataQueue.get(0);
+            errorDataQueue.remove(0);
             return model;
         }
         catch (Exception e)
@@ -78,12 +78,16 @@ public class logModel
 
     public void setThreadCount(int runningThread)
     {
-        sharedInstance.totalRunningThread = runningThread;
+        totalRunningThread = runningThread;
+        if(runningThread<0)
+        {
+            runningThread = 0;
+        }
     }
 
     public void addThreadCount(int runningThread)
     {
-        sharedInstance.totalRunningThread = +runningThread;
+        totalRunningThread = totalRunningThread + runningThread;
     }
 
     /*Getter Methods*/
@@ -92,8 +96,8 @@ public class logModel
         lock.lock();
         try
         {
-            logMessageModel model = sharedInstance.requestDataQueue.get(0);
-            sharedInstance.requestDataQueue.remove(0);
+            logMessageModel model = requestDataQueue.get(0);
+            requestDataQueue.remove(0);
             return model;
         }
         catch (Exception e)
@@ -111,8 +115,8 @@ public class logModel
         lock.lock();
         try
         {
-            logMessageModel model = sharedInstance.foundURLDataQueue.get(0);
-            sharedInstance.foundURLDataQueue.remove(0);
+            logMessageModel model = foundURLDataQueue.get(0);
+            foundURLDataQueue.remove(0);
             return model;
         }
         catch (Exception e)
@@ -131,7 +135,7 @@ public class logModel
         lock.lock();
         try
         {
-            return sharedInstance.errorDataQueue.isEmpty();
+            return errorDataQueue.isEmpty();
         }
         finally
         {
@@ -144,7 +148,7 @@ public class logModel
         lock.lock();
         try
         {
-            return sharedInstance.requestDataQueue.isEmpty();
+            return requestDataQueue.isEmpty();
         }
         finally
         {
@@ -157,7 +161,7 @@ public class logModel
         lock.lock();
         try
         {
-            return sharedInstance.foundURLDataQueue.isEmpty();
+            return foundURLDataQueue.isEmpty();
         }
         finally
         {
@@ -168,17 +172,17 @@ public class logModel
 
     public int getPausedThread()
     {
-        return preferences.maxThreadCount - sharedInstance.totalRunningThread;
+        return preferences.maxThreadCount - totalRunningThread;
     }
 
     public int getRunningThread()
     {
-        return sharedInstance.totalRunningThread;
+        return totalRunningThread;
     }
 
     public int getSize()
     {
-        return sharedInstance.errorDataQueue.size() + sharedInstance.requestDataQueue.size() + sharedInstance.foundURLDataQueue.size();
+        return errorDataQueue.size() + requestDataQueue.size() + foundURLDataQueue.size();
     }
 
     public void logMessgeToFile(String message, String messageType, enumeration.logType Type)

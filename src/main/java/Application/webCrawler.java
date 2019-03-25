@@ -115,15 +115,17 @@ public class webCrawler
                             urlmodel = htmlParser.getUrl(host);
                             log.logMessage("Fethcing From Same Host", "THID : " + this.getId() + " : Thread Status");
                             String url = urlmodel.getURL();
-                            log.logMessage("Sending Url Request : " + url, "THID : " + this.getId() + " : Thread Status");
-                            accessedURLModel model = webRequestHandler.getInstance().requestConnection(url, String.valueOf(this.getId()));
-                            String html = model.getContent();
-                            urlmodel.setURL(model.getAccessedURL());
-                            log.logMessage("Parsing HTML : " + url, "THID : " + this.getId() + " : Thread Status");
-                            htmlParser.parse_html(html, urlmodel, String.valueOf(this.getId()));
-                            log.logMessage("Parsing Completed : " + url, "THID : " + this.getId() + " : Thread Status");
-                            updatePauseCounter(1);
-
+                            if(helperMethod.getNetworkType(url).equals(enumeration.UrlTypes.onion))
+                            {
+                                log.logMessage("Sending Url Request : " + url, "THID : " + this.getId() + " : Thread Status");
+                                accessedURLModel model = webRequestHandler.getInstance().requestConnection(url, String.valueOf(this.getId()));
+                                String html = model.getContent();
+                                urlmodel.setURL(model.getAccessedURL());
+                                log.logMessage("Parsing HTML : " + url, "THID : " + this.getId() + " : Thread Status");
+                                htmlParser.parse_html(html, urlmodel, String.valueOf(this.getId()));
+                                log.logMessage("Parsing Completed : " + url, "THID : " + this.getId() + " : Thread Status");
+                                updatePauseCounter(1);
+                            }
                         }
                     }
                     catch (Exception ex)
@@ -171,9 +173,10 @@ public class webCrawler
     public void queueReloadInvoke() throws Exception
     {
         log.logThreadCount(runningThreadQueue.size());
-        if (htmlParser.getOnionQueuesSize()<=1 && status.appStatus == enumeration.appStatus.running)
+
+        if (htmlParser.getOnionQueuesSize()<=preferences.minOnionQueueSize && status.appStatus == enumeration.appStatus.running && htmlParser.isQueueInitialized())
         {
-            ArrayList<String> data = fileHandler.readQueueStack();
+            ArrayList<String> data = fileHandler.readQueueStack(htmlParser.getQueueKeys(),htmlParser);
             for(int counter=0;counter<data.size();counter++)
             {
                 String url = data.get(counter);
@@ -252,7 +255,7 @@ public class webCrawler
         try
         {
             pausedThreadCounter+=count;
-            logController.getInstance().logThreadCount(preferences.maxThreadCount - pausedThreadCounter);
+            logController.getInstance().logAddThreadCount(count);
         }
         finally
         {

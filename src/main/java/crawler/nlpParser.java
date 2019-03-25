@@ -226,6 +226,11 @@ class nlpParser
 
     public String preProcessUrl(String urlLink, int type, String host, String threadId) throws URISyntaxException
     {
+        if(!urlHelperMethod.getNetworkType(urlLink).equals(enumeration.UrlTypes.onion))
+        {
+            return "";
+        }
+
         String subUrl = urlHelperMethod.getSubUrl(urlLink);
         if (urlLink.contains("#") | (subUrl.length()<=3 && subUrl.length()>1) || urlLink.length()>600 || urlLink.length() < 2)
         {

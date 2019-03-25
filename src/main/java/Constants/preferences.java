@@ -10,7 +10,7 @@ public class preferences
     /*Queues*/
     public static int requestQueueReloadGap = 1000;
     public static int maxQueueSize = 5;
-    public static int minQueueSize = 15;
+    public static int minOnionQueueSize = 15;
     public static int retryCount = 10;
     public static int retryMinutes = 1666;
     public static int maxUrlDepth = 4;

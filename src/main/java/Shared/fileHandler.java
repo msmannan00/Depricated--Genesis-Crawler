@@ -247,11 +247,14 @@ public class fileHandler
 
     }
 
-    public static ArrayList<String> readQueueStack() throws IOException
+    public static ArrayList<String> readQueueStack(ArrayList<String> list, crawler manager) throws IOException
     {
+        HashMap<String, Integer> maxQueueChecker = new HashMap<String, Integer>();
         ArrayList<String> backedURLList = new ArrayList<String>();
         int rowLength = 2000;
+        ArrayList<String> backedlist = new ArrayList<String>();
         //Initial write position
+        String urlStack = "";
         try (RandomAccessFile raf = new RandomAccessFile(string.url_stack, "rw"))
         {
             //Initial write position
@@ -259,9 +262,31 @@ public class fileHandler
             for (int e = 0; e < rowLength; e++)
             {
                 String tempData = raf.readLine();
-                if (tempData != null)
+                if(tempData == null)
                 {
+                    break;
+                }
+                String host = helperMethod.getUrlHost(tempData.substring(2));
+                if ((!manager.hasHostBackupLimitReached(host) && (!maxQueueChecker.containsKey(host) || maxQueueChecker.get(host)+manager.getHostBackupLimit(host)<preferences.maxQueueSize)))
+                {
+                    if(maxQueueChecker.containsKey(host))
+                    {
+                        maxQueueChecker.put(host,maxQueueChecker.get(host)+1);
+                        if(maxQueueChecker.get(host)>100)
+                        {
+                            log.print("host : " + host + " - " + maxQueueChecker.get(host));
+                        }
+                    }
+                    else
+                    {
+                        maxQueueChecker.put(host,1);
+                    }
                     backedURLList.add(tempData);
+                }
+                else
+                {
+                    backedlist.add(tempData);
+                    urlStack=urlStack + tempData+"\n";
                 }
             }
             // Shift the next lines upwards.
@@ -278,6 +303,16 @@ public class fileHandler
                 raf.seek(readPosition);
             }
             raf.setLength(writePosition);
+
+            try
+            {
+                appendFile(string.url_stack, urlStack);
+            }
+            catch (URISyntaxException e)
+            {
+                e.printStackTrace();
+            }
+
         }
 
         return backedURLList;

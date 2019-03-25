@@ -1,5 +1,6 @@
 package Shared;
 
+import Constants.enumeration;
 import Constants.string;
 import java.awt.Dimension;
 import java.awt.Point;
@@ -12,6 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class helperMethod
@@ -117,6 +119,41 @@ public class helperMethod
         else
         {
             return false;
+        }
+    }
+
+    static String getUrlHost(String URLLink)
+    {
+        try
+        {
+            Pattern pattern = Pattern.compile(string.urlHostMacherRegex);
+            Matcher matcher = pattern.matcher(URLLink);
+            matcher.find();
+            String protocol = matcher.group(1);
+            String domain = matcher.group(2);
+            return protocol + domain;
+        }
+        catch (Exception ex)
+        {
+            return "";
+        }
+    }
+
+    /*CHECK TYPE OF URL ONION OR BASEURL OR SAME HOST URL*/
+    public static enumeration.UrlTypes getNetworkType(String URLLink)
+    {
+        String hostURL = getUrlHost(URLLink);
+        if (hostURL.contains(string.typeOnion))
+        {
+            return enumeration.UrlTypes.onion;
+        }
+        else if (!hostURL.equals(string.none))
+        {
+            return enumeration.UrlTypes.base;
+        }
+        else
+        {
+            return enumeration.UrlTypes.none;
         }
     }
 
