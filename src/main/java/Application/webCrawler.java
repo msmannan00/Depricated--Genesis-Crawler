@@ -132,7 +132,7 @@ public class webCrawler
                     {
                         updatePauseCounter(1);
                         //log.print("", ex);
-                        ex.printStackTrace();
+                        //ex.printStackTrace();
                         log.logMessage("Thread Error : " + ex.getMessage() + " : " + host, "THID : " + this.getId() + " : Thread Status");
                     }
                 }

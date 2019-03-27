@@ -78,12 +78,11 @@ public class crawler implements Serializable {
             for (String URLLink : urlList) {
                 enumeration.UrlDataTypes urlType = urlHelperMethod.getUrlExtension(URLLink);
                 if (urlHelperMethod.isUrlValid(URLLink) && !urlType.equals(enumeration.UrlDataTypes.none)) {
-                    if (!duplicationFilter.getInstance().is_url_duplicate(URLLink) || ((pModel.getCatagory().equals(enumeration.UrlDataTypes.news) || pModel.getCatagory().equals(enumeration.UrlDataTypes.finance)) && urlType.equals(enumeration.UrlDataTypes.link))) {
-                        if (hasHostBackupLimitReached(URLLink) && urlType.equals(enumeration.UrlDataTypes.link)) {
+                    if (threadID.equals("-3") || !duplicationFilter.getInstance().is_url_duplicate(URLLink) || ((pModel.getCatagory().equals(enumeration.UrlDataTypes.news) || pModel.getCatagory().equals(enumeration.UrlDataTypes.finance)) && urlType.equals(enumeration.UrlDataTypes.link))) {
+                        if (!threadID.equals("-3") && hasHostBackupLimitReached(URLLink) && urlType.equals(enumeration.UrlDataTypes.link)) {
                             fileHandler.appendFile(string.url_stack, urlHelperMethod.createBackupLink(URLLink, pModel.getURL(), pModel.getDepth()));
                             continue;
                         }
-
                         if (urlType.equals(enumeration.UrlDataTypes.link)) {
                             queryManager.setUrl(URLLink, pModel);
                         } else if (!currentUrlKey.equals(string.emptyString) && urlHelperMethod.getNetworkType(URLLink).equals(UrlTypes.onion) && !URLLink.equals("base.onion")) {

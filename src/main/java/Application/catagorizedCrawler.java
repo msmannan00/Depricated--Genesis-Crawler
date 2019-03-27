@@ -120,16 +120,16 @@ public class catagorizedCrawler
                                 accessedURLModel model = webRequestHandler.getInstance().requestConnection(url, "-2");
                                 String html = model.getContent();
                                 urlmodel.setURL(model.getAccessedURL());
-                                crawl.parse_html(html, urlmodel, "-2");
+                                crawl.parse_html(html, urlmodel, "-3");
                             }
                         }
                         else
                         {
-                            logModel.getInstance().addThreadCount(-1);
                             seenList.clear();
                             isCatagorizerRunning = false;
                             break;
                         }
+                        logModel.getInstance().addThreadCount(-1);
                     }
                     catch (Exception ex)
                     {

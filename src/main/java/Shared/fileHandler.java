@@ -252,7 +252,6 @@ public class fileHandler
         HashMap<String, Integer> maxQueueChecker = new HashMap<String, Integer>();
         ArrayList<String> backedURLList = new ArrayList<String>();
         int rowLength = 2000;
-        ArrayList<String> backedlist = new ArrayList<String>();
         //Initial write position
         String urlStack = "";
         try (RandomAccessFile raf = new RandomAccessFile(string.url_stack, "rw"))
@@ -285,7 +284,6 @@ public class fileHandler
                 }
                 else
                 {
-                    backedlist.add(tempData);
                     urlStack=urlStack + tempData+"\n";
                 }
             }
