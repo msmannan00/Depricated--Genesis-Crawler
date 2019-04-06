@@ -78,7 +78,7 @@ public class urlHelperMethod
 
     static enumeration.UrlDataTypes getUrlExtension(String URLLink)
     {
-        String ext = FilenameUtils.getExtension(URLLink);
+        String ext = FilenameUtils.getExtension(URLLink.split("\\?")[0]);
 
         if (URLLink.endsWith(".gif") || URLLink.endsWith(".jpg") || URLLink.endsWith(".png") || URLLink.endsWith(".svg") || URLLink.endsWith(".ico") || URLLink.endsWith(".jpeg"))
         {
@@ -128,7 +128,7 @@ public class urlHelperMethod
         {
             return "";
         }
-        return "url=" + URLEncoder.encode(URL, "UTF-8") + "&type=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&s_type=" + datatype + "&live_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&update_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&WP_FK=" + currentUrlKey;
+        return "url=" + URLEncoder.encode(URL, "UTF-8") + "&stype=" + preferences.networkType.toLowerCase() + "&n_type=" + preferences.networkType + "&dtype=" + datatype + "&live_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&update_date=" + URLEncoder.encode(helperMethod.getCurrentDate(), "UTF-8") + "&WP_FK=" + currentUrlKey;
     }
 
     public static HttpURLConnection createHTTPConnection(String url) throws IOException {

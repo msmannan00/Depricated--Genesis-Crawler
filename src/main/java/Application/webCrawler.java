@@ -56,6 +56,7 @@ public class webCrawler
         threadInitialization();
         threadController();
         htmlParser.queueURLInitialization();
+        htmlParser.parsingKeysInitialization();
     }
 
     private void threadInitialization()
@@ -97,6 +98,7 @@ public class webCrawler
                 {
                     try
                     {
+                        htmlParser.removeFromHostIfParsed(host);
                         lockManager.getInstance().pauseThread(lock, this, webCrawler.this, host);
                         wait();
 
@@ -106,9 +108,8 @@ public class webCrawler
                             updatePauseCounter(-1);
                             if (htmlParser.isHostEmpty(host))
                             {
-                                htmlParser.removeFromHostIfParsed(host);
-                                log.logMessage("RE-Fethcing URL", "THID : " + this.getId() + " : Thread Status");
                                 host = lockManager.getInstance().getHtmlParserKey(lock, htmlParser);
+                                log.logMessage("RE-Fethcing URL", "THID : " + this.getId() + " : Thread Status");
                                 log.logMessage("URL Fethched : " + host, "THID : " + this.getId() + " : Thread Status");
                             }
 
@@ -131,8 +132,11 @@ public class webCrawler
                     catch (Exception ex)
                     {
                         updatePauseCounter(1);
-                        //log.print("", ex);
-                        //ex.printStackTrace();
+                        //if(!ex.getMessage().contains("TTL")&&!ex.getMessage().contains("SOCKS server general failure"))
+                        //{
+                            //ex.printStackTrace();
+                            //log.print("", ex);
+                        //}
                         log.logMessage("Thread Error : " + ex.getMessage() + " : " + host, "THID : " + this.getId() + " : Thread Status");
                     }
                 }

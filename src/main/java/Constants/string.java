@@ -35,5 +35,5 @@ public class string
     public static String driverString = "jdbc:sqlserver://localhost:1433;characterEncoding=utf-8;databaseName=TorCrawler;user=msmannan00;password=imammehdi0";
 
     /*Post Data Strings*/
-    public static String postUrl = "http://boogle.store/update_cache";
+    public static String postUrl = "https://boogle.store/update_cache";
 }

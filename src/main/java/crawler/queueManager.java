@@ -127,6 +127,7 @@ class queueManager implements Serializable
     {
         if (parsingQueues!=null && !parsingQueues.isEmpty() && parsingQueues.get(host)!=null && parsingQueues.get(host).isEmpty() && !host.equals(string.emptyString))
         {
+            ///parsingQueuesKeys.remove(host);
             parsingQueues.remove(host);
         }
     }
@@ -155,14 +156,12 @@ class queueManager implements Serializable
     {
         if (priorityQueue.containsKey(host))
         {
-            //log.print("1 adding url : " + subUrl);
             int depth = getUrlDepth(host,parentURL);
             priorityQueue.get(host).add(new urlModel(subUrl,depth,parentURL.getCatagory()));
             onionQueueSize++;
         }
         else if (parsingQueues.containsKey(host))
         {
-            //log.print("2 adding url : " + subUrl);
             parsingQueueSize+=1;
             int depth = getUrlDepth(host,parentURL);
             parsingQueues.get(host).add(new urlModel(subUrl,depth,parentURL.getCatagory()));
@@ -185,11 +184,11 @@ class queueManager implements Serializable
             }
             else
             {
-                //log.print("5 adding url : " + subUrl + " -> " + host);
                 tempList.add(new urlModel(host,1,parentURL.getCatagory()));
                 tempList.add(new urlModel(subUrl,preferences.maxUrlDepth-1,parentURL.getCatagory()));
                 onionQueueSize+=2;
             }
+            //log.print("3 adding url : " + host);
             priorityQueue.put(host, tempList);
         }
     }

@@ -78,7 +78,7 @@ public class crawler implements Serializable {
             for (String URLLink : urlList) {
                 enumeration.UrlDataTypes urlType = urlHelperMethod.getUrlExtension(URLLink);
                 if (urlHelperMethod.isUrlValid(URLLink) && !urlType.equals(enumeration.UrlDataTypes.none)) {
-                    if (threadID.equals("-3") || !duplicationFilter.getInstance().is_url_duplicate(URLLink) || ((pModel.getCatagory().equals(enumeration.UrlDataTypes.news) || pModel.getCatagory().equals(enumeration.UrlDataTypes.finance)) && urlType.equals(enumeration.UrlDataTypes.link))) {
+                    if (!duplicationFilter.getInstance().is_url_duplicate(URLLink) || ((pModel.getCatagory().equals(enumeration.UrlDataTypes.news) || pModel.getCatagory().equals(enumeration.UrlDataTypes.finance)) && urlType.equals(enumeration.UrlDataTypes.link))) {
                         if (!threadID.equals("-3") && hasHostBackupLimitReached(URLLink) && urlType.equals(enumeration.UrlDataTypes.link)) {
                             fileHandler.appendFile(string.url_stack, urlHelperMethod.createBackupLink(URLLink, pModel.getURL(), pModel.getDepth()));
                             continue;
@@ -127,6 +127,10 @@ public class crawler implements Serializable {
 
     public void removeFromHostIfParsed(String host) {
         queryManager.removeFromParsingQueues(host);
+    }
+
+    public void parsingKeysInitialization() {
+        queryManager.parsingKeysInitialization();
     }
 
     public boolean isHostEmpty(String host) {

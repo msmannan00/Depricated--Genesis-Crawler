@@ -4,11 +4,13 @@ import Shared.fileHandler;
 import Constants.string;
 import Shared.helperMethod;
 import Shared.wordChecker;
+import crawler.duplicationFilter;
 import logManager.log;
 import java.io.IOException;
 import java.text.ParseException;
 import javax.swing.UnsupportedLookAndFeelException;
 import logManager.logController;
+import org.apache.commons.io.FilenameUtils;
 
 public class applicationController
 {
@@ -27,6 +29,17 @@ public class applicationController
     {
         try
         {
+            if(1!=1)
+            {
+                log.print(duplicationFilter.getInstance().is_url_duplicate("https://www.youtube.com/watch.jpg?v=_PBlykN4KIY")+"");
+                log.print(duplicationFilter.getInstance().is_url_duplicate("https://www.youtube.com/watch.jpg?v=_PBlykN4KIY")+"");
+                log.print(duplicationFilter.getInstance().is_url_duplicate("https://www.youtube.com/watch.jpg?v=_PBlykN4KIY")+"");
+                log.print(duplicationFilter.getInstance().is_url_duplicate("https://www.youtube.com/watch.jpg?v=_PBlykN4KIY")+"");
+                log.print(duplicationFilter.getInstance().is_url_duplicate("https://www.youtube.com/watch.jpg?v=_PBlykN4KIY")+"");
+                log.print(duplicationFilter.getInstance().is_url_duplicate("https://www.youtube.com/watch.jpg?v=_PBlykN4KIY")+"");
+                return;
+            }
+
             appInitialization();
             logInitialization();
         }
