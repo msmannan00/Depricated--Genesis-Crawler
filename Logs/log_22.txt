@@ -1,0 +1,1674 @@
+THID : 15 : Thread Status : Parsing Completed : http://atlayofke5rqhsma.onion/index.php?link1=timeline&u=cheflife
+THID : 14 : Thread Status : Found URL : http://3xztn67lhic527zkhzm7jgh6hhb53zjb722asylbc7m3m7xpormuwvid.onion/forum/member.php?action=emailuser&uid=3532
+THID : 14 : Thread Status : Parsing HTML : http://3xztn67lhic527zkhzm7jgh6hhb53zjb722asylbc7m3m7xpormuwvid.onion/forum/member.php?action=emailuser&uid=3532
+THID : 14 : Thread Status : Extracting URLS
+THID : 14 : Thread Status : Extracted URLS : 2
+THID : 14 : Thread Status : Saving Current URL : crawler.urlModel@4df3a1b1
+THID : 18 : Thread Status : RE-Fethcing URL
+THID : 18 : Thread Status : URL Fethched : http://ampnckidnqwtd7ry.onion
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onionhttp://ampnckidnqwtd7ry.onion
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onionhttp://ampnckidnqwtd7ry.onion
+THID : 14 : Thread Status : Parsing Completed : http://3xztn67lhic527zkhzm7jgh6hhb53zjb722asylbc7m3m7xpormuwvid.onion/forum/member.php?action=emailuser&uid=3532
+THID : 30 : Thread Status : Found URL : http://3sp6svxkyucma3i2.onion/scrpts/quicksearch.php?cat=prost&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Parsing HTML : http://3sp6svxkyucma3i2.onion/scrpts/quicksearch.php?cat=prost&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Extracting URLS
+THID : 30 : Thread Status : Extracted URLS : 0
+THID : 30 : Thread Status : Saving Current URL : crawler.urlModel@264621f6
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : https://dstormer6em3i4km.onion.link/caesar-salvini-calls-for-passing-out-guns-for-people-to-self-defend-from-zombie-horde/
+THID : 25 : Thread Status : Reqesting Onion URL : https://dstormer6em3i4km.onion.link/caesar-salvini-calls-for-passing-out-guns-for-people-to-self-defend-from-zombie-horde/
+THID : 30 : Thread Status : Parsing Completed : http://3sp6svxkyucma3i2.onion/scrpts/quicksearch.php?cat=prost&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 26 : Thread Status : Fethcing From Same Host
+THID : 26 : Thread Status : Sending Url Request : http://3jjo4r2b5rqomsfl.onion/ru/news-1218.html
+THID : 26 : Thread Status : Reqesting Onion URL : http://3jjo4r2b5rqomsfl.onion/ru/news-1218.html
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/059.TXT
+THID : 33 : Thread Status : Reqesting Onion URL : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/059.TXT
+THID : 25 : Thread Status : Found URL : https://dstormer6em3i4km.onion.link/caesar-salvini-calls-for-passing-out-guns-for-people-to-self-defend-from-zombie-horde/
+THID : 25 : Thread Status : Parsing HTML : https://dstormer6em3i4km.onion.link/caesar-salvini-calls-for-passing-out-guns-for-people-to-self-defend-from-zombie-horde/
+THID : 25 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Extracted URLS : 0
+THID : 25 : Thread Status : Saving Current URL : crawler.urlModel@548eed7c
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/355-canary
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/355-canary
+THID : 25 : Thread Status : Parsing Completed : https://dstormer6em3i4km.onion.link/caesar-salvini-calls-for-passing-out-guns-for-people-to-self-defend-from-zombie-horde/
+THID : 26 : Thread Status : Found URL : http://3jjo4r2b5rqomsfl.onion/ru/news-1218.html
+THID : 26 : Thread Status : Parsing HTML : http://3jjo4r2b5rqomsfl.onion/ru/news-1218.html
+THID : 26 : Thread Status : Extracting URLS
+THID : 33 : Thread Status : Found URL : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/059.TXT
+THID : 33 : Thread Status : Parsing HTML : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/059.TXT
+THID : 33 : Thread Status : Extracting URLS
+THID : 26 : Thread Status : Extracted URLS : 0
+THID : 26 : Thread Status : Saving Current URL : crawler.urlModel@1bad89d0
+THID : 33 : Thread Status : Extracted URLS : 0
+THID : 33 : Thread Status : Saving Current URL : crawler.urlModel@6786625
+THID : 26 : Thread Status : Parsing Completed : http://3jjo4r2b5rqomsfl.onion/ru/news-1218.html
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://aaalinkdbpopbfax.onion/chat/chattor-s70.html
+THID : 24 : Thread Status : Reqesting Onion URL : http://aaalinkdbpopbfax.onion/chat/chattor-s70.html
+THID : 33 : Thread Status : Parsing Completed : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/059.TXT
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/ucp.php?mode=terms&sid=224eea87d6d24c84dcc28ceb1d142b55
+THID : 28 : Thread Status : Reqesting Onion URL : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/ucp.php?mode=terms&sid=224eea87d6d24c84dcc28ceb1d142b55
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/355-canary
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/355-canary
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@2cad9865
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/355-canary
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://6f6ejaiiixypfqaf.onion/news/BSA-068_Security_update_for_freetype/
+THID : 19 : Thread Status : Reqesting Onion URL : http://6f6ejaiiixypfqaf.onion/news/BSA-068_Security_update_for_freetype/
+THID : 24 : Thread Status : Found URL : http://aaalinkdbpopbfax.onion/chat/chattor-s70.html
+THID : 24 : Thread Status : Parsing HTML : http://aaalinkdbpopbfax.onion/chat/chattor-s70.html
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Extracted URLS : 1
+THID : 24 : Thread Status : Saving Current URL : crawler.urlModel@73417d56
+THID : 28 : Thread Status : Found URL : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/ucp.php?mode=terms&sid=224eea87d6d24c84dcc28ceb1d142b55
+THID : 28 : Thread Status : Parsing HTML : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/ucp.php?mode=terms&sid=224eea87d6d24c84dcc28ceb1d142b55
+THID : 28 : Thread Status : Extracting URLS
+THID : 28 : Thread Status : Extracted URLS : 0
+THID : 28 : Thread Status : Saving Current URL : crawler.urlModel@366b1ec0
+THID : 24 : Thread Status : Parsing Completed : http://aaalinkdbpopbfax.onion/chat/chattor-s70.html
+THID : 28 : Thread Status : Parsing Completed : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/ucp.php?mode=terms&sid=224eea87d6d24c84dcc28ceb1d142b55
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/-/archive/nvlrev_bootstrap4/fdwmarket-nvlrev_bootstrap4.tar.bz2
+THID : 39 : Thread Status : Reqesting Onion URL : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/-/archive/nvlrev_bootstrap4/fdwmarket-nvlrev_bootstrap4.tar.bz2
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&printable=yes
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&printable=yes
+THID : 18 : Thread Status : Thread Error : SOCKS: Host unreachable : http://ampnckidnqwtd7ry.onion
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://hss3uro2hsxfogfq.onion/chat/?q=0%CD%A3%CD%8B%CC%BD%CC%92%CD%8A%CC%B4%CC%95%CC%B6%CC%A0%CD%87%CC%9E%CD%94%CC%BA%CC%AE%CD%99%CC%B0%CC%9F%CD%9A%CC%BC%CC%99%CD%96%CC%AC%CC%A4%CC%AB%CC%98%CC%AF0%CC%89%CC%8B%CC%91%CD%91%CD%8B%CC%8D%CC%90%CC%8A%CC%9A%CC%87%CD%AC%CD%AE%CC%B7%CD%9C%CD%80%CD%87%CD%9A%CC%99%CD%95%CC%AB%CC%B3%CC%AF0%CD%AD%CC%88%CD%86%CC%91%CD%A9%CC%94%CD%91%CD%AA%CD%A3%CD%A8%CD%AC%CC%8F%CD%8B%CD%8B%CC%83%CC%9A%CC%BE%CD%86%CC%BE%CD%81%CD%98%CC%9D%CC%A3%CD%95%CC%AE%CC%AA%CC%97
+THID : 32 : Thread Status : Reqesting Onion URL : http://hss3uro2hsxfogfq.onion/chat/?q=0%CD%A3%CD%8B%CC%BD%CC%92%CD%8A%CC%B4%CC%95%CC%B6%CC%A0%CD%87%CC%9E%CD%94%CC%BA%CC%AE%CD%99%CC%B0%CC%9F%CD%9A%CC%BC%CC%99%CD%96%CC%AC%CC%A4%CC%AB%CC%98%CC%AF0%CC%89%CC%8B%CC%91%CD%91%CD%8B%CC%8D%CC%90%CC%8A%CC%9A%CC%87%CD%AC%CD%AE%CC%B7%CD%9C%CD%80%CD%87%CD%9A%CC%99%CD%95%CC%AB%CC%B3%CC%AF0%CD%AD%CC%88%CD%86%CC%91%CD%A9%CC%94%CD%91%CD%AA%CD%A3%CD%A8%CD%AC%CC%8F%CD%8B%CD%8B%CC%83%CC%9A%CC%BE%CD%86%CC%BE%CD%81%CD%98%CC%9D%CC%A3%CD%95%CC%AE%CC%AA%CC%97
+THID : 17 : Thread Status : RE-Fethcing URL
+THID : 17 : Thread Status : URL Fethched : http://anunciosqh55ibrs.onion
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : http://anunciosqh55ibrs.onionhttp://anunciosqh55ibrs.onion
+THID : 17 : Thread Status : Reqesting Onion URL : http://anunciosqh55ibrs.onionhttp://anunciosqh55ibrs.onion
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=login&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 36 : Thread Status : Reqesting Onion URL : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=login&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 19 : Thread Status : Found URL : http://6f6ejaiiixypfqaf.onion/news/BSA-068_Security_update_for_freetype/
+THID : 19 : Thread Status : Parsing HTML : http://6f6ejaiiixypfqaf.onion/news/BSA-068_Security_update_for_freetype/
+THID : 19 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Extracted URLS : 0
+THID : 19 : Thread Status : Saving Current URL : crawler.urlModel@25270e5e
+THID : 19 : Thread Status : Parsing Completed : http://6f6ejaiiixypfqaf.onion/news/BSA-068_Security_update_for_freetype/
+THID : 17 : Thread Status : Thread Error : SOCKS: Host unreachable : http://anunciosqh55ibrs.onion
+THID : 37 : Thread Status : RE-Fethcing URL
+THID : 37 : Thread Status : URL Fethched : http://hurtmehpneqdprmj.onion
+THID : 37 : Thread Status : Fethcing From Same Host
+THID : 37 : Thread Status : Sending Url Request : http://hurtmehpneqdprmj.onionhttp://hurtmehpneqdprmj.onion
+THID : 37 : Thread Status : Reqesting Onion URL : http://hurtmehpneqdprmj.onionhttp://hurtmehpneqdprmj.onion
+THID : 20 : Thread Status : Found URL : http://traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&printable=yes?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&printable=yes
+THID : 20 : Thread Status : Parsing HTML : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&printable=yes
+THID : 20 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Extracted URLS : 0
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@21e90007
+THID : 20 : Thread Status : Parsing Completed : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&printable=yes
+THID : 32 : Thread Status : Found URL : http://hss3uro2hsxfogfq.onion/chat/?q=0%CD%A3%CD%8B%CC%BD%CC%92%CD%8A%CC%B4%CC%95%CC%B6%CC%A0%CD%87%CC%9E%CD%94%CC%BA%CC%AE%CD%99%CC%B0%CC%9F%CD%9A%CC%BC%CC%99%CD%96%CC%AC%CC%A4%CC%AB%CC%98%CC%AF0%CC%89%CC%8B%CC%91%CD%91%CD%8B%CC%8D%CC%90%CC%8A%CC%9A%CC%87%CD%AC%CD%AE%CC%B7%CD%9C%CD%80%CD%87%CD%9A%CC%99%CD%95%CC%AB%CC%B3%CC%AF0%CD%AD%CC%88%CD%86%CC%91%CD%A9%CC%94%CD%91%CD%AA%CD%A3%CD%A8%CD%AC%CC%8F%CD%8B%CD%8B%CC%83%CC%9A%CC%BE%CD%86%CC%BE%CD%81%CD%98%CC%9D%CC%A3%CD%95%CC%AE%CC%AA%CC%97
+THID : 32 : Thread Status : Parsing HTML : http://hss3uro2hsxfogfq.onion/chat/?q=0%CD%A3%CD%8B%CC%BD%CC%92%CD%8A%CC%B4%CC%95%CC%B6%CC%A0%CD%87%CC%9E%CD%94%CC%BA%CC%AE%CD%99%CC%B0%CC%9F%CD%9A%CC%BC%CC%99%CD%96%CC%AC%CC%A4%CC%AB%CC%98%CC%AF0%CC%89%CC%8B%CC%91%CD%91%CD%8B%CC%8D%CC%90%CC%8A%CC%9A%CC%87%CD%AC%CD%AE%CC%B7%CD%9C%CD%80%CD%87%CD%9A%CC%99%CD%95%CC%AB%CC%B3%CC%AF0%CD%AD%CC%88%CD%86%CC%91%CD%A9%CC%94%CD%91%CD%AA%CD%A3%CD%A8%CD%AC%CC%8F%CD%8B%CD%8B%CC%83%CC%9A%CC%BE%CD%86%CC%BE%CD%81%CD%98%CC%9D%CC%A3%CD%95%CC%AE%CC%AA%CC%97
+THID : 32 : Thread Status : Extracting URLS
+THID : 32 : Thread Status : Extracted URLS : 0
+THID : 32 : Thread Status : Saving Current URL : crawler.urlModel@6259eb
+THID : 34 : Thread Status : Fethcing From Same Host
+THID : 34 : Thread Status : Sending Url Request : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/index.php?sid=92bdfb1a8caac3726d5d6201b91cdbd1
+THID : 34 : Thread Status : Reqesting Onion URL : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/index.php?sid=92bdfb1a8caac3726d5d6201b91cdbd1
+THID : 32 : Thread Status : Parsing Completed : http://hss3uro2hsxfogfq.onion/chat/?q=0%CD%A3%CD%8B%CC%BD%CC%92%CD%8A%CC%B4%CC%95%CC%B6%CC%A0%CD%87%CC%9E%CD%94%CC%BA%CC%AE%CD%99%CC%B0%CC%9F%CD%9A%CC%BC%CC%99%CD%96%CC%AC%CC%A4%CC%AB%CC%98%CC%AF0%CC%89%CC%8B%CC%91%CD%91%CD%8B%CC%8D%CC%90%CC%8A%CC%9A%CC%87%CD%AC%CD%AE%CC%B7%CD%9C%CD%80%CD%87%CD%9A%CC%99%CD%95%CC%AB%CC%B3%CC%AF0%CD%AD%CC%88%CD%86%CC%91%CD%A9%CC%94%CD%91%CD%AA%CD%A3%CD%A8%CD%AC%CC%8F%CD%8B%CD%8B%CC%83%CC%9A%CC%BE%CD%86%CC%BE%CD%81%CD%98%CC%9D%CC%A3%CD%95%CC%AE%CC%AA%CC%97
+THID : 36 : Thread Status : Found URL : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=login&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 36 : Thread Status : Parsing HTML : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=login&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 36 : Thread Status : Extracting URLS
+THID : 36 : Thread Status : Extracted URLS : 0
+THID : 36 : Thread Status : Saving Current URL : crawler.urlModel@6ea3a1d
+THID : 36 : Thread Status : Parsing Completed : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=login&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/forum/profile.php?id=89920
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/forum/profile.php?id=89920
+THID : 37 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hurtmehpneqdprmj.onion
+THID : 34 : Thread Status : Found URL : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/index.php?sid=92bdfb1a8caac3726d5d6201b91cdbd1
+THID : 34 : Thread Status : Parsing HTML : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/index.php?sid=92bdfb1a8caac3726d5d6201b91cdbd1
+THID : 34 : Thread Status : Extracting URLS
+THID : 34 : Thread Status : Extracted URLS : 0
+THID : 34 : Thread Status : Saving Current URL : crawler.urlModel@58cadf0c
+THID : 34 : Thread Status : Parsing Completed : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/index.php?sid=92bdfb1a8caac3726d5d6201b91cdbd1
+THID : 35 : Thread Status : RE-Fethcing URL
+THID : 35 : Thread Status : URL Fethched : http://5j7saze5byfqccf3.onion
+THID : 35 : Thread Status : Fethcing From Same Host
+THID : 35 : Thread Status : Sending Url Request : http://5j7saze5byfqccf3.onionhttp://5j7saze5byfqccf3.onion
+THID : 35 : Thread Status : Reqesting Onion URL : http://5j7saze5byfqccf3.onionhttp://5j7saze5byfqccf3.onion
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://4bflp2c4tnynnbes.onion/zh-CN/tbb/tbb-25/
+THID : 38 : Thread Status : Reqesting Onion URL : http://4bflp2c4tnynnbes.onion/zh-CN/tbb/tbb-25/
+THID : 35 : Thread Status : Thread Error : SOCKS: Host unreachable : http://5j7saze5byfqccf3.onion
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://3wirxietn4iktvf3.onion/articles/43750
+THID : 40 : Thread Status : Reqesting Onion URL : http://3wirxietn4iktvf3.onion/articles/43750
+THID : 38 : Thread Status : Found URL : http://4bflp2c4tnynnbes.onion/zh-CN/tbb/tbb-25/
+THID : 38 : Thread Status : Parsing HTML : http://4bflp2c4tnynnbes.onion/zh-CN/tbb/tbb-25/
+THID : 38 : Thread Status : Extracting URLS
+THID : 38 : Thread Status : Extracted URLS : 0
+THID : 38 : Thread Status : Saving Current URL : crawler.urlModel@6423070
+THID : 38 : Thread Status : Parsing Completed : http://4bflp2c4tnynnbes.onion/zh-CN/tbb/tbb-25/
+THID : 21 : Thread Status : Thread Error : http://alicedbdh5xixwai.onion/forum/profile.php?id=89920 : http://alicedbdh5xixwai.onion
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://5fodcclwitris3ro.onion/to-buy/8-blackberry-grove
+THID : 29 : Thread Status : Reqesting Onion URL : http://5fodcclwitris3ro.onion/to-buy/8-blackberry-grove
+THID : 39 : Thread Status : Found URL : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/-/archive/nvlrev_bootstrap4/fdwmarket-nvlrev_bootstrap4.tar.bz2
+THID : 39 : Thread Status : Parsing HTML : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/-/archive/nvlrev_bootstrap4/fdwmarket-nvlrev_bootstrap4.tar.bz2
+THID : 39 : Thread Status : Extracting URLS
+THID : 39 : Thread Status : Extracted URLS : 0
+THID : 39 : Thread Status : Saving Current URL : crawler.urlModel@7c6427a9
+THID : 23 : Thread Status : Fethcing From Same Host
+THID : 23 : Thread Status : Sending Url Request : http://4nui7tpgyeqsdr7f.onion/news-1549.html
+THID : 23 : Thread Status : Reqesting Onion URL : http://4nui7tpgyeqsdr7f.onion/news-1549.html
+THID : 39 : Thread Status : Parsing Completed : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/-/archive/nvlrev_bootstrap4/fdwmarket-nvlrev_bootstrap4.tar.bz2
+THID : 29 : Thread Status : Found URL : http://5fodcclwitris3ro.onion/to-buy/8-blackberry-grove
+THID : 29 : Thread Status : Parsing HTML : http://5fodcclwitris3ro.onion/to-buy/8-blackberry-grove
+THID : 29 : Thread Status : Extracting URLS
+THID : 29 : Thread Status : Extracted URLS : 0
+THID : 29 : Thread Status : Saving Current URL : crawler.urlModel@1d6d848c
+THID : 29 : Thread Status : Parsing Completed : http://5fodcclwitris3ro.onion/to-buy/8-blackberry-grove
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://kgg2m7yk5aybusll.onion/watch?v=D2CkIg6ZQg0
+THID : 42 : Thread Status : Reqesting Onion URL : http://kgg2m7yk5aybusll.onion/watch?v=D2CkIg6ZQg0
+THID : 23 : Thread Status : Found URL : http://4nui7tpgyeqsdr7f.onion/news-1549.html
+THID : 23 : Thread Status : Parsing HTML : http://4nui7tpgyeqsdr7f.onion/news-1549.html
+THID : 23 : Thread Status : Extracting URLS
+THID : 23 : Thread Status : Extracted URLS : 0
+THID : 23 : Thread Status : Saving Current URL : crawler.urlModel@2cdbcc4d
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://proxybaywflm3nwl.onion/?load=/torrent/6781386/Sims_2_-_All_In_One_-__all_expansions_and_updates_and_languages
+THID : 16 : Thread Status : Reqesting Onion URL : http://proxybaywflm3nwl.onion/?load=/torrent/6781386/Sims_2_-_All_In_One_-__all_expansions_and_updates_and_languages
+THID : 23 : Thread Status : Parsing Completed : http://4nui7tpgyeqsdr7f.onion/news-1549.html
+THID : 40 : Thread Status : Found URL : http://3wirxietn4iktvf3.onion/articles/43750
+THID : 40 : Thread Status : Parsing HTML : http://3wirxietn4iktvf3.onion/articles/43750
+THID : 40 : Thread Status : Extracting URLS
+THID : 40 : Thread Status : Extracted URLS : 0
+THID : 40 : Thread Status : Saving Current URL : crawler.urlModel@1e4cb479
+THID : 40 : Thread Status : Parsing Completed : http://3wirxietn4iktvf3.onion/articles/43750
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : http://satri4bb5r56y253.onion/memberlist.php?mode=viewprofile&u=3392&sid=8ee53b64cd2d5ca9b8789f5cbf046007
+THID : 27 : Thread Status : Reqesting Onion URL : http://satri4bb5r56y253.onion/memberlist.php?mode=viewprofile&u=3392&sid=8ee53b64cd2d5ca9b8789f5cbf046007
+THID : 42 : Thread Status : Found URL : http://kgg2m7yk5aybusll.onion/watch?v=D2CkIg6ZQg0
+THID : 42 : Thread Status : Parsing HTML : http://kgg2m7yk5aybusll.onion/watch?v=D2CkIg6ZQg0
+THID : 42 : Thread Status : Extracting URLS
+THID : 42 : Thread Status : Extracted URLS : 0
+THID : 42 : Thread Status : Saving Current URL : crawler.urlModel@54e98237
+THID : 42 : Thread Status : Parsing Completed : http://kgg2m7yk5aybusll.onion/watch?v=D2CkIg6ZQg0
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://atlayofke5rqhsma.onion/index.php?link1=welcome&last_url=%2Findex.php%3Flink1%3Dtimeline%26u%3Dsixto
+THID : 15 : Thread Status : Reqesting Onion URL : http://atlayofke5rqhsma.onion/index.php?link1=welcome&last_url=%2Findex.php%3Flink1%3Dtimeline%26u%3Dsixto
+THID : 14 : Thread Status : RE-Fethcing URL
+THID : 14 : Thread Status : URL Fethched : http://7pta37j2kgxquq6w.onion
+THID : 27 : Thread Status : Found URL : http://satri4bb5r56y253.onion/memberlist.php?mode=viewprofile&u=3392&sid=8ee53b64cd2d5ca9b8789f5cbf046007
+THID : 14 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Parsing HTML : http://satri4bb5r56y253.onion/memberlist.php?mode=viewprofile&u=3392&sid=8ee53b64cd2d5ca9b8789f5cbf046007
+THID : 27 : Thread Status : Extracting URLS
+THID : 14 : Thread Status : Sending Url Request : http://7pta37j2kgxquq6w.onionhttp://7pta37j2kgxquq6w.onion
+THID : 14 : Thread Status : Reqesting Onion URL : http://7pta37j2kgxquq6w.onionhttp://7pta37j2kgxquq6w.onion
+THID : 27 : Thread Status : Extracted URLS : 0
+THID : 27 : Thread Status : Saving Current URL : crawler.urlModel@3b9fe390
+THID : 16 : Thread Status : Found URL : http://proxybaywflm3nwl.onion/?load=/torrent/6781386/Sims_2_-_All_In_One_-__all_expansions_and_updates_and_languages
+THID : 16 : Thread Status : Parsing HTML : http://proxybaywflm3nwl.onion/?load=/torrent/6781386/Sims_2_-_All_In_One_-__all_expansions_and_updates_and_languages
+THID : 16 : Thread Status : Extracting URLS
+THID : 16 : Thread Status : Extracted URLS : 2
+THID : 16 : Thread Status : Saving Current URL : crawler.urlModel@61d2a797
+THID : 27 : Thread Status : Parsing Completed : http://satri4bb5r56y253.onion/memberlist.php?mode=viewprofile&u=3392&sid=8ee53b64cd2d5ca9b8789f5cbf046007
+THID : 15 : Thread Status : Found URL : http://atlayofke5rqhsma.onion/index.php?link1=welcome&last_url=%2Findex.php%3Flink1%3Dtimeline%26u%3Dsixto
+THID : 15 : Thread Status : Parsing HTML : http://atlayofke5rqhsma.onion/index.php?link1=welcome&last_url=%2Findex.php%3Flink1%3Dtimeline%26u%3Dsixto
+THID : 15 : Thread Status : Extracting URLS
+THID : 15 : Thread Status : Extracted URLS : 1
+THID : 15 : Thread Status : Saving Current URL : crawler.urlModel@6030e606
+THID : 16 : Thread Status : Parsing Completed : http://proxybaywflm3nwl.onion/?load=/torrent/6781386/Sims_2_-_All_In_One_-__all_expansions_and_updates_and_languages
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Parsing Completed : http://atlayofke5rqhsma.onion/index.php?link1=welcome&last_url=%2Findex.php%3Flink1%3Dtimeline%26u%3Dsixto
+THID : 30 : Thread Status : Sending Url Request : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=6fckf0&new=1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Reqesting Onion URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=6fckf0&new=1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 14 : Thread Status : Thread Error : SOCKS: Host unreachable : http://7pta37j2kgxquq6w.onion
+THID : 25 : Thread Status : RE-Fethcing URL
+THID : 25 : Thread Status : URL Fethched : http://archivecaslytosk.onion
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://archivecaslytosk.onionhttp://archivecaslytosk.onion
+THID : 25 : Thread Status : Reqesting Onion URL : http://archivecaslytosk.onionhttp://archivecaslytosk.onion
+THID : 30 : Thread Status : Found URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=6fckf0&new=1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Parsing HTML : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=6fckf0&new=1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Extracting URLS
+THID : 30 : Thread Status : Extracted URLS : 0
+THID : 30 : Thread Status : Saving Current URL : crawler.urlModel@1d7f59fd
+THID : 30 : Thread Status : Parsing Completed : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=6fckf0&new=1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 26 : Thread Status : Fethcing From Same Host
+THID : 26 : Thread Status : Sending Url Request : http://3jjo4r2b5rqomsfl.onion/news-1560.html
+THID : 26 : Thread Status : Reqesting Onion URL : http://3jjo4r2b5rqomsfl.onion/news-1560.html
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/060.TXT
+THID : 33 : Thread Status : Reqesting Onion URL : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/060.TXT
+THID : 25 : Thread Status : Thread Error : SOCKS: Host unreachable : http://archivecaslytosk.onion
+THID : 26 : Thread Status : Found URL : http://3jjo4r2b5rqomsfl.onion/news-1560.html
+THID : 26 : Thread Status : Parsing HTML : http://3jjo4r2b5rqomsfl.onion/news-1560.html
+THID : 26 : Thread Status : Extracting URLS
+THID : 26 : Thread Status : Extracted URLS : 0
+THID : 26 : Thread Status : Saving Current URL : crawler.urlModel@1fcac855
+THID : 26 : Thread Status : Parsing Completed : http://3jjo4r2b5rqomsfl.onion/news-1560.html
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/280-candyhell
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/280-candyhell
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://aaalinkdbpopbfax.onion/search-engines/ahmia-search-tor-hidden-services-s7.html
+THID : 24 : Thread Status : Reqesting Onion URL : http://aaalinkdbpopbfax.onion/search-engines/ahmia-search-tor-hidden-services-s7.html
+THID : 33 : Thread Status : Found URL : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/060.TXT
+THID : 33 : Thread Status : Parsing HTML : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/060.TXT
+THID : 33 : Thread Status : Extracting URLS
+THID : 33 : Thread Status : Extracted URLS : 0
+THID : 33 : Thread Status : Saving Current URL : crawler.urlModel@4a325247
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/index.php?sid=6794e2b4757880028614c5f1c0c1c985
+THID : 28 : Thread Status : Reqesting Onion URL : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/index.php?sid=6794e2b4757880028614c5f1c0c1c985
+THID : 33 : Thread Status : Parsing Completed : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/060.TXT
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onion/2019/01/01/minio-terraform-state-storage/
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onion/2019/01/01/minio-terraform-state-storage/
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/280-candyhell
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/280-candyhell
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@1810d327
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/280-candyhell
+THID : 28 : Thread Status : Found URL : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/index.php?sid=6794e2b4757880028614c5f1c0c1c985
+THID : 28 : Thread Status : Parsing HTML : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/index.php?sid=6794e2b4757880028614c5f1c0c1c985
+THID : 28 : Thread Status : Extracting URLS
+THID : 28 : Thread Status : Extracted URLS : 0
+THID : 28 : Thread Status : Saving Current URL : crawler.urlModel@3ed0939a
+THID : 24 : Thread Status : Found URL : http://aaalinkdbpopbfax.onion/search-engines/ahmia-search-tor-hidden-services-s7.html
+THID : 24 : Thread Status : Parsing HTML : http://aaalinkdbpopbfax.onion/search-engines/ahmia-search-tor-hidden-services-s7.html
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Extracted URLS : 1
+THID : 24 : Thread Status : Saving Current URL : crawler.urlModel@68fd051
+THID : 28 : Thread Status : Parsing Completed : http://orijrn6wmbpudxykfsc3sytcu7iol5y73wii2thitkpyir44rwmop2qd.onion/index.php?sid=6794e2b4757880028614c5f1c0c1c985
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://6f6ejaiiixypfqaf.onion/news/BSA-066_Security_update_for_nginx/
+THID : 19 : Thread Status : Reqesting Onion URL : http://6f6ejaiiixypfqaf.onion/news/BSA-066_Security_update_for_nginx/
+THID : 24 : Thread Status : Parsing Completed : http://aaalinkdbpopbfax.onion/search-engines/ahmia-search-tor-hidden-services-s7.html
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : http://anunciosqh55ibrs.onion/res/1778.html
+THID : 17 : Thread Status : Reqesting Onion URL : http://anunciosqh55ibrs.onion/res/1778.html
+THID : 19 : Thread Status : Found URL : http://6f6ejaiiixypfqaf.onion/news/BSA-066_Security_update_for_nginx/
+THID : 19 : Thread Status : Parsing HTML : http://6f6ejaiiixypfqaf.onion/news/BSA-066_Security_update_for_nginx/
+THID : 19 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Extracted URLS : 0
+THID : 19 : Thread Status : Saving Current URL : crawler.urlModel@4b5abc3c
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&oldid=368318
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&oldid=368318
+THID : 19 : Thread Status : Parsing Completed : http://6f6ejaiiixypfqaf.onion/news/BSA-066_Security_update_for_nginx/
+THID : 32 : Thread Status : RE-Fethcing URL
+THID : 32 : Thread Status : URL Fethched : http://hackmerjqh352nps.onion
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://hackmerjqh352nps.onionhttp://hackmerjqh352nps.onion
+THID : 32 : Thread Status : Reqesting Onion URL : http://hackmerjqh352nps.onionhttp://hackmerjqh352nps.onion
+THID : 18 : Thread Status : Found URL : http://ampnckidnqwtd7ry.onion/2019/01/01/minio-terraform-state-storage/
+THID : 18 : Thread Status : Parsing HTML : http://ampnckidnqwtd7ry.onion/2019/01/01/minio-terraform-state-storage/
+THID : 18 : Thread Status : Extracting URLS
+THID : 18 : Thread Status : Extracted URLS : 20
+THID : 18 : Thread Status : Saving Current URL : crawler.urlModel@77ac1fbe
+THID : 18 : Thread Status : Parsing Completed : http://ampnckidnqwtd7ry.onion/2019/01/01/minio-terraform-state-storage/
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=delete_cookies&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 36 : Thread Status : Reqesting Onion URL : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=delete_cookies&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 37 : Thread Status : Fethcing From Same Host
+THID : 37 : Thread Status : Sending Url Request : http://hurtmehpneqdprmj.onion/ucp.php?mode=register&sid=c6ed6417862b6438ce06d1ce3be8f1ec
+THID : 37 : Thread Status : Reqesting Onion URL : http://hurtmehpneqdprmj.onion/ucp.php?mode=register&sid=c6ed6417862b6438ce06d1ce3be8f1ec
+THID : 32 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hackmerjqh352nps.onion
+THID : 20 : Thread Status : Found URL : http://traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&oldid=368318?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&oldid=368318
+THID : 20 : Thread Status : Parsing HTML : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&oldid=368318
+THID : 20 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Extracted URLS : 0
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@2476fc14
+THID : 34 : Thread Status : Fethcing From Same Host
+THID : 34 : Thread Status : Sending Url Request : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/ucp.php?mode=register&sid=f0ac719565b310a3f0db92dae30726c2
+THID : 34 : Thread Status : Reqesting Onion URL : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/ucp.php?mode=register&sid=f0ac719565b310a3f0db92dae30726c2
+THID : 20 : Thread Status : Parsing Completed : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&oldid=368318
+THID : 36 : Thread Status : Found URL : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=delete_cookies&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 36 : Thread Status : Parsing HTML : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=delete_cookies&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 36 : Thread Status : Extracting URLS
+THID : 36 : Thread Status : Extracted URLS : 0
+THID : 36 : Thread Status : Saving Current URL : crawler.urlModel@4e22d551
+THID : 36 : Thread Status : Parsing Completed : http://6uwbixgwtcj6ogfi.onion/ucp.php?mode=delete_cookies&sid=7359e75b19af5a3d5b81bfe084e7afb5
+THID : 35 : Thread Status : Fethcing From Same Host
+THID : 35 : Thread Status : Sending Url Request : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-font-viewer.html
+THID : 35 : Thread Status : Reqesting Onion URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-font-viewer.html
+THID : 34 : Thread Status : Found URL : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/ucp.php?mode=register&sid=f0ac719565b310a3f0db92dae30726c2
+THID : 34 : Thread Status : Parsing HTML : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/ucp.php?mode=register&sid=f0ac719565b310a3f0db92dae30726c2
+THID : 34 : Thread Status : Extracting URLS
+THID : 34 : Thread Status : Extracted URLS : 0
+THID : 34 : Thread Status : Saving Current URL : crawler.urlModel@3b0f6bda
+THID : 34 : Thread Status : Parsing Completed : http://ks72w7znseqc42q2o5c7cfuru62zjyikcb3ppwceyswui3e3clorj5id.onion/ucp.php?mode=register&sid=f0ac719565b310a3f0db92dae30726c2
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://4bflp2c4tnynnbes.onion/it/tbb/tbb-11/
+THID : 38 : Thread Status : Reqesting Onion URL : http://4bflp2c4tnynnbes.onion/it/tbb/tbb-11/
+THID : 17 : Thread Status : Thread Error : SOCKS: Host unreachable : http://anunciosqh55ibrs.onion
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/forum/profile.php?id=89976
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/forum/profile.php?id=89976
+THID : 38 : Thread Status : Found URL : http://4bflp2c4tnynnbes.onion/it/tbb/tbb-11/
+THID : 38 : Thread Status : Parsing HTML : http://4bflp2c4tnynnbes.onion/it/tbb/tbb-11/
+THID : 38 : Thread Status : Extracting URLS
+THID : 38 : Thread Status : Extracted URLS : 0
+THID : 38 : Thread Status : Saving Current URL : crawler.urlModel@4b1a1dd1
+THID : 38 : Thread Status : Parsing Completed : http://4bflp2c4tnynnbes.onion/it/tbb/tbb-11/
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/commits/nvlrev_bootstrap4
+THID : 39 : Thread Status : Reqesting Onion URL : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/commits/nvlrev_bootstrap4
+THID : 21 : Thread Status : Thread Error : http://alicedbdh5xixwai.onion/forum/profile.php?id=89976 : http://alicedbdh5xixwai.onion
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://5fodcclwitris3ro.onion/to-rent/8-blackberry-grove
+THID : 29 : Thread Status : Reqesting Onion URL : http://5fodcclwitris3ro.onion/to-rent/8-blackberry-grove
+THID : 23 : Thread Status : RE-Fethcing URL
+THID : 23 : Thread Status : URL Fethched : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion
+THID : 23 : Thread Status : Fethcing From Same Host
+THID : 23 : Thread Status : Sending Url Request : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onionhttp://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion
+THID : 23 : Thread Status : Reqesting Onion URL : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onionhttp://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion
+THID : 39 : Thread Status : Found URL : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/commits/nvlrev_bootstrap4
+THID : 39 : Thread Status : Parsing HTML : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/commits/nvlrev_bootstrap4
+THID : 39 : Thread Status : Extracting URLS
+THID : 39 : Thread Status : Extracted URLS : 0
+THID : 39 : Thread Status : Saving Current URL : crawler.urlModel@518233ba
+THID : 29 : Thread Status : Found URL : http://5fodcclwitris3ro.onion/to-rent/8-blackberry-grove
+THID : 29 : Thread Status : Parsing HTML : http://5fodcclwitris3ro.onion/to-rent/8-blackberry-grove
+THID : 29 : Thread Status : Extracting URLS
+THID : 29 : Thread Status : Extracted URLS : 0
+THID : 29 : Thread Status : Saving Current URL : crawler.urlModel@77784a7a
+THID : 39 : Thread Status : Parsing Completed : http://haklab4ulibiyeix.onion/devmarket/fdwmarket/commits/nvlrev_bootstrap4
+THID : 29 : Thread Status : Parsing Completed : http://5fodcclwitris3ro.onion/to-rent/8-blackberry-grove
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://3wirxietn4iktvf3.onion/about/ch%C3%B4mage
+THID : 40 : Thread Status : Reqesting Onion URL : http://3wirxietn4iktvf3.onion/about/ch%C3%B4mage
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://kgg2m7yk5aybusll.onion/watch?v=194-NTQ4AQ8
+THID : 42 : Thread Status : Reqesting Onion URL : http://kgg2m7yk5aybusll.onion/watch?v=194-NTQ4AQ8
+THID : 23 : Thread Status : Thread Error : SOCKS: Host unreachable : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : http://satri4bb5r56y253.onion/search.php?sid=bf816921afeb499d2896181ddad83e64
+THID : 27 : Thread Status : Reqesting Onion URL : http://satri4bb5r56y253.onion/search.php?sid=bf816921afeb499d2896181ddad83e64
+THID : 40 : Thread Status : Found URL : http://3wirxietn4iktvf3.onion/about/ch%C3%B4mage
+THID : 40 : Thread Status : Parsing HTML : http://3wirxietn4iktvf3.onion/about/ch%C3%B4mage
+THID : 40 : Thread Status : Extracting URLS
+THID : 40 : Thread Status : Extracted URLS : 0
+THID : 40 : Thread Status : Saving Current URL : crawler.urlModel@572d5cb2
+THID : 40 : Thread Status : Parsing Completed : http://3wirxietn4iktvf3.onion/about/ch%C3%B4mage
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://proxybaywflm3nwl.onion/?load=/user/MartinBLCK
+THID : 16 : Thread Status : Reqesting Onion URL : http://proxybaywflm3nwl.onion/?load=/user/MartinBLCK
+THID : 42 : Thread Status : Found URL : http://kgg2m7yk5aybusll.onion/watch?v=194-NTQ4AQ8
+THID : 42 : Thread Status : Parsing HTML : http://kgg2m7yk5aybusll.onion/watch?v=194-NTQ4AQ8
+THID : 42 : Thread Status : Extracting URLS
+THID : 42 : Thread Status : Extracted URLS : 0
+THID : 42 : Thread Status : Saving Current URL : crawler.urlModel@65af99a0
+THID : 42 : Thread Status : Parsing Completed : http://kgg2m7yk5aybusll.onion/watch?v=194-NTQ4AQ8
+THID : 15 : Thread Status : RE-Fethcing URL
+THID : 15 : Thread Status : URL Fethched : http://wiki7psimrgr3shv.onion
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://wiki7psimrgr3shv.onionhttp://wiki7psimrgr3shv.onion
+THID : 15 : Thread Status : Reqesting Onion URL : http://wiki7psimrgr3shv.onionhttp://wiki7psimrgr3shv.onion
+THID : 27 : Thread Status : Found URL : http://satri4bb5r56y253.onion/search.php?sid=bf816921afeb499d2896181ddad83e64
+THID : 27 : Thread Status : Parsing HTML : http://satri4bb5r56y253.onion/search.php?sid=bf816921afeb499d2896181ddad83e64
+THID : 27 : Thread Status : Extracting URLS
+THID : 27 : Thread Status : Extracted URLS : 0
+THID : 27 : Thread Status : Saving Current URL : crawler.urlModel@235d57be
+THID : 27 : Thread Status : Parsing Completed : http://satri4bb5r56y253.onion/search.php?sid=bf816921afeb499d2896181ddad83e64
+THID : 14 : Thread Status : Fethcing From Same Host
+THID : 14 : Thread Status : Sending Url Request : http://7pta37j2kgxquq6w.onion/foro/viewforum.php?f=6&sid=e9cf9281b3ebae223d0451711b4b7600
+THID : 14 : Thread Status : Reqesting Onion URL : http://7pta37j2kgxquq6w.onion/foro/viewforum.php?f=6&sid=e9cf9281b3ebae223d0451711b4b7600
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=tdky1j&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Reqesting Onion URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=tdky1j&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 15 : Thread Status : Thread Error : SOCKS: Host unreachable : http://wiki7psimrgr3shv.onion
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://archivecaslytosk.onion/Rb483
+THID : 25 : Thread Status : Reqesting Onion URL : http://archivecaslytosk.onion/Rb483
+THID : 30 : Thread Status : Found URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=tdky1j&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Parsing HTML : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=tdky1j&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Extracting URLS
+THID : 30 : Thread Status : Extracted URLS : 0
+THID : 30 : Thread Status : Saving Current URL : crawler.urlModel@34e355f8
+THID : 16 : Thread Status : Found URL : http://proxybaywflm3nwl.onion/?load=/user/MartinBLCK
+THID : 16 : Thread Status : Parsing HTML : http://proxybaywflm3nwl.onion/?load=/user/MartinBLCK
+THID : 16 : Thread Status : Extracting URLS
+THID : 16 : Thread Status : Extracted URLS : 2
+THID : 16 : Thread Status : Saving Current URL : crawler.urlModel@4f361f98
+THID : 30 : Thread Status : Parsing Completed : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=tdky1j&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 26 : Thread Status : Fethcing From Same Host
+THID : 26 : Thread Status : Sending Url Request : http://3jjo4r2b5rqomsfl.onion/ru/news-1556.html
+THID : 26 : Thread Status : Reqesting Onion URL : http://3jjo4r2b5rqomsfl.onion/ru/news-1556.html
+THID : 16 : Thread Status : Parsing Completed : http://proxybaywflm3nwl.onion/?load=/user/MartinBLCK
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/061.TXT
+THID : 33 : Thread Status : Reqesting Onion URL : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/061.TXT
+THID : 26 : Thread Status : Found URL : http://3jjo4r2b5rqomsfl.onion/ru/news-1556.html
+THID : 26 : Thread Status : Parsing HTML : http://3jjo4r2b5rqomsfl.onion/ru/news-1556.html
+THID : 26 : Thread Status : Extracting URLS
+THID : 26 : Thread Status : Extracted URLS : 0
+THID : 26 : Thread Status : Saving Current URL : crawler.urlModel@1661b8c8
+THID : 26 : Thread Status : Parsing Completed : http://3jjo4r2b5rqomsfl.onion/ru/news-1556.html
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/194-caper
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/194-caper
+THID : 33 : Thread Status : Found URL : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/061.TXT
+THID : 33 : Thread Status : Parsing HTML : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/061.TXT
+THID : 33 : Thread Status : Extracting URLS
+THID : 33 : Thread Status : Extracted URLS : 0
+THID : 33 : Thread Status : Saving Current URL : crawler.urlModel@4cc71c67
+THID : 33 : Thread Status : Parsing Completed : http://5pxgor7yuvsjafwr.onion/files/1k_hacking/061.TXT
+THID : 28 : Thread Status : RE-Fethcing URL
+THID : 28 : Thread Status : URL Fethched : http://vyrxto4jsgoxvilf.onion
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://vyrxto4jsgoxvilf.onionhttp://vyrxto4jsgoxvilf.onion
+THID : 28 : Thread Status : Reqesting Onion URL : http://vyrxto4jsgoxvilf.onionhttp://vyrxto4jsgoxvilf.onion
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/194-caper
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/194-caper
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@53eac830
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/194-caper
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://aaalinkdbpopbfax.onion/marketplaces/dream-market-s25.html
+THID : 24 : Thread Status : Reqesting Onion URL : http://aaalinkdbpopbfax.onion/marketplaces/dream-market-s25.html
+THID : 25 : Thread Status : Found URL : http://archivecaslytosk.onion/Rb483
+THID : 25 : Thread Status : Parsing HTML : http://archivecaslytosk.onion/Rb483
+THID : 25 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Extracted URLS : 38
+THID : 25 : Thread Status : Saving Current URL : crawler.urlModel@4fdb45aa
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://6f6ejaiiixypfqaf.onion/news/BSA-065_Security_update_for_puppet/
+THID : 19 : Thread Status : Reqesting Onion URL : http://6f6ejaiiixypfqaf.onion/news/BSA-065_Security_update_for_puppet/
+THID : 28 : Thread Status : Thread Error : SOCKS: Host unreachable : http://vyrxto4jsgoxvilf.onion
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onion/2019/01/01/docker-centos-no-route-to-host/
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onion/2019/01/01/docker-centos-no-route-to-host/
+THID : 25 : Thread Status : Parsing Completed : http://archivecaslytosk.onion/Rb483
+THID : 19 : Thread Status : Found URL : http://6f6ejaiiixypfqaf.onion/news/BSA-065_Security_update_for_puppet/
+THID : 19 : Thread Status : Parsing HTML : http://6f6ejaiiixypfqaf.onion/news/BSA-065_Security_update_for_puppet/
+THID : 19 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Extracted URLS : 0
+THID : 19 : Thread Status : Saving Current URL : crawler.urlModel@70f4413c
+THID : 19 : Thread Status : Parsing Completed : http://6f6ejaiiixypfqaf.onion/news/BSA-065_Security_update_for_puppet/
+THID : 24 : Thread Status : Found URL : http://aaalinkdbpopbfax.onion/marketplaces/dream-market-s25.html
+THID : 24 : Thread Status : Parsing HTML : http://aaalinkdbpopbfax.onion/marketplaces/dream-market-s25.html
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Extracted URLS : 1
+THID : 24 : Thread Status : Saving Current URL : crawler.urlModel@63a44fd9
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://hackmerjqh352nps.onion/res/102.html
+THID : 32 : Thread Status : Reqesting Onion URL : http://hackmerjqh352nps.onion/res/102.html
+THID : 24 : Thread Status : Parsing Completed : http://aaalinkdbpopbfax.onion/marketplaces/dream-market-s25.html
+THID : 18 : Thread Status : Found URL : http://ampnckidnqwtd7ry.onion/2019/01/01/docker-centos-no-route-to-host/
+THID : 18 : Thread Status : Parsing HTML : http://ampnckidnqwtd7ry.onion/2019/01/01/docker-centos-no-route-to-host/
+THID : 18 : Thread Status : Extracting URLS
+THID : 18 : Thread Status : Extracted URLS : 0
+THID : 18 : Thread Status : Saving Current URL : crawler.urlModel@617f8f28
+THID : 18 : Thread Status : Parsing Completed : http://ampnckidnqwtd7ry.onion/2019/01/01/docker-centos-no-route-to-host/
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%3A%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&returntoquery=action%3Dedit
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%3A%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&returntoquery=action%3Dedit
+THID : 36 : Thread Status : RE-Fethcing URL
+THID : 36 : Thread Status : URL Fethched : http://oxwugzccvk3dk6tj.onion
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://oxwugzccvk3dk6tj.onionhttp://oxwugzccvk3dk6tj.onion
+THID : 36 : Thread Status : Reqesting Onion URL : http://oxwugzccvk3dk6tj.onionhttp://oxwugzccvk3dk6tj.onion
+THID : 13 : Thread Status : Thread Error : SOCKS: TTL expired : http://cryptontd3uutyje.onion
+THID : 34 : Thread Status : RE-Fethcing URL
+THID : 34 : Thread Status : URL Fethched : http://6666666obdown7k7.onion
+THID : 34 : Thread Status : Fethcing From Same Host
+THID : 34 : Thread Status : Sending Url Request : http://6666666obdown7k7.onionhttp://6666666obdown7k7.onion
+THID : 34 : Thread Status : Reqesting Onion URL : http://6666666obdown7k7.onionhttp://6666666obdown7k7.onion
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : http://anunciosqh55ibrs.onion/res/1776.html
+THID : 17 : Thread Status : Reqesting Onion URL : http://anunciosqh55ibrs.onion/res/1776.html
+THID : 36 : Thread Status : Thread Error : SOCKS: Host unreachable : http://oxwugzccvk3dk6tj.onion
+THID : 20 : Thread Status : Found URL : http://traditio3trziwpn.onion/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%3A%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&returntoquery=action%3Dedit?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%3A%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&returntoquery=action%3Dedit
+THID : 20 : Thread Status : Parsing HTML : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%3A%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&returntoquery=action%3Dedit
+THID : 20 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Extracted URLS : 0
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@3db1146
+THID : 17 : Thread Status : Thread Error : SOCKS: Host unreachable : http://anunciosqh55ibrs.onion
+THID : 38 : Thread Status : RE-Fethcing URL
+THID : 38 : Thread Status : URL Fethched : http://a5jajbt66y46s7wb.onion
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://a5jajbt66y46s7wb.onionhttp://a5jajbt66y46s7wb.onion
+THID : 38 : Thread Status : Reqesting Onion URL : http://a5jajbt66y46s7wb.onionhttp://a5jajbt66y46s7wb.onion
+THID : 20 : Thread Status : Parsing Completed : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%3A%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%91%D0%B0%D0%B9%D0%B4%D0%B0&returntoquery=action%3Dedit
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/forum/profile.php?id=89963
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/forum/profile.php?id=89963
+THID : 32 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hackmerjqh352nps.onion
+THID : 34 : Thread Status : Thread Error : SOCKS: Host unreachable : http://6666666obdown7k7.onion
+THID : 39 : Thread Status : RE-Fethcing URL
+THID : 39 : Thread Status : URL Fethched : http://z2hjm7uhwisw5jm5.onion
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://z2hjm7uhwisw5jm5.onionhttp://z2hjm7uhwisw5jm5.onion
+THID : 39 : Thread Status : Reqesting Onion URL : http://z2hjm7uhwisw5jm5.onionhttp://z2hjm7uhwisw5jm5.onion
+THID : 21 : Thread Status : Thread Error : http://alicedbdh5xixwai.onion/forum/profile.php?id=89963 : http://alicedbdh5xixwai.onion
+THID : 38 : Thread Status : Thread Error : SOCKS: Host unreachable : http://a5jajbt66y46s7wb.onion
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://5fodcclwitris3ro.onion/contact/viewing_let/1698454
+THID : 29 : Thread Status : Reqesting Onion URL : http://5fodcclwitris3ro.onion/contact/viewing_let/1698454
+THID : 23 : Thread Status : Fethcing From Same Host
+THID : 23 : Thread Status : Sending Url Request : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/282.php
+THID : 23 : Thread Status : Reqesting Onion URL : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/282.php
+THID : 29 : Thread Status : Found URL : http://5fodcclwitris3ro.onion/contact/viewing_let/1698454
+THID : 29 : Thread Status : Parsing HTML : http://5fodcclwitris3ro.onion/contact/viewing_let/1698454
+THID : 29 : Thread Status : Extracting URLS
+THID : 29 : Thread Status : Extracted URLS : 0
+THID : 39 : Thread Status : Thread Error : SOCKS: Host unreachable : http://z2hjm7uhwisw5jm5.onion
+THID : 29 : Thread Status : Saving Current URL : crawler.urlModel@2166e85b
+THID : 29 : Thread Status : Parsing Completed : http://5fodcclwitris3ro.onion/contact/viewing_let/1698454
+THID : 40 : Thread Status : RE-Fethcing URL
+THID : 40 : Thread Status : URL Fethched : http://4jq4kri3wwppwn4a.onion
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://4jq4kri3wwppwn4a.onionhttp://4jq4kri3wwppwn4a.onion
+THID : 40 : Thread Status : Reqesting Onion URL : http://4jq4kri3wwppwn4a.onionhttp://4jq4kri3wwppwn4a.onion
+THID : 42 : Thread Status : RE-Fethcing URL
+THID : 42 : Thread Status : URL Fethched : http://3dboysn3o5d7dk3i.onion
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://3dboysn3o5d7dk3i.onionhttp://3dboysn3o5d7dk3i.onion
+THID : 42 : Thread Status : Reqesting Onion URL : http://3dboysn3o5d7dk3i.onionhttp://3dboysn3o5d7dk3i.onion
+THID : 40 : Thread Status : Thread Error : SOCKS: Host unreachable : http://4jq4kri3wwppwn4a.onion
+THID : 27 : Thread Status : RE-Fethcing URL
+THID : 27 : Thread Status : URL Fethched : https://www.nytimes3xbfgragh.onion
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : https://www.nytimes3xbfgragh.onionhttps://www.nytimes3xbfgragh.onion
+THID : 27 : Thread Status : Reqesting Onion URL : https://www.nytimes3xbfgragh.onionhttps://www.nytimes3xbfgragh.onion
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://wiki7psimrgr3shv.onion/Freemail.html
+THID : 15 : Thread Status : Reqesting Onion URL : http://wiki7psimrgr3shv.onion/Freemail.html
+THID : 42 : Thread Status : Thread Error : SOCKS: Host unreachable : http://3dboysn3o5d7dk3i.onion
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=25qt6o&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Reqesting Onion URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=25qt6o&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 27 : Thread Status : Thread Error : SOCKS: Host unreachable : https://www.nytimes3xbfgragh.onion
+THID : 16 : Thread Status : RE-Fethcing URL
+THID : 16 : Thread Status : URL Fethched : http://7gsvzcjvupypvz66.onion
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://7gsvzcjvupypvz66.onionhttp://7gsvzcjvupypvz66.onion
+THID : 16 : Thread Status : Reqesting Onion URL : http://7gsvzcjvupypvz66.onionhttp://7gsvzcjvupypvz66.onion
+THID : 30 : Thread Status : Found URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=25qt6o&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Parsing HTML : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=25qt6o&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Extracting URLS
+THID : 30 : Thread Status : Extracted URLS : 0
+THID : 30 : Thread Status : Saving Current URL : crawler.urlModel@1c5486df
+THID : 30 : Thread Status : Parsing Completed : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=25qt6o&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 26 : Thread Status : RE-Fethcing URL
+THID : 26 : Thread Status : URL Fethched : http://aef6y4766z656q6a.onion
+THID : 26 : Thread Status : Fethcing From Same Host
+THID : 26 : Thread Status : Sending Url Request : http://aef6y4766z656q6a.onionhttp://aef6y4766z656q6a.onion
+THID : 26 : Thread Status : Reqesting Onion URL : http://aef6y4766z656q6a.onionhttp://aef6y4766z656q6a.onion
+THID : 33 : Thread Status : RE-Fethcing URL
+THID : 33 : Thread Status : URL Fethched : http://zqktlwi4fecvo6ri.onion
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://zqktlwi4fecvo6ri.onionhttp://zqktlwi4fecvo6ri.onion
+THID : 33 : Thread Status : Reqesting Onion URL : http://zqktlwi4fecvo6ri.onionhttp://zqktlwi4fecvo6ri.onion
+THID : 16 : Thread Status : Thread Error : SOCKS: Host unreachable : http://7gsvzcjvupypvz66.onion
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/208-carrina
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/208-carrina
+THID : 22 : Thread Status : Thread Error : SOCKS: TTL expired : https://blockchainbdgpzk.onion
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://vyrxto4jsgoxvilf.onion/groonga_9.0.1-1_ia64.deb
+THID : 28 : Thread Status : Reqesting Onion URL : http://vyrxto4jsgoxvilf.onion/groonga_9.0.1-1_ia64.deb
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/208-carrina
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/208-carrina
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@6b866672
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/208-carrina
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://archivecaslytosk.onion/dJrwc
+THID : 25 : Thread Status : Reqesting Onion URL : http://archivecaslytosk.onion/dJrwc
+THID : 33 : Thread Status : Thread Error : SOCKS: Host unreachable : http://zqktlwi4fecvo6ri.onion
+THID : 19 : Thread Status : RE-Fethcing URL
+THID : 19 : Thread Status : URL Fethched : http://athleticdvjcx5ca.onion
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://athleticdvjcx5ca.onionhttp://athleticdvjcx5ca.onion
+THID : 19 : Thread Status : Reqesting Onion URL : http://athleticdvjcx5ca.onionhttp://athleticdvjcx5ca.onion
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://aaalinkdbpopbfax.onion/hacking/hackerplace-s96.html
+THID : 24 : Thread Status : Reqesting Onion URL : http://aaalinkdbpopbfax.onion/hacking/hackerplace-s96.html
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onion/category/docker.html
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onion/category/docker.html
+THID : 19 : Thread Status : Thread Error : SOCKS: Host unreachable : http://athleticdvjcx5ca.onion
+THID : 25 : Thread Status : Found URL : http://archivecaslytosk.onion/dJrwc
+THID : 25 : Thread Status : Parsing HTML : http://archivecaslytosk.onion/dJrwc
+THID : 25 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Extracted URLS : 10
+THID : 25 : Thread Status : Saving Current URL : crawler.urlModel@3db35149
+THID : 13 : Thread Status : Fethcing From Same Host
+THID : 13 : Thread Status : Sending Url Request : http://cryptontd3uutyje.onion/charts/coin/SC
+THID : 13 : Thread Status : Reqesting Onion URL : http://cryptontd3uutyje.onion/charts/coin/SC
+THID : 24 : Thread Status : Found URL : http://aaalinkdbpopbfax.onion/hacking/hackerplace-s96.html
+THID : 24 : Thread Status : Parsing HTML : http://aaalinkdbpopbfax.onion/hacking/hackerplace-s96.html
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Extracted URLS : 1
+THID : 24 : Thread Status : Saving Current URL : crawler.urlModel@1bf72536
+THID : 25 : Thread Status : Parsing Completed : http://archivecaslytosk.onion/dJrwc
+THID : 18 : Thread Status : Found URL : http://ampnckidnqwtd7ry.onion/category/docker.html
+THID : 18 : Thread Status : Parsing HTML : http://ampnckidnqwtd7ry.onion/category/docker.html
+THID : 18 : Thread Status : Extracting URLS
+THID : 18 : Thread Status : Extracted URLS : 0
+THID : 18 : Thread Status : Saving Current URL : crawler.urlModel@56092c20
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://oxwugzccvk3dk6tj.onion/tingles/res/649.html
+THID : 36 : Thread Status : Reqesting Onion URL : http://oxwugzccvk3dk6tj.onion/tingles/res/649.html
+THID : 18 : Thread Status : Parsing Completed : http://ampnckidnqwtd7ry.onion/category/docker.html
+THID : 24 : Thread Status : Parsing Completed : http://aaalinkdbpopbfax.onion/hacking/hackerplace-s96.html
+THID : 26 : Thread Status : Thread Error : SOCKS: Host unreachable : http://aef6y4766z656q6a.onion
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : http://anunciosqh55ibrs.onion/res/1775.html
+THID : 17 : Thread Status : Reqesting Onion URL : http://anunciosqh55ibrs.onion/res/1775.html
+THID : 28 : Thread Status : Thread Error : http://vyrxto4jsgoxvilf.onion/groonga_9.0.1-1_ia64.deb : http://vyrxto4jsgoxvilf.onion
+THID : 15 : Thread Status : Found URL : http://wiki7psimrgr3shv.onion/Freemail.html
+THID : 15 : Thread Status : Parsing HTML : http://wiki7psimrgr3shv.onion/Freemail.html
+THID : 15 : Thread Status : Extracting URLS
+THID : 15 : Thread Status : Extracted URLS : 13
+THID : 15 : Thread Status : Saving Current URL : crawler.urlModel@19c79afe
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/%D0%A4%D0%BE%D1%82%D0%BE%D1%85%D0%B8%D0%BC%D0%B8%D1%8F
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/%D0%A4%D0%BE%D1%82%D0%BE%D1%85%D0%B8%D0%BC%D0%B8%D1%8F
+THID : 15 : Thread Status : Parsing Completed : http://wiki7psimrgr3shv.onion/Freemail.html
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://hackmerjqh352nps.onion/res/103.html
+THID : 32 : Thread Status : Reqesting Onion URL : http://hackmerjqh352nps.onion/res/103.html
+THID : 34 : Thread Status : Fethcing From Same Host
+THID : 34 : Thread Status : Sending Url Request : http://6666666obdown7k7.onion/user/nyawka
+THID : 34 : Thread Status : Reqesting Onion URL : http://6666666obdown7k7.onion/user/nyawka
+THID : 36 : Thread Status : Found URL : http://oxwugzccvk3dk6tj.onion/tingles/res/649.html
+THID : 36 : Thread Status : Parsing HTML : http://oxwugzccvk3dk6tj.onion/tingles/res/649.html
+THID : 36 : Thread Status : Extracting URLS
+THID : 36 : Thread Status : Extracted URLS : 199
+THID : 36 : Thread Status : Saving Current URL : crawler.urlModel@be5be2d
+THID : 41 : Thread Status : Thread Error : SOCKS: TTL expired : http://papyrefb2tdk6czd.onion
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/forum/profile.php?id=89951
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/forum/profile.php?id=89951
+THID : 20 : Thread Status : Found URL : http://traditio3trziwpn.onion/%D0%A4%D0%BE%D1%82%D0%BE%D1%85%D0%B8%D0%BC%D0%B8%D1%8F
+THID : 20 : Thread Status : Parsing HTML : http://m.traditio3trziwpn.onion/%D0%A4%D0%BE%D1%82%D0%BE%D1%85%D0%B8%D0%BC%D0%B8%D1%8F
+THID : 20 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Extracted URLS : 0
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@10decb75
+THID : 32 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hackmerjqh352nps.onion
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://a5jajbt66y46s7wb.onion/news-1556.html
+THID : 38 : Thread Status : Reqesting Onion URL : http://a5jajbt66y46s7wb.onion/news-1556.html
+THID : 17 : Thread Status : Thread Error : SOCKS: Host unreachable : http://anunciosqh55ibrs.onion
+THID : 21 : Thread Status : Thread Error : http://alicedbdh5xixwai.onion/forum/profile.php?id=89951 : http://alicedbdh5xixwai.onion
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=sendpassword&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Reqesting Onion URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=sendpassword&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 29 : Thread Status : RE-Fethcing URL
+THID : 29 : Thread Status : URL Fethched : http://7lvd7fa5yfbdqaii.onion
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://7lvd7fa5yfbdqaii.onionhttp://7lvd7fa5yfbdqaii.onion
+THID : 29 : Thread Status : Reqesting Onion URL : http://7lvd7fa5yfbdqaii.onionhttp://7lvd7fa5yfbdqaii.onion
+THID : 39 : Thread Status : Found URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=sendpassword&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Parsing HTML : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=sendpassword&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Extracting URLS
+THID : 39 : Thread Status : Extracted URLS : 10
+THID : 39 : Thread Status : Saving Current URL : crawler.urlModel@6331a4b0
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://4jq4kri3wwppwn4a.onion/search.php?sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Reqesting Onion URL : http://4jq4kri3wwppwn4a.onion/search.php?sid=2005d072e25cabe49ba7b0039753037b
+THID : 29 : Thread Status : Thread Error : SOCKS: Host unreachable : http://7lvd7fa5yfbdqaii.onion
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://3dboysn3o5d7dk3i.onion/app.php/help/faq?sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Reqesting Onion URL : http://3dboysn3o5d7dk3i.onion/app.php/help/faq?sid=6d4033cf968b83c90196ede770e04f96
+THID : 40 : Thread Status : Found URL : http://4jq4kri3wwppwn4a.onion/search.php?sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Parsing HTML : http://4jq4kri3wwppwn4a.onion/search.php?sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Extracting URLS
+THID : 40 : Thread Status : Extracted URLS : 12
+THID : 40 : Thread Status : Saving Current URL : crawler.urlModel@a2fce1b
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : https://www.nytimes3xbfgragh.onion/2019/03/29/world/americas/brazil-bolsonaro-coup.html?ref=nyt-es&mcid=nyt-es&subid=article
+THID : 27 : Thread Status : Reqesting Onion URL : https://www.nytimes3xbfgragh.onion/2019/03/29/world/americas/brazil-bolsonaro-coup.html?ref=nyt-es&mcid=nyt-es&subid=article
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=kb41nu&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Reqesting Onion URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=kb41nu&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 38 : Thread Status : Found URL : http://a5jajbt66y46s7wb.onion/news-1556.html
+THID : 38 : Thread Status : Parsing HTML : http://a5jajbt66y46s7wb.onion/news-1556.html
+THID : 38 : Thread Status : Extracting URLS
+THID : 38 : Thread Status : Extracted URLS : 231
+THID : 38 : Thread Status : Saving Current URL : crawler.urlModel@6cb083b8
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://7gsvzcjvupypvz66.onion/tt/res/10.html
+THID : 16 : Thread Status : Reqesting Onion URL : http://7gsvzcjvupypvz66.onion/tt/res/10.html
+THID : 30 : Thread Status : Found URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=kb41nu&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Parsing HTML : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=kb41nu&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Extracting URLS
+THID : 30 : Thread Status : Extracted URLS : 0
+THID : 30 : Thread Status : Saving Current URL : crawler.urlModel@6cdd4d0f
+THID : 22 : Thread Status : Fethcing From Same Host
+THID : 22 : Thread Status : Sending Url Request : https://blockchainbdgpzk.onion/tx/eff14995b77b003989c4b8482a869c8e8b797da3b714a771270ef3fd490e400a
+THID : 22 : Thread Status : Reqesting Onion URL : https://blockchainbdgpzk.onion/tx/eff14995b77b003989c4b8482a869c8e8b797da3b714a771270ef3fd490e400a
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/97-calypsto/photosets/1-wild-soul
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/97-calypsto/photosets/1-wild-soul
+THID : 16 : Thread Status : Found URL : http://7gsvzcjvupypvz66.onion/tt/res/10.html
+THID : 16 : Thread Status : Parsing HTML : http://7gsvzcjvupypvz66.onion/tt/res/10.html
+THID : 16 : Thread Status : Extracting URLS
+THID : 16 : Thread Status : Extracted URLS : 17
+THID : 16 : Thread Status : Saving Current URL : crawler.urlModel@2f1a6fe3
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Distributed_Networking&action=edit&redlink=1
+THID : 33 : Thread Status : Reqesting Onion URL : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Distributed_Networking&action=edit&redlink=1
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/97-calypsto/photosets/1-wild-soul
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/97-calypsto/photosets/1-wild-soul
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@2b28a5d7
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://athleticdvjcx5ca.onion/category/insulinopodobnyj-faktor-rosta/
+THID : 19 : Thread Status : Reqesting Onion URL : http://athleticdvjcx5ca.onion/category/insulinopodobnyj-faktor-rosta/
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://archivecaslytosk.onion/JTqWy
+THID : 25 : Thread Status : Reqesting Onion URL : http://archivecaslytosk.onion/JTqWy
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onion/index2.html
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onion/index2.html
+THID : 42 : Thread Status : Found URL : http://3dboysn3o5d7dk3i.onion/app.php/help/faq?sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Parsing HTML : http://3dboysn3o5d7dk3i.onion/app.php/help/faq?sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Extracting URLS
+THID : 42 : Thread Status : Extracted URLS : 15
+THID : 42 : Thread Status : Saving Current URL : crawler.urlModel@55657b6d
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://aaalinkdbpopbfax.onion/comment_s9.html
+THID : 24 : Thread Status : Reqesting Onion URL : http://aaalinkdbpopbfax.onion/comment_s9.html
+THID : 18 : Thread Status : Found URL : http://ampnckidnqwtd7ry.onion/index2.html
+THID : 18 : Thread Status : Parsing HTML : http://ampnckidnqwtd7ry.onion/index2.html
+THID : 18 : Thread Status : Extracting URLS
+THID : 18 : Thread Status : Extracted URLS : 0
+THID : 18 : Thread Status : Saving Current URL : crawler.urlModel@3013af1e
+THID : 26 : Thread Status : Fethcing From Same Host
+THID : 26 : Thread Status : Sending Url Request : http://aef6y4766z656q6a.onion/news-1549.html
+THID : 26 : Thread Status : Reqesting Onion URL : http://aef6y4766z656q6a.onion/news-1549.html
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.archive
+THID : 28 : Thread Status : Reqesting Onion URL : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.archive
+THID : 25 : Thread Status : Found URL : http://archivecaslytosk.onion/JTqWy
+THID : 25 : Thread Status : Parsing HTML : http://archivecaslytosk.onion/JTqWy
+THID : 25 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Extracted URLS : 21
+THID : 25 : Thread Status : Saving Current URL : crawler.urlModel@c97b3d8
+THID : 33 : Thread Status : Thread Error : http://zqktlwi4fecvo6ri.onion/wiki/Distributed_Networking : http://zqktlwi4fecvo6ri.onion
+THID : 24 : Thread Status : Found URL : http://aaalinkdbpopbfax.onion/comment_s9.html
+THID : 24 : Thread Status : Parsing HTML : http://aaalinkdbpopbfax.onion/comment_s9.html
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Extracted URLS : 0
+THID : 24 : Thread Status : Saving Current URL : crawler.urlModel@74e587ec
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://wiki7psimrgr3shv.onion/Sone.html
+THID : 15 : Thread Status : Reqesting Onion URL : http://wiki7psimrgr3shv.onion/Sone.html
+THID : 41 : Thread Status : Fethcing From Same Host
+THID : 41 : Thread Status : Sending Url Request : http://papyrefb2tdk6czd.onion/ficha2.php?a=27179&xmlsrv=271795316567
+THID : 41 : Thread Status : Reqesting Onion URL : http://papyrefb2tdk6czd.onion/ficha2.php?a=27179&xmlsrv=271795316567
+THID : 28 : Thread Status : Thread Error : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.archive : http://vyrxto4jsgoxvilf.onion
+THID : 15 : Thread Status : Thread Error : http://wiki7psimrgr3shv.onion/Sone.html : http://wiki7psimrgr3shv.onion
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://hackmerjqh352nps.onion/res/105.html
+THID : 32 : Thread Status : Reqesting Onion URL : http://hackmerjqh352nps.onion/res/105.html
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : http://anunciosqh55ibrs.onion/res/1773.html
+THID : 17 : Thread Status : Reqesting Onion URL : http://anunciosqh55ibrs.onion/res/1773.html
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/forum/profile.php?id=89991
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/forum/profile.php?id=89991
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://7lvd7fa5yfbdqaii.onion/saude_autonomia
+THID : 29 : Thread Status : Reqesting Onion URL : http://7lvd7fa5yfbdqaii.onion/saude_autonomia
+THID : 21 : Thread Status : Thread Error : http://alicedbdh5xixwai.onion/forum/profile.php?id=89991 : http://alicedbdh5xixwai.onion
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Distributed_database&action=edit&redlink=1
+THID : 33 : Thread Status : Reqesting Onion URL : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Distributed_database&action=edit&redlink=1
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.buildinfo
+THID : 28 : Thread Status : Reqesting Onion URL : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.buildinfo
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://wiki7psimrgr3shv.onion/FMS.html
+THID : 15 : Thread Status : Reqesting Onion URL : http://wiki7psimrgr3shv.onion/FMS.html
+THID : 28 : Thread Status : Thread Error : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.buildinfo : http://vyrxto4jsgoxvilf.onion
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/cgi-bin/show.php?f=8de51a105c18d1e362de1c0deef4b041
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/cgi-bin/show.php?f=8de51a105c18d1e362de1c0deef4b041
+THID : 33 : Thread Status : Thread Error : http://zqktlwi4fecvo6ri.onion/wiki/Distributed_database : http://zqktlwi4fecvo6ri.onion
+THID : 17 : Thread Status : Thread Error : SOCKS: Host unreachable : http://anunciosqh55ibrs.onion
+THID : 15 : Thread Status : Found URL : http://wiki7psimrgr3shv.onion/FMS.html
+THID : 15 : Thread Status : Parsing HTML : http://wiki7psimrgr3shv.onion/FMS.html
+THID : 15 : Thread Status : Extracting URLS
+THID : 15 : Thread Status : Extracted URLS : 0
+THID : 15 : Thread Status : Saving Current URL : crawler.urlModel@64770752
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.changes
+THID : 28 : Thread Status : Reqesting Onion URL : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.changes
+THID : 32 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hackmerjqh352nps.onion
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Osiris_(Serverless_Portal_System)&action=edit&redlink=1
+THID : 33 : Thread Status : Reqesting Onion URL : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Osiris_(Serverless_Portal_System)&action=edit&redlink=1
+THID : 36 : Thread Status : Parsing Completed : http://oxwugzccvk3dk6tj.onion/tingles/res/649.html
+THID : 20 : Thread Status : Parsing Completed : http://m.traditio3trziwpn.onion/%D0%A4%D0%BE%D1%82%D0%BE%D1%85%D0%B8%D0%BC%D0%B8%D1%8F
+THID : 39 : Thread Status : Parsing Completed : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=sendpassword&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : http://anunciosqh55ibrs.onion/res/1687.html
+THID : 17 : Thread Status : Reqesting Onion URL : http://anunciosqh55ibrs.onion/res/1687.html
+THID : 40 : Thread Status : Parsing Completed : http://4jq4kri3wwppwn4a.onion/search.php?sid=2005d072e25cabe49ba7b0039753037b
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://hackmerjqh352nps.onion/res/101.html
+THID : 32 : Thread Status : Reqesting Onion URL : http://hackmerjqh352nps.onion/res/101.html
+THID : 29 : Thread Status : Found URL : http://7lvd7fa5yfbdqaii.onion/saude_autonomia
+THID : 29 : Thread Status : Parsing HTML : http://7lvd7fa5yfbdqaii.onion/saude_autonomia
+THID : 29 : Thread Status : Extracting URLS
+THID : 29 : Thread Status : Extracted URLS : 104
+THID : 29 : Thread Status : Saving Current URL : crawler.urlModel@50de411f
+THID : 27 : Thread Status : Found URL : https://www.nytimes3xbfgragh.onion/2019/03/29/world/americas/brazil-bolsonaro-coup.html?ref=nyt-es&mcid=nyt-es&subid=article
+THID : 27 : Thread Status : Parsing HTML : https://www.nytimes3xbfgragh.onion/2019/03/29/world/americas/brazil-bolsonaro-coup.html?ref=nyt-es&mcid=nyt-es&subid=article
+THID : 27 : Thread Status : Extracting URLS
+THID : 27 : Thread Status : Extracted URLS : 154
+THID : 27 : Thread Status : Saving Current URL : crawler.urlModel@5dd732ad
+THID : 28 : Thread Status : Thread Error : http://vyrxto4jsgoxvilf.onion/haskell-skylighting_0.7.5-1_sparc64.changes : http://vyrxto4jsgoxvilf.onion
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://oxwugzccvk3dk6tj.onion/tingles/res/13948.html
+THID : 36 : Thread Status : Reqesting Onion URL : http://oxwugzccvk3dk6tj.onion/tingles/res/13948.html
+THID : 33 : Thread Status : Thread Error : http://zqktlwi4fecvo6ri.onion/wiki/Osiris_(Serverless_Portal_System) : http://zqktlwi4fecvo6ri.onion
+THID : 35 : Thread Status : Found URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-font-viewer.html
+THID : 35 : Thread Status : Parsing HTML : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-font-viewer.html
+THID : 35 : Thread Status : Extracting URLS
+THID : 35 : Thread Status : Extracted URLS : 1
+THID : 35 : Thread Status : Saving Current URL : crawler.urlModel@18665737
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/%D0%91%D0%B8%D0%BE%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/%D0%91%D0%B8%D0%BE%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=terms&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Reqesting Onion URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=terms&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Thread Error : SOCKS: Host unreachable : http://anunciosqh55ibrs.onion
+THID : 40 : Thread Status : Sending Url Request : http://4jq4kri3wwppwn4a.onion/search.php?search_id=unanswered&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Reqesting Onion URL : http://4jq4kri3wwppwn4a.onion/search.php?search_id=unanswered&sid=2005d072e25cabe49ba7b0039753037b
+THID : 39 : Thread Status : Found URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=terms&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Parsing HTML : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=terms&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Extracting URLS
+THID : 39 : Thread Status : Extracted URLS : 0
+THID : 39 : Thread Status : Saving Current URL : crawler.urlModel@43302507
+THID : 36 : Thread Status : Found URL : http://oxwugzccvk3dk6tj.onion/tingles/res/13948.html
+THID : 36 : Thread Status : Parsing HTML : http://oxwugzccvk3dk6tj.onion/tingles/res/13948.html
+THID : 36 : Thread Status : Extracting URLS
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://vyrxto4jsgoxvilf.onion/hdf5-helpers_1.10.5+repack-1~exp1_ppc64.deb
+THID : 28 : Thread Status : Reqesting Onion URL : http://vyrxto4jsgoxvilf.onion/hdf5-helpers_1.10.5+repack-1~exp1_ppc64.deb
+THID : 40 : Thread Status : Found URL : http://4jq4kri3wwppwn4a.onion/search.php?search_id=unanswered&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Parsing HTML : http://4jq4kri3wwppwn4a.onion/search.php?search_id=unanswered&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Extracting URLS
+THID : 40 : Thread Status : Extracted URLS : 0
+THID : 40 : Thread Status : Saving Current URL : crawler.urlModel@670b8d1
+THID : 36 : Thread Status : Extracted URLS : 104
+THID : 36 : Thread Status : Saving Current URL : crawler.urlModel@2fba8c3f
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Tahoe-LAFS&action=edit&redlink=1
+THID : 33 : Thread Status : Reqesting Onion URL : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Tahoe-LAFS&action=edit&redlink=1
+THID : 38 : Thread Status : Parsing Completed : http://a5jajbt66y46s7wb.onion/news-1556.html
+THID : 30 : Thread Status : Parsing Completed : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=kb41nu&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 16 : Thread Status : Parsing Completed : http://7gsvzcjvupypvz66.onion/tt/res/10.html
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/97-calypsto/photosets/1-wild-soul
+THID : 17 : Thread Status : RE-Fethcing URL
+THID : 17 : Thread Status : URL Fethched : https://static.nytimes3xbfgragh.onion
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : https://static.nytimes3xbfgragh.onionhttps://static.nytimes3xbfgragh.onion
+THID : 17 : Thread Status : Reqesting Onion URL : https://static.nytimes3xbfgragh.onionhttps://static.nytimes3xbfgragh.onion
+THID : 28 : Thread Status : Thread Error : http://vyrxto4jsgoxvilf.onion/hdf5-helpers_1.10.5+repack-1~exp1_ppc64.deb : http://vyrxto4jsgoxvilf.onion
+THID : 42 : Thread Status : Parsing Completed : http://3dboysn3o5d7dk3i.onion/app.php/help/faq?sid=6d4033cf968b83c90196ede770e04f96
+THID : 18 : Thread Status : Parsing Completed : http://ampnckidnqwtd7ry.onion/index2.html
+THID : 21 : Thread Status : Found URL : http://alice34mdngm7dhzx34dglpactwrppd6cskewvi7ny2ktn7x7tf77qid.onion/cgi-bin/show.php?f=8de51a105c18d1e362de1c0deef4b041
+THID : 20 : Thread Status : Found URL : http://traditio3trziwpn.onion/%D0%91%D0%B8%D0%BE%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0
+THID : 20 : Thread Status : Parsing HTML : http://m.traditio3trziwpn.onion/%D0%91%D0%B8%D0%BE%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0
+THID : 20 : Thread Status : Extracting URLS
+THID : 21 : Thread Status : Parsing HTML : http://alicedbdh5xixwai.onion/cgi-bin/show.php?f=8de51a105c18d1e362de1c0deef4b041
+THID : 21 : Thread Status : Extracting URLS
+THID : 21 : Thread Status : Extracted URLS : 1
+THID : 21 : Thread Status : Saving Current URL : crawler.urlModel@7a0a438e
+THID : 20 : Thread Status : Extracted URLS : 0
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@41bf233d
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=troll
+THID : 38 : Thread Status : Reqesting Onion URL : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=troll
+THID : 33 : Thread Status : Thread Error : http://zqktlwi4fecvo6ri.onion/wiki/Tahoe-LAFS : http://zqktlwi4fecvo6ri.onion
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=y3bxo8&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Reqesting Onion URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=y3bxo8&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 17 : Thread Status : Thread Error : SOCKS: Host unreachable : https://static.nytimes3xbfgragh.onion
+THID : 38 : Thread Status : Found URL : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=troll
+THID : 38 : Thread Status : Parsing HTML : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=troll
+THID : 38 : Thread Status : Extracting URLS
+THID : 38 : Thread Status : Extracted URLS : 0
+THID : 38 : Thread Status : Saving Current URL : crawler.urlModel@2cb0c740
+THID : 25 : Thread Status : Parsing Completed : http://archivecaslytosk.onion/JTqWy
+THID : 24 : Thread Status : Parsing Completed : http://aaalinkdbpopbfax.onion/comment_s9.html
+THID : 15 : Thread Status : Parsing Completed : http://wiki7psimrgr3shv.onion/FMS.html
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://7gsvzcjvupypvz66.onion/tt/res/22.html
+THID : 16 : Thread Status : Reqesting Onion URL : http://7gsvzcjvupypvz66.onion/tt/res/22.html
+THID : 30 : Thread Status : Found URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=y3bxo8&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Parsing HTML : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=y3bxo8&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Extracting URLS
+THID : 30 : Thread Status : Extracted URLS : 0
+THID : 30 : Thread Status : Saving Current URL : crawler.urlModel@42bf99f9
+THID : 32 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hackmerjqh352nps.onion
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/187-bruna/photosets/2-make-me-purr
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/187-bruna/photosets/2-make-me-purr
+THID : 19 : Thread Status : Found URL : http://athleticdvjcx5ca.onion/category/insulinopodobnyj-faktor-rosta/
+THID : 19 : Thread Status : Parsing HTML : http://athleticdvjcx5ca.onion/category/insulinopodobnyj-faktor-rosta/
+THID : 19 : Thread Status : Extracting URLS
+THID : 16 : Thread Status : Found URL : http://7gsvzcjvupypvz66.onion/tt/res/22.html
+THID : 16 : Thread Status : Parsing HTML : http://7gsvzcjvupypvz66.onion/tt/res/22.html
+THID : 16 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Extracted URLS : 207
+THID : 16 : Thread Status : Extracted URLS : 0
+THID : 19 : Thread Status : Saving Current URL : crawler.urlModel@218fb77e
+THID : 16 : Thread Status : Saving Current URL : crawler.urlModel@78b0b889
+THID : 28 : Thread Status : RE-Fethcing URL
+THID : 28 : Thread Status : URL Fethched : http://superkuhbitj6tul.onion
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://superkuhbitj6tul.onionhttp://superkuhbitj6tul.onion
+THID : 28 : Thread Status : Reqesting Onion URL : http://superkuhbitj6tul.onionhttp://superkuhbitj6tul.onion
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/187-bruna/photosets/2-make-me-purr
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/187-bruna/photosets/2-make-me-purr
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@353fc27e
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://3dboysn3o5d7dk3i.onion/app.php/contactadmin?sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Reqesting Onion URL : http://3dboysn3o5d7dk3i.onion/app.php/contactadmin?sid=6d4033cf968b83c90196ede770e04f96
+THID : 29 : Thread Status : Parsing Completed : http://7lvd7fa5yfbdqaii.onion/saude_autonomia
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onion/pages/cv.html
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onion/pages/cv.html
+THID : 28 : Thread Status : Thread Error : SOCKS: Host unreachable : http://superkuhbitj6tul.onion
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Template:Why&action=edit&redlink=1
+THID : 33 : Thread Status : Reqesting Onion URL : http://zqktlwi4fecvo6ri.onion/wiki/index.php?title=Template:Why&action=edit&redlink=1
+THID : 18 : Thread Status : Found URL : http://ampnckidnqwtd7ry.onion/pages/cv.html
+THID : 18 : Thread Status : Parsing HTML : http://ampnckidnqwtd7ry.onion/pages/cv.html
+THID : 18 : Thread Status : Extracting URLS
+THID : 18 : Thread Status : Extracted URLS : 0
+THID : 18 : Thread Status : Saving Current URL : crawler.urlModel@27d5074d
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : https://static.nytimes3xbfgragh.onion/email-content/CLIM_sample.html
+THID : 17 : Thread Status : Reqesting Onion URL : https://static.nytimes3xbfgragh.onion/email-content/CLIM_sample.html
+THID : 27 : Thread Status : Parsing Completed : https://www.nytimes3xbfgragh.onion/2019/03/29/world/americas/brazil-bolsonaro-coup.html?ref=nyt-es&mcid=nyt-es&subid=article
+THID : 35 : Thread Status : Parsing Completed : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-font-viewer.html
+THID : 39 : Thread Status : Parsing Completed : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=terms&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 40 : Thread Status : Parsing Completed : http://4jq4kri3wwppwn4a.onion/search.php?search_id=unanswered&sid=2005d072e25cabe49ba7b0039753037b
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://archivecaslytosk.onion/zkovD
+THID : 25 : Thread Status : Reqesting Onion URL : http://archivecaslytosk.onion/zkovD
+THID : 42 : Thread Status : Found URL : http://3dboysn3o5d7dk3i.onion/app.php/contactadmin?sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Parsing HTML : http://3dboysn3o5d7dk3i.onion/app.php/contactadmin?sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Extracting URLS
+THID : 42 : Thread Status : Extracted URLS : 0
+THID : 42 : Thread Status : Saving Current URL : crawler.urlModel@50c5f951
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://aaalinkdbpopbfax.onion/private-shops/the-dutchdrugz-vendor-shop-s246.html
+THID : 24 : Thread Status : Reqesting Onion URL : http://aaalinkdbpopbfax.onion/private-shops/the-dutchdrugz-vendor-shop-s246.html
+THID : 33 : Thread Status : Thread Error : http://zqktlwi4fecvo6ri.onion/wiki/Template:Why : http://zqktlwi4fecvo6ri.onion
+THID : 17 : Thread Status : Found URL : https://static.nytimes3xbfgragh.onion/email-content/CLIM_sample.html
+THID : 17 : Thread Status : Parsing HTML : https://static.nytimes3xbfgragh.onion/email-content/CLIM_sample.html
+THID : 17 : Thread Status : Extracting URLS
+THID : 17 : Thread Status : Extracted URLS : 46
+THID : 17 : Thread Status : Saving Current URL : crawler.urlModel@2516036e
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://wiki7psimrgr3shv.onion/Frost.html
+THID : 15 : Thread Status : Reqesting Onion URL : http://wiki7psimrgr3shv.onion/Frost.html
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://hackmerjqh352nps.onion/res/99.html
+THID : 32 : Thread Status : Reqesting Onion URL : http://hackmerjqh352nps.onion/res/99.html
+THID : 15 : Thread Status : Found URL : http://wiki7psimrgr3shv.onion/Frost.html
+THID : 15 : Thread Status : Parsing HTML : http://wiki7psimrgr3shv.onion/Frost.html
+THID : 15 : Thread Status : Extracting URLS
+THID : 15 : Thread Status : Extracted URLS : 0
+THID : 15 : Thread Status : Saving Current URL : crawler.urlModel@747e4971
+THID : 24 : Thread Status : Found URL : http://aaalinkdbpopbfax.onion/private-shops/the-dutchdrugz-vendor-shop-s246.html
+THID : 24 : Thread Status : Parsing HTML : http://aaalinkdbpopbfax.onion/private-shops/the-dutchdrugz-vendor-shop-s246.html
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Extracted URLS : 1
+THID : 24 : Thread Status : Saving Current URL : crawler.urlModel@357ec42e
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/pt-zine-somos-o-que-comemos-alimenta%C3%A7%C3%A3o+387035
+THID : 29 : Thread Status : Reqesting Onion URL : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/pt-zine-somos-o-que-comemos-alimenta%C3%A7%C3%A3o+387035
+THID : 25 : Thread Status : Found URL : http://archivecaslytosk.onion/zkovD
+THID : 25 : Thread Status : Parsing HTML : http://archivecaslytosk.onion/zkovD
+THID : 25 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Extracted URLS : 15
+THID : 25 : Thread Status : Saving Current URL : crawler.urlModel@2f514a3b
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://superkuhbitj6tul.onion/library/Neuroscience/?C=M&O=D
+THID : 28 : Thread Status : Reqesting Onion URL : http://superkuhbitj6tul.onion/library/Neuroscience/?C=M&O=D
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : https://www.nytimes3xbfgragh.onion/es/tag/jair-bolsonaro/
+THID : 27 : Thread Status : Reqesting Onion URL : https://www.nytimes3xbfgragh.onion/es/tag/jair-bolsonaro/
+THID : 35 : Thread Status : Fethcing From Same Host
+THID : 35 : Thread Status : Sending Url Request : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-music.html
+THID : 35 : Thread Status : Reqesting Onion URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-music.html
+THID : 32 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hackmerjqh352nps.onion
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=privacy&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Reqesting Onion URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=privacy&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 27 : Thread Status : Found URL : https://www.nytimes3xbfgragh.onion/es/tag/jair-bolsonaro/
+THID : 27 : Thread Status : Parsing HTML : https://www.nytimes3xbfgragh.onion/es/tag/jair-bolsonaro/
+THID : 27 : Thread Status : Extracting URLS
+THID : 27 : Thread Status : Extracted URLS : 40
+THID : 27 : Thread Status : Saving Current URL : crawler.urlModel@54cf0ecd
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://4jq4kri3wwppwn4a.onion/search.php?search_id=active_topics&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Reqesting Onion URL : http://4jq4kri3wwppwn4a.onion/search.php?search_id=active_topics&sid=2005d072e25cabe49ba7b0039753037b
+THID : 29 : Thread Status : Found URL : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/pt-zine-somos-o-que-comemos-alimenta%C3%A7%C3%A3o+387035
+THID : 29 : Thread Status : Parsing HTML : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/pt-zine-somos-o-que-comemos-alimenta%C3%A7%C3%A3o+387035
+THID : 29 : Thread Status : Extracting URLS
+THID : 29 : Thread Status : Extracted URLS : 0
+THID : 29 : Thread Status : Saving Current URL : crawler.urlModel@6540eae4
+THID : 39 : Thread Status : Found URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=privacy&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Parsing HTML : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=privacy&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Extracting URLS
+THID : 39 : Thread Status : Extracted URLS : 0
+THID : 39 : Thread Status : Saving Current URL : crawler.urlModel@1e340ba7
+THID : 33 : Thread Status : RE-Fethcing URL
+THID : 33 : Thread Status : URL Fethched : http://asocialfz7ncw5ui.onion
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://asocialfz7ncw5ui.onionhttp://asocialfz7ncw5ui.onion
+THID : 33 : Thread Status : Reqesting Onion URL : http://asocialfz7ncw5ui.onionhttp://asocialfz7ncw5ui.onion
+THID : 40 : Thread Status : Found URL : http://4jq4kri3wwppwn4a.onion/search.php?search_id=active_topics&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Parsing HTML : http://4jq4kri3wwppwn4a.onion/search.php?search_id=active_topics&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Extracting URLS
+THID : 40 : Thread Status : Extracted URLS : 0
+THID : 40 : Thread Status : Saving Current URL : crawler.urlModel@7d642b1a
+THID : 32 : Thread Status : RE-Fethcing URL
+THID : 32 : Thread Status : URL Fethched : http://aprovpnacgvqwh76.onion
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://aprovpnacgvqwh76.onionhttp://aprovpnacgvqwh76.onion
+THID : 32 : Thread Status : Reqesting Onion URL : http://aprovpnacgvqwh76.onionhttp://aprovpnacgvqwh76.onion
+THID : 28 : Thread Status : Found URL : http://superkuhbitj6tul.onion/library/Neuroscience/?C=M&O=D
+THID : 28 : Thread Status : Parsing HTML : http://superkuhbitj6tul.onion/library/Neuroscience/?C=M&O=D
+THID : 28 : Thread Status : Extracting URLS
+THID : 28 : Thread Status : Extracted URLS : 103
+THID : 28 : Thread Status : Saving Current URL : crawler.urlModel@478339a1
+THID : 32 : Thread Status : Thread Error : SOCKS: Host unreachable : http://aprovpnacgvqwh76.onion
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://aprovpnacgvqwh76.onion/ru/lost-password/
+THID : 32 : Thread Status : Reqesting Onion URL : http://aprovpnacgvqwh76.onion/ru/lost-password/
+THID : 33 : Thread Status : Thread Error : SOCKS: Host unreachable : http://asocialfz7ncw5ui.onion
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://asocialfz7ncw5ui.onion/articles/comics/search-keywords.html
+THID : 33 : Thread Status : Reqesting Onion URL : http://asocialfz7ncw5ui.onion/articles/comics/search-keywords.html
+THID : 37 : Thread Status : Thread Error : SOCKS: TTL expired : http://hurtmehpneqdprmj.onion
+THID : 37 : Thread Status : Fethcing From Same Host
+THID : 37 : Thread Status : Sending Url Request : http://hurtmehpneqdprmj.onion/index.php?sid=c6ed6417862b6438ce06d1ce3be8f1ec
+THID : 37 : Thread Status : Reqesting Onion URL : http://hurtmehpneqdprmj.onion/index.php?sid=c6ed6417862b6438ce06d1ce3be8f1ec
+THID : 32 : Thread Status : Found URL : http://aprovpnacgvqwh76.onion/ru/lost-password/
+THID : 32 : Thread Status : Parsing HTML : http://aprovpnacgvqwh76.onion/ru/lost-password/
+THID : 32 : Thread Status : Extracting URLS
+THID : 32 : Thread Status : Extracted URLS : 38
+THID : 32 : Thread Status : Saving Current URL : crawler.urlModel@400e99c4
+THID : 33 : Thread Status : Found URL : http://asocialfz7ncw5ui.onion/articles/comics/search-keywords.html
+THID : 33 : Thread Status : Parsing HTML : http://asocialfz7ncw5ui.onion/articles/comics/search-keywords.html
+THID : 33 : Thread Status : Extracting URLS
+THID : 33 : Thread Status : Extracted URLS : 2
+THID : 33 : Thread Status : Saving Current URL : crawler.urlModel@94b1294
+THID : 36 : Thread Status : Parsing Completed : http://oxwugzccvk3dk6tj.onion/tingles/res/13948.html
+THID : 21 : Thread Status : Parsing Completed : http://alicedbdh5xixwai.onion/cgi-bin/show.php?f=8de51a105c18d1e362de1c0deef4b041
+THID : 20 : Thread Status : Parsing Completed : http://m.traditio3trziwpn.onion/%D0%91%D0%B8%D0%BE%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0
+THID : 38 : Thread Status : Parsing Completed : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=troll
+THID : 30 : Thread Status : Parsing Completed : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=y3bxo8&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://oxwugzccvk3dk6tj.onion/tingles/res/273.html
+THID : 36 : Thread Status : Reqesting Onion URL : http://oxwugzccvk3dk6tj.onion/tingles/res/273.html
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/nonude/683/
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/nonude/683/
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0&action=edit&redlink=1
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0&action=edit&redlink=1
+THID : 21 : Thread Status : Found URL : http://alicedbdh5xixwai.onion/nonude/683/
+THID : 21 : Thread Status : Parsing HTML : http://alicedbdh5xixwai.onion/nonude/683/
+THID : 21 : Thread Status : Extracting URLS
+THID : 21 : Thread Status : Extracted URLS : 2
+THID : 21 : Thread Status : Saving Current URL : crawler.urlModel@c7323f0
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://a5jajbt66y46s7wb.onion/news-1549.html
+THID : 38 : Thread Status : Reqesting Onion URL : http://a5jajbt66y46s7wb.onion/news-1549.html
+THID : 36 : Thread Status : Found URL : http://oxwugzccvk3dk6tj.onion/tingles/res/273.html
+THID : 36 : Thread Status : Parsing HTML : http://oxwugzccvk3dk6tj.onion/tingles/res/273.html
+THID : 36 : Thread Status : Extracting URLS
+THID : 36 : Thread Status : Extracted URLS : 115
+THID : 36 : Thread Status : Saving Current URL : crawler.urlModel@6357dea
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=vrnco1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Reqesting Onion URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=vrnco1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 14 : Thread Status : Thread Error : SOCKS: TTL expired : http://7pta37j2kgxquq6w.onion
+THID : 38 : Thread Status : Found URL : http://a5jajbt66y46s7wb.onion/news-1549.html
+THID : 38 : Thread Status : Parsing HTML : http://a5jajbt66y46s7wb.onion/news-1549.html
+THID : 38 : Thread Status : Extracting URLS
+THID : 14 : Thread Status : Fethcing From Same Host
+THID : 14 : Thread Status : Sending Url Request : http://7pta37j2kgxquq6w.onion/foro/memberlist.php?mode=viewprofile&u=130&sid=e9cf9281b3ebae223d0451711b4b7600
+THID : 14 : Thread Status : Reqesting Onion URL : http://7pta37j2kgxquq6w.onion/foro/memberlist.php?mode=viewprofile&u=130&sid=e9cf9281b3ebae223d0451711b4b7600
+THID : 38 : Thread Status : Extracted URLS : 0
+THID : 38 : Thread Status : Saving Current URL : crawler.urlModel@3b66a316
+THID : 30 : Thread Status : Found URL : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=vrnco1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Parsing HTML : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=vrnco1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 30 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Parsing Completed : http://athleticdvjcx5ca.onion/category/insulinopodobnyj-faktor-rosta/
+THID : 16 : Thread Status : Parsing Completed : http://7gsvzcjvupypvz66.onion/tt/res/22.html
+THID : 18 : Thread Status : Parsing Completed : http://ampnckidnqwtd7ry.onion/pages/cv.html
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/187-bruna/photosets/2-make-me-purr
+THID : 42 : Thread Status : Parsing Completed : http://3dboysn3o5d7dk3i.onion/app.php/contactadmin?sid=6d4033cf968b83c90196ede770e04f96
+THID : 30 : Thread Status : Extracted URLS : 0
+THID : 30 : Thread Status : Saving Current URL : crawler.urlModel@7a658d0f
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://athleticdvjcx5ca.onion/category/mehanicheskij-faktor-rosta/
+THID : 19 : Thread Status : Reqesting Onion URL : http://athleticdvjcx5ca.onion/category/mehanicheskij-faktor-rosta/
+THID : 35 : Thread Status : Found URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-music.html
+THID : 35 : Thread Status : Parsing HTML : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-music.html
+THID : 35 : Thread Status : Extracting URLS
+THID : 35 : Thread Status : Extracted URLS : 0
+THID : 35 : Thread Status : Saving Current URL : crawler.urlModel@13a8a85d
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://7gsvzcjvupypvz66.onion/tt/res/26.html
+THID : 16 : Thread Status : Reqesting Onion URL : http://7gsvzcjvupypvz66.onion/tt/res/26.html
+THID : 19 : Thread Status : Found URL : http://athleticdvjcx5ca.onion/category/mehanicheskij-faktor-rosta/
+THID : 19 : Thread Status : Parsing HTML : http://athleticdvjcx5ca.onion/category/mehanicheskij-faktor-rosta/
+THID : 19 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Extracted URLS : 6
+THID : 19 : Thread Status : Saving Current URL : crawler.urlModel@3cc718ef
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onion/tag/aws-s3.html
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onion/tag/aws-s3.html
+THID : 16 : Thread Status : Found URL : http://7gsvzcjvupypvz66.onion/tt/res/26.html
+THID : 16 : Thread Status : Parsing HTML : http://7gsvzcjvupypvz66.onion/tt/res/26.html
+THID : 16 : Thread Status : Extracting URLS
+THID : 16 : Thread Status : Extracted URLS : 0
+THID : 16 : Thread Status : Saving Current URL : crawler.urlModel@705a2d8
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/139-qinn
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/139-qinn
+THID : 20 : Thread Status : Found URL : http://traditio3trziwpn.onion/w/index.php?title=%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0&action=edit&redlink=1?title=%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0&action=edit&redlink=1
+THID : 18 : Thread Status : Found URL : http://ampnckidnqwtd7ry.onion/tag/aws-s3.html
+THID : 18 : Thread Status : Parsing HTML : http://ampnckidnqwtd7ry.onion/tag/aws-s3.html
+THID : 18 : Thread Status : Extracting URLS
+THID : 18 : Thread Status : Extracted URLS : 0
+THID : 18 : Thread Status : Saving Current URL : crawler.urlModel@3aceca50
+THID : 20 : Thread Status : Parsing HTML : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0&action=edit&redlink=1
+THID : 20 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Extracted URLS : 0
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@2e33aab5
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=login&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Reqesting Onion URL : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=login&sid=6d4033cf968b83c90196ede770e04f96
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/139-qinn
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/139-qinn
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@301137a1
+THID : 17 : Thread Status : Parsing Completed : https://static.nytimes3xbfgragh.onion/email-content/CLIM_sample.html
+THID : 15 : Thread Status : Parsing Completed : http://wiki7psimrgr3shv.onion/Frost.html
+THID : 24 : Thread Status : Parsing Completed : http://aaalinkdbpopbfax.onion/private-shops/the-dutchdrugz-vendor-shop-s246.html
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : https://static.nytimes3xbfgragh.onion/email-content/MSB_sample.html
+THID : 17 : Thread Status : Reqesting Onion URL : https://static.nytimes3xbfgragh.onion/email-content/MSB_sample.html
+THID : 42 : Thread Status : Found URL : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=login&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Parsing HTML : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=login&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Extracting URLS
+THID : 42 : Thread Status : Extracted URLS : 0
+THID : 42 : Thread Status : Saving Current URL : crawler.urlModel@48252144
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://wiki7psimrgr3shv.onion/Freenet_IRC.html
+THID : 15 : Thread Status : Reqesting Onion URL : http://wiki7psimrgr3shv.onion/Freenet_IRC.html
+THID : 24 : Thread Status : RE-Fethcing URL
+THID : 24 : Thread Status : URL Fethched : http://agartha2oooh2cxa.onion
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://agartha2oooh2cxa.onionhttp://agartha2oooh2cxa.onion
+THID : 24 : Thread Status : Reqesting Onion URL : http://agartha2oooh2cxa.onionhttp://agartha2oooh2cxa.onion
+THID : 17 : Thread Status : Found URL : https://static.nytimes3xbfgragh.onion/email-content/MSB_sample.html
+THID : 17 : Thread Status : Parsing HTML : https://static.nytimes3xbfgragh.onion/email-content/MSB_sample.html
+THID : 17 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Parsing Completed : http://archivecaslytosk.onion/zkovD
+THID : 17 : Thread Status : Extracted URLS : 8
+THID : 17 : Thread Status : Saving Current URL : crawler.urlModel@1db269b0
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://archivecaslytosk.onion/SpmEl
+THID : 25 : Thread Status : Reqesting Onion URL : http://archivecaslytosk.onion/SpmEl
+THID : 15 : Thread Status : Found URL : http://wiki7psimrgr3shv.onion/Freenet_IRC.html
+THID : 15 : Thread Status : Parsing HTML : http://wiki7psimrgr3shv.onion/Freenet_IRC.html
+THID : 15 : Thread Status : Extracting URLS
+THID : 15 : Thread Status : Extracted URLS : 0
+THID : 15 : Thread Status : Saving Current URL : crawler.urlModel@514b3d6a
+THID : 24 : Thread Status : Thread Error : SOCKS: Host unreachable : http://agartha2oooh2cxa.onion
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=662.0
+THID : 24 : Thread Status : Reqesting Onion URL : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=662.0
+THID : 25 : Thread Status : Found URL : http://archivecaslytosk.onion/SpmEl
+THID : 25 : Thread Status : Parsing HTML : http://archivecaslytosk.onion/SpmEl
+THID : 25 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Extracted URLS : 19
+THID : 25 : Thread Status : Saving Current URL : crawler.urlModel@3ab2bc6e
+THID : 23 : Thread Status : Thread Error : SOCKS: Host unreachable : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion
+THID : 23 : Thread Status : Fethcing From Same Host
+THID : 23 : Thread Status : Sending Url Request : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/281.php
+THID : 23 : Thread Status : Reqesting Onion URL : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/281.php
+THID : 27 : Thread Status : Parsing Completed : https://www.nytimes3xbfgragh.onion/es/tag/jair-bolsonaro/
+THID : 29 : Thread Status : Parsing Completed : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/pt-zine-somos-o-que-comemos-alimenta%C3%A7%C3%A3o+387035
+THID : 39 : Thread Status : Parsing Completed : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=privacy&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 40 : Thread Status : Parsing Completed : http://4jq4kri3wwppwn4a.onion/search.php?search_id=active_topics&sid=2005d072e25cabe49ba7b0039753037b
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : https://www.nytimes3xbfgragh.onion/newsletters/el-times
+THID : 27 : Thread Status : Reqesting Onion URL : https://www.nytimes3xbfgragh.onion/newsletters/el-times
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/ervas-autonomia
+THID : 29 : Thread Status : Reqesting Onion URL : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/ervas-autonomia
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=delete_cookies&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Reqesting Onion URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=delete_cookies&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 28 : Thread Status : Parsing Completed : http://superkuhbitj6tul.onion/library/Neuroscience/?C=M&O=D
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://4jq4kri3wwppwn4a.onion/app.php/help/faq?sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Reqesting Onion URL : http://4jq4kri3wwppwn4a.onion/app.php/help/faq?sid=2005d072e25cabe49ba7b0039753037b
+THID : 32 : Thread Status : Parsing Completed : http://aprovpnacgvqwh76.onion/ru/lost-password/
+THID : 33 : Thread Status : Parsing Completed : http://asocialfz7ncw5ui.onion/articles/comics/search-keywords.html
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://superkuhbitj6tul.onion/library/Neuroscience/Amygdala/
+THID : 28 : Thread Status : Reqesting Onion URL : http://superkuhbitj6tul.onion/library/Neuroscience/Amygdala/
+THID : 39 : Thread Status : Found URL : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=delete_cookies&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Parsing HTML : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=delete_cookies&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Extracting URLS
+THID : 39 : Thread Status : Extracted URLS : 0
+THID : 39 : Thread Status : Saving Current URL : crawler.urlModel@5e6be438
+THID : 21 : Thread Status : Parsing Completed : http://alicedbdh5xixwai.onion/nonude/683/
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dns-leaks-in-ubuntu-18-debian-9-kali-linux-2018/
+THID : 32 : Thread Status : Reqesting Onion URL : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dns-leaks-in-ubuntu-18-debian-9-kali-linux-2018/
+THID : 24 : Thread Status : Found URL : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=662.0
+THID : 24 : Thread Status : Parsing HTML : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=662.0
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Extracted URLS : 19
+THID : 24 : Thread Status : Saving Current URL : crawler.urlModel@17829922
+THID : 27 : Thread Status : Found URL : https://www.nytimes3xbfgragh.onion/newsletters/el-times
+THID : 27 : Thread Status : Parsing HTML : https://www.nytimes3xbfgragh.onion/newsletters/el-times
+THID : 27 : Thread Status : Extracting URLS
+THID : 27 : Thread Status : Extracted URLS : 2
+THID : 27 : Thread Status : Saving Current URL : crawler.urlModel@6407c969
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://asocialfz7ncw5ui.onion/articles/video/mr-robot.html
+THID : 33 : Thread Status : Reqesting Onion URL : http://asocialfz7ncw5ui.onion/articles/video/mr-robot.html
+THID : 40 : Thread Status : Found URL : http://4jq4kri3wwppwn4a.onion/app.php/help/faq?sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Parsing HTML : http://4jq4kri3wwppwn4a.onion/app.php/help/faq?sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Extracting URLS
+THID : 40 : Thread Status : Extracted URLS : 0
+THID : 40 : Thread Status : Saving Current URL : crawler.urlModel@401130c8
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/nonude/682/
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/nonude/682/
+THID : 28 : Thread Status : Found URL : http://superkuhbitj6tul.onion/library/Neuroscience/Amygdala/
+THID : 28 : Thread Status : Parsing HTML : http://superkuhbitj6tul.onion/library/Neuroscience/Amygdala/
+THID : 28 : Thread Status : Extracting URLS
+THID : 28 : Thread Status : Extracted URLS : 0
+THID : 28 : Thread Status : Saving Current URL : crawler.urlModel@1694bf05
+THID : 33 : Thread Status : Found URL : http://asocialfz7ncw5ui.onion/articles/video/mr-robot.html
+THID : 33 : Thread Status : Parsing HTML : http://asocialfz7ncw5ui.onion/articles/video/mr-robot.html
+THID : 33 : Thread Status : Extracting URLS
+THID : 33 : Thread Status : Extracted URLS : 0
+THID : 33 : Thread Status : Saving Current URL : crawler.urlModel@4c367a5
+THID : 32 : Thread Status : Found URL : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dns-leaks-in-ubuntu-18-debian-9-kali-linux-2018/
+THID : 32 : Thread Status : Parsing HTML : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dns-leaks-in-ubuntu-18-debian-9-kali-linux-2018/
+THID : 32 : Thread Status : Extracting URLS
+THID : 32 : Thread Status : Extracted URLS : 16
+THID : 32 : Thread Status : Saving Current URL : crawler.urlModel@6b74edac
+THID : 21 : Thread Status : Found URL : http://alicedbdh5xixwai.onion/nonude/682/
+THID : 21 : Thread Status : Parsing HTML : http://alicedbdh5xixwai.onion/nonude/682/
+THID : 21 : Thread Status : Extracting URLS
+THID : 21 : Thread Status : Extracted URLS : 2
+THID : 21 : Thread Status : Saving Current URL : crawler.urlModel@22b21549
+THID : 29 : Thread Status : Found URL : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/ervas-autonomia
+THID : 29 : Thread Status : Parsing HTML : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/ervas-autonomia
+THID : 29 : Thread Status : Extracting URLS
+THID : 29 : Thread Status : Extracted URLS : 0
+THID : 29 : Thread Status : Saving Current URL : crawler.urlModel@19006ea9
+THID : 23 : Thread Status : Thread Error : SOCKS: Host unreachable : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion
+THID : 23 : Thread Status : Fethcing From Same Host
+THID : 23 : Thread Status : Sending Url Request : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/280.php
+THID : 23 : Thread Status : Reqesting Onion URL : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/280.php
+THID : 13 : Thread Status : Thread Error : SOCKS: TTL expired : http://cryptontd3uutyje.onion
+THID : 13 : Thread Status : Fethcing From Same Host
+THID : 13 : Thread Status : Sending Url Request : http://cryptontd3uutyje.onion/charts/coin/XVG
+THID : 13 : Thread Status : Reqesting Onion URL : http://cryptontd3uutyje.onion/charts/coin/XVG
+THID : 34 : Thread Status : Thread Error : SOCKS server general failure : http://6666666obdown7k7.onion
+THID : 34 : Thread Status : Fethcing From Same Host
+THID : 34 : Thread Status : Sending Url Request : http://6666666obdown7k7.onion/user/Zabilnapas
+THID : 34 : Thread Status : Reqesting Onion URL : http://6666666obdown7k7.onion/user/Zabilnapas
+THID : 22 : Thread Status : Thread Error : SOCKS: TTL expired : https://blockchainbdgpzk.onion
+THID : 22 : Thread Status : Fethcing From Same Host
+THID : 22 : Thread Status : Sending Url Request : https://blockchainbdgpzk.onion/address/14AcKEr19gHJvgwQhK7sfFm6YJGmoZZoqu
+THID : 22 : Thread Status : Reqesting Onion URL : https://blockchainbdgpzk.onion/address/14AcKEr19gHJvgwQhK7sfFm6YJGmoZZoqu
+THID : 26 : Thread Status : Thread Error : SOCKS server general failure : http://aef6y4766z656q6a.onion
+THID : 26 : Thread Status : Fethcing From Same Host
+THID : 26 : Thread Status : Sending Url Request : http://aef6y4766z656q6a.onion/ru/games/flash/slots/fun.html?quick=1&gameName=agentmaxcash
+THID : 26 : Thread Status : Reqesting Onion URL : http://aef6y4766z656q6a.onion/ru/games/flash/slots/fun.html?quick=1&gameName=agentmaxcash
+THID : 41 : Thread Status : Thread Error : SOCKS: TTL expired : http://papyrefb2tdk6czd.onion
+THID : 41 : Thread Status : Fethcing From Same Host
+THID : 41 : Thread Status : Sending Url Request : http://papyrefb2tdk6czd.onion/ficha2.php?a=39735&xmlsrv=397355815166
+THID : 41 : Thread Status : Reqesting Onion URL : http://papyrefb2tdk6czd.onion/ficha2.php?a=39735&xmlsrv=397355815166
+THID : 36 : Thread Status : Parsing Completed : http://oxwugzccvk3dk6tj.onion/tingles/res/273.html
+THID : 38 : Thread Status : Parsing Completed : http://a5jajbt66y46s7wb.onion/news-1549.html
+THID : 30 : Thread Status : Parsing Completed : http://3sp6svxkyucma3i2.onion/showstory.php?storyid=vrnco1&SID=a1smmlvi6l3bkrli1941m8q670
+THID : 35 : Thread Status : Parsing Completed : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-music.html
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://oxwugzccvk3dk6tj.onion/tingles/res/14047.html
+THID : 36 : Thread Status : Reqesting Onion URL : http://oxwugzccvk3dk6tj.onion/tingles/res/14047.html
+THID : 19 : Thread Status : Parsing Completed : http://athleticdvjcx5ca.onion/category/mehanicheskij-faktor-rosta/
+THID : 16 : Thread Status : Parsing Completed : http://7gsvzcjvupypvz66.onion/tt/res/26.html
+THID : 18 : Thread Status : Parsing Completed : http://ampnckidnqwtd7ry.onion/tag/aws-s3.html
+THID : 20 : Thread Status : Parsing Completed : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0&action=edit&redlink=1
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/139-qinn
+THID : 42 : Thread Status : Parsing Completed : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=login&sid=6d4033cf968b83c90196ede770e04f96
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=agentmaxcash
+THID : 38 : Thread Status : Reqesting Onion URL : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=agentmaxcash
+THID : 30 : Thread Status : RE-Fethcing URL
+THID : 30 : Thread Status : URL Fethched : http://gl3n4wtekbfaubye.onion
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://gl3n4wtekbfaubye.onionhttp://gl3n4wtekbfaubye.onion
+THID : 30 : Thread Status : Reqesting Onion URL : http://gl3n4wtekbfaubye.onionhttp://gl3n4wtekbfaubye.onion
+THID : 35 : Thread Status : Fethcing From Same Host
+THID : 35 : Thread Status : Sending Url Request : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/cheese.html
+THID : 35 : Thread Status : Reqesting Onion URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/cheese.html
+THID : 17 : Thread Status : Parsing Completed : https://static.nytimes3xbfgragh.onion/email-content/MSB_sample.html
+THID : 15 : Thread Status : Parsing Completed : http://wiki7psimrgr3shv.onion/Freenet_IRC.html
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://athleticdvjcx5ca.onion/category/blokatory-miostatina/
+THID : 19 : Thread Status : Reqesting Onion URL : http://athleticdvjcx5ca.onion/category/blokatory-miostatina/
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://7gsvzcjvupypvz66.onion/tt/res/104.html
+THID : 16 : Thread Status : Reqesting Onion URL : http://7gsvzcjvupypvz66.onion/tt/res/104.html
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://ampnckidnqwtd7ry.onion/tag/nginx.html
+THID : 18 : Thread Status : Reqesting Onion URL : http://ampnckidnqwtd7ry.onion/tag/nginx.html
+THID : 38 : Thread Status : Found URL : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=agentmaxcash
+THID : 38 : Thread Status : Parsing HTML : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=agentmaxcash
+THID : 38 : Thread Status : Extracting URLS
+THID : 38 : Thread Status : Extracted URLS : 0
+THID : 38 : Thread Status : Saving Current URL : crawler.urlModel@2089d53e
+THID : 36 : Thread Status : Found URL : http://oxwugzccvk3dk6tj.onion/tingles/res/14047.html
+THID : 36 : Thread Status : Parsing HTML : http://oxwugzccvk3dk6tj.onion/tingles/res/14047.html
+THID : 36 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=2
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=2
+THID : 25 : Thread Status : Parsing Completed : http://archivecaslytosk.onion/SpmEl
+THID : 39 : Thread Status : Parsing Completed : http://z2hjm7uhwisw5jm5.onion/ucp.php?mode=delete_cookies&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 35 : Thread Status : Found URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/cheese.html
+THID : 35 : Thread Status : Parsing HTML : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/cheese.html
+THID : 35 : Thread Status : Extracting URLS
+THID : 35 : Thread Status : Extracted URLS : 0
+THID : 19 : Thread Status : Found URL : http://athleticdvjcx5ca.onion/category/blokatory-miostatina/
+THID : 35 : Thread Status : Saving Current URL : crawler.urlModel@dc8a49a
+THID : 16 : Thread Status : Found URL : http://7gsvzcjvupypvz66.onion/tt/res/104.html
+THID : 19 : Thread Status : Parsing HTML : http://athleticdvjcx5ca.onion/category/blokatory-miostatina/
+THID : 16 : Thread Status : Parsing HTML : http://7gsvzcjvupypvz66.onion/tt/res/104.html
+THID : 16 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Extracting URLS
+THID : 16 : Thread Status : Extracted URLS : 0
+THID : 16 : Thread Status : Saving Current URL : crawler.urlModel@58f257ee
+THID : 19 : Thread Status : Extracted URLS : 8
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Saving Current URL : crawler.urlModel@22e2f817
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/205-quince
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/205-quince
+THID : 36 : Thread Status : Extracted URLS : 157
+THID : 36 : Thread Status : Saving Current URL : crawler.urlModel@3e094b9b
+THID : 24 : Thread Status : Parsing Completed : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=662.0
+THID : 30 : Thread Status : Thread Error : SOCKS: Host unreachable : http://gl3n4wtekbfaubye.onion
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=register&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Reqesting Onion URL : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=register&sid=6d4033cf968b83c90196ede770e04f96
+THID : 18 : Thread Status : Found URL : http://ampnckidnqwtd7ry.onion/tag/nginx.html
+THID : 18 : Thread Status : Parsing HTML : http://ampnckidnqwtd7ry.onion/tag/nginx.html
+THID : 18 : Thread Status : Extracting URLS
+THID : 27 : Thread Status : Parsing Completed : https://www.nytimes3xbfgragh.onion/newsletters/el-times
+THID : 40 : Thread Status : Parsing Completed : http://4jq4kri3wwppwn4a.onion/app.php/help/faq?sid=2005d072e25cabe49ba7b0039753037b
+THID : 28 : Thread Status : Parsing Completed : http://superkuhbitj6tul.onion/library/Neuroscience/Amygdala/
+THID : 33 : Thread Status : Parsing Completed : http://asocialfz7ncw5ui.onion/articles/video/mr-robot.html
+THID : 18 : Thread Status : Extracted URLS : 0
+THID : 18 : Thread Status : Saving Current URL : crawler.urlModel@25b98905
+THID : 32 : Thread Status : Parsing Completed : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dns-leaks-in-ubuntu-18-debian-9-kali-linux-2018/
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/205-quince
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/205-quince
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@687c7227
+THID : 21 : Thread Status : Parsing Completed : http://alicedbdh5xixwai.onion/nonude/682/
+THID : 29 : Thread Status : Parsing Completed : http://7lvd7fa5yfbdqaii.onion/saude_autonomia/ervas-autonomia
+THID : 38 : Thread Status : Parsing Completed : http://a5jajbt66y46s7wb.onion/ru/games/flash/slots/fun.html?quick=1&gameName=agentmaxcash
+THID : 35 : Thread Status : Parsing Completed : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/cheese.html
+THID : 42 : Thread Status : Found URL : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=register&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Parsing HTML : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=register&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Extracting URLS
+THID : 42 : Thread Status : Extracted URLS : 0
+THID : 42 : Thread Status : Saving Current URL : crawler.urlModel@515ec379
+THID : 19 : Thread Status : Parsing Completed : http://athleticdvjcx5ca.onion/category/blokatory-miostatina/
+THID : 16 : Thread Status : Parsing Completed : http://7gsvzcjvupypvz66.onion/tt/res/104.html
+THID : 18 : Thread Status : Parsing Completed : http://ampnckidnqwtd7ry.onion/tag/nginx.html
+THID : 20 : Thread Status : Found URL : http://traditio3trziwpn.onion/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=2?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=2
+THID : 20 : Thread Status : Parsing HTML : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=2
+THID : 20 : Thread Status : Extracting URLS
+THID : 20 : Thread Status : Extracted URLS : 0
+THID : 20 : Thread Status : Saving Current URL : crawler.urlModel@70ce3d99
+THID : 37 : Thread Status : Thread Error : SOCKS: TTL expired : http://hurtmehpneqdprmj.onion
+THID : 14 : Thread Status : Thread Error : SOCKS: TTL expired : http://7pta37j2kgxquq6w.onion
+THID : 36 : Thread Status : Parsing Completed : http://oxwugzccvk3dk6tj.onion/tingles/res/14047.html
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/205-quince
+THID : 42 : Thread Status : Parsing Completed : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=register&sid=6d4033cf968b83c90196ede770e04f96
+THID : 20 : Thread Status : Parsing Completed : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=2
+THID : 23 : Thread Status : Thread Error : SOCKS: TTL expired : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion
+THID : 13 : Thread Status : Thread Error : SOCKS: TTL expired : http://cryptontd3uutyje.onion
+THID : 34 : Thread Status : Thread Error : SOCKS: TTL expired : http://6666666obdown7k7.onion
+THID : 22 : Thread Status : Thread Error : SOCKS: TTL expired : https://blockchainbdgpzk.onion
+THID : 26 : Thread Status : Thread Error : SOCKS: TTL expired : http://aef6y4766z656q6a.onion
+THID : 41 : Thread Status : Thread Error : SOCKS server general failure : http://papyrefb2tdk6czd.onion
+THID : 17 : Thread Status : Fethcing From Same Host
+THID : 17 : Thread Status : Sending Url Request : https://static.nytimes3xbfgragh.onion/email-content/CA_sample.html
+THID : 17 : Thread Status : Reqesting Onion URL : https://static.nytimes3xbfgragh.onion/email-content/CA_sample.html
+THID : 15 : Thread Status : RE-Fethcing URL
+THID : 15 : Thread Status : URL Fethched : http://auutwvp7bmku4wzk.onion
+THID : 15 : Thread Status : Fethcing From Same Host
+THID : 15 : Thread Status : Sending Url Request : http://auutwvp7bmku4wzk.onionhttp://auutwvp7bmku4wzk.onion
+THID : 15 : Thread Status : Reqesting Onion URL : http://auutwvp7bmku4wzk.onionhttp://auutwvp7bmku4wzk.onion
+THID : 25 : Thread Status : Fethcing From Same Host
+THID : 25 : Thread Status : Sending Url Request : http://archivecaslytosk.onion/Rb483/254b09710a148179aa12878f3193a87471d79392
+THID : 25 : Thread Status : Reqesting Onion URL : http://archivecaslytosk.onion/Rb483/254b09710a148179aa12878f3193a87471d79392
+THID : 39 : Thread Status : Fethcing From Same Host
+THID : 39 : Thread Status : Sending Url Request : http://z2hjm7uhwisw5jm5.onion/memberlist.php?mode=contactadmin&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Reqesting Onion URL : http://z2hjm7uhwisw5jm5.onion/memberlist.php?mode=contactadmin&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 15 : Thread Status : Thread Error : SOCKS: Host unreachable : http://auutwvp7bmku4wzk.onion
+THID : 24 : Thread Status : Fethcing From Same Host
+THID : 24 : Thread Status : Sending Url Request : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=786.0
+THID : 24 : Thread Status : Reqesting Onion URL : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=786.0
+THID : 30 : Thread Status : Fethcing From Same Host
+THID : 30 : Thread Status : Sending Url Request : http://gl3n4wtekbfaubye.onion/tags/hardware/storage:dvd-writer.xml
+THID : 30 : Thread Status : Reqesting Onion URL : http://gl3n4wtekbfaubye.onion/tags/hardware/storage:dvd-writer.xml
+THID : 27 : Thread Status : Fethcing From Same Host
+THID : 27 : Thread Status : Sending Url Request : https://www.nytimes3xbfgragh.onion/es/2018/10/28/jair-bolsonaro-elecciones-brasil/
+THID : 27 : Thread Status : Reqesting Onion URL : https://www.nytimes3xbfgragh.onion/es/2018/10/28/jair-bolsonaro-elecciones-brasil/
+THID : 25 : Thread Status : Found URL : http://archivecaslytosk.onion/Rb483/254b09710a148179aa12878f3193a87471d79392
+THID : 25 : Thread Status : Parsing HTML : http://archivecaslytosk.onion/Rb483/254b09710a148179aa12878f3193a87471d79392
+THID : 25 : Thread Status : Extracting URLS
+THID : 25 : Thread Status : Extracted URLS : 0
+THID : 25 : Thread Status : Saving Current URL : crawler.urlModel@1d2c8b68
+THID : 40 : Thread Status : Fethcing From Same Host
+THID : 40 : Thread Status : Sending Url Request : http://4jq4kri3wwppwn4a.onion/ucp.php?mode=login&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Reqesting Onion URL : http://4jq4kri3wwppwn4a.onion/ucp.php?mode=login&sid=2005d072e25cabe49ba7b0039753037b
+THID : 24 : Thread Status : Found URL : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=786.0
+THID : 24 : Thread Status : Parsing HTML : http://agartha2oooh2cxa.onion/index.php?PHPSESSID=3t7d4qptv3jod5bvitdhdsk5b3&topic=786.0
+THID : 24 : Thread Status : Extracting URLS
+THID : 24 : Thread Status : Thread Error : begin 0, end 58, length 57 : http://agartha2oooh2cxa.onion
+THID : 28 : Thread Status : Fethcing From Same Host
+THID : 28 : Thread Status : Sending Url Request : http://superkuhbitj6tul.onion/library/Neuroscience/Auditory/
+THID : 28 : Thread Status : Reqesting Onion URL : http://superkuhbitj6tul.onion/library/Neuroscience/Auditory/
+THID : 25 : Thread Status : Parsing Completed : http://archivecaslytosk.onion/Rb483/254b09710a148179aa12878f3193a87471d79392
+THID : 17 : Thread Status : Found URL : https://static.nytimes3xbfgragh.onion/email-content/CA_sample.html
+THID : 17 : Thread Status : Parsing HTML : https://static.nytimes3xbfgragh.onion/email-content/CA_sample.html
+THID : 17 : Thread Status : Extracting URLS
+THID : 17 : Thread Status : Extracted URLS : 9
+THID : 17 : Thread Status : Saving Current URL : crawler.urlModel@283c9f86
+THID : 33 : Thread Status : Fethcing From Same Host
+THID : 33 : Thread Status : Sending Url Request : http://asocialfz7ncw5ui.onion/articles/internet/data-breaches.html
+THID : 33 : Thread Status : Reqesting Onion URL : http://asocialfz7ncw5ui.onion/articles/internet/data-breaches.html
+THID : 40 : Thread Status : Found URL : http://4jq4kri3wwppwn4a.onion/ucp.php?mode=login&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Parsing HTML : http://4jq4kri3wwppwn4a.onion/ucp.php?mode=login&sid=2005d072e25cabe49ba7b0039753037b
+THID : 40 : Thread Status : Extracting URLS
+THID : 40 : Thread Status : Extracted URLS : 0
+THID : 40 : Thread Status : Saving Current URL : crawler.urlModel@34ba71c7
+THID : 32 : Thread Status : Fethcing From Same Host
+THID : 32 : Thread Status : Sending Url Request : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dnsleak-in-ubuntu-17/
+THID : 32 : Thread Status : Reqesting Onion URL : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dnsleak-in-ubuntu-17/
+THID : 21 : Thread Status : Fethcing From Same Host
+THID : 21 : Thread Status : Sending Url Request : http://alicedbdh5xixwai.onion/cgi-bin/img.php?f=8de51a105c18d1e362de1c0deef4b041&session=3vkqasugmfkpd44qavbsde9ge2
+THID : 21 : Thread Status : Reqesting Onion URL : http://alicedbdh5xixwai.onion/cgi-bin/img.php?f=8de51a105c18d1e362de1c0deef4b041&session=3vkqasugmfkpd44qavbsde9ge2
+THID : 27 : Thread Status : Found URL : https://www.nytimes3xbfgragh.onion/es/2018/10/28/jair-bolsonaro-elecciones-brasil/
+THID : 27 : Thread Status : Parsing HTML : https://www.nytimes3xbfgragh.onion/es/2018/10/28/jair-bolsonaro-elecciones-brasil/
+THID : 27 : Thread Status : Extracting URLS
+THID : 27 : Thread Status : Extracted URLS : 5
+THID : 27 : Thread Status : Saving Current URL : crawler.urlModel@1c9862f9
+THID : 29 : Thread Status : Fethcing From Same Host
+THID : 29 : Thread Status : Sending Url Request : http://7lvd7fa5yfbdqaii.onion/subta/seguranca-holistica
+THID : 29 : Thread Status : Reqesting Onion URL : http://7lvd7fa5yfbdqaii.onion/subta/seguranca-holistica
+THID : 28 : Thread Status : Found URL : http://superkuhbitj6tul.onion/library/Neuroscience/Auditory/
+THID : 28 : Thread Status : Parsing HTML : http://superkuhbitj6tul.onion/library/Neuroscience/Auditory/
+THID : 28 : Thread Status : Extracting URLS
+THID : 28 : Thread Status : Extracted URLS : 0
+THID : 28 : Thread Status : Saving Current URL : crawler.urlModel@78e73e09
+THID : 38 : Thread Status : Fethcing From Same Host
+THID : 38 : Thread Status : Sending Url Request : http://a5jajbt66y46s7wb.onion/news-1536.html
+THID : 38 : Thread Status : Reqesting Onion URL : http://a5jajbt66y46s7wb.onion/news-1536.html
+THID : 33 : Thread Status : Found URL : http://asocialfz7ncw5ui.onion/articles/internet/data-breaches.html
+THID : 33 : Thread Status : Parsing HTML : http://asocialfz7ncw5ui.onion/articles/internet/data-breaches.html
+THID : 33 : Thread Status : Extracting URLS
+THID : 33 : Thread Status : Extracted URLS : 0
+THID : 33 : Thread Status : Saving Current URL : crawler.urlModel@5cbbbd10
+THID : 39 : Thread Status : Found URL : http://z2hjm7uhwisw5jm5.onion/memberlist.php?mode=contactadmin&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Parsing HTML : http://z2hjm7uhwisw5jm5.onion/memberlist.php?mode=contactadmin&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 39 : Thread Status : Extracting URLS
+THID : 39 : Thread Status : Extracted URLS : 0
+THID : 39 : Thread Status : Saving Current URL : crawler.urlModel@724bdc79
+THID : 35 : Thread Status : Fethcing From Same Host
+THID : 35 : Thread Status : Sending Url Request : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-tweak-tool.html
+THID : 35 : Thread Status : Reqesting Onion URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-tweak-tool.html
+THID : 19 : Thread Status : Fethcing From Same Host
+THID : 19 : Thread Status : Sending Url Request : http://athleticdvjcx5ca.onion/category/gennyj_doping/
+THID : 19 : Thread Status : Reqesting Onion URL : http://athleticdvjcx5ca.onion/category/gennyj_doping/
+THID : 16 : Thread Status : Fethcing From Same Host
+THID : 16 : Thread Status : Sending Url Request : http://7gsvzcjvupypvz66.onion/tt/res/157.html
+THID : 16 : Thread Status : Reqesting Onion URL : http://7gsvzcjvupypvz66.onion/tt/res/157.html
+THID : 17 : Thread Status : Parsing Completed : https://static.nytimes3xbfgragh.onion/email-content/CA_sample.html
+THID : 40 : Thread Status : Parsing Completed : http://4jq4kri3wwppwn4a.onion/ucp.php?mode=login&sid=2005d072e25cabe49ba7b0039753037b
+THID : 28 : Thread Status : Parsing Completed : http://superkuhbitj6tul.onion/library/Neuroscience/Auditory/
+THID : 18 : Thread Status : RE-Fethcing URL
+THID : 18 : Thread Status : URL Fethched : http://auutwvp4pdnoknsd.onion
+THID : 18 : Thread Status : Fethcing From Same Host
+THID : 18 : Thread Status : Sending Url Request : http://auutwvp4pdnoknsd.onionhttp://auutwvp4pdnoknsd.onion
+THID : 18 : Thread Status : Reqesting Onion URL : http://auutwvp4pdnoknsd.onionhttp://auutwvp4pdnoknsd.onion
+THID : 32 : Thread Status : Found URL : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dnsleak-in-ubuntu-17/
+THID : 32 : Thread Status : Parsing HTML : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dnsleak-in-ubuntu-17/
+THID : 32 : Thread Status : Extracting URLS
+THID : 32 : Thread Status : Extracted URLS : 16
+THID : 32 : Thread Status : Saving Current URL : crawler.urlModel@5c7266db
+THID : 37 : Thread Status : Fethcing From Same Host
+THID : 37 : Thread Status : Sending Url Request : http://hurtmehpneqdprmj.onion/ucp.php?mode=delete_cookies&sid=c6ed6417862b6438ce06d1ce3be8f1ec
+THID : 37 : Thread Status : Reqesting Onion URL : http://hurtmehpneqdprmj.onion/ucp.php?mode=delete_cookies&sid=c6ed6417862b6438ce06d1ce3be8f1ec
+THID : 38 : Thread Status : Found URL : http://a5jajbt66y46s7wb.onion/news-1536.html
+THID : 38 : Thread Status : Parsing HTML : http://a5jajbt66y46s7wb.onion/news-1536.html
+THID : 38 : Thread Status : Extracting URLS
+THID : 38 : Thread Status : Extracted URLS : 0
+THID : 38 : Thread Status : Saving Current URL : crawler.urlModel@48cc2fd4
+THID : 14 : Thread Status : Fethcing From Same Host
+THID : 14 : Thread Status : Sending Url Request : http://7pta37j2kgxquq6w.onion/foro/viewforum.php?f=9&sid=e9cf9281b3ebae223d0451711b4b7600
+THID : 14 : Thread Status : Reqesting Onion URL : http://7pta37j2kgxquq6w.onion/foro/viewforum.php?f=9&sid=e9cf9281b3ebae223d0451711b4b7600
+THID : 35 : Thread Status : Found URL : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-tweak-tool.html
+THID : 35 : Thread Status : Parsing HTML : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-tweak-tool.html
+THID : 35 : Thread Status : Extracting URLS
+THID : 35 : Thread Status : Extracted URLS : 0
+THID : 35 : Thread Status : Saving Current URL : crawler.urlModel@635b1a0
+THID : 27 : Thread Status : Parsing Completed : https://www.nytimes3xbfgragh.onion/es/2018/10/28/jair-bolsonaro-elecciones-brasil/
+THID : 39 : Thread Status : Parsing Completed : http://z2hjm7uhwisw5jm5.onion/memberlist.php?mode=contactadmin&sid=0bbcb51f424b163d57716e445ab6fc2e
+THID : 32 : Thread Status : Parsing Completed : http://aprovpnacgvqwh76.onion/ru/blog/how-to-fix-dnsleak-in-ubuntu-17/
+THID : 33 : Thread Status : Parsing Completed : http://asocialfz7ncw5ui.onion/articles/internet/data-breaches.html
+THID : 38 : Thread Status : Parsing Completed : http://a5jajbt66y46s7wb.onion/news-1536.html
+THID : 35 : Thread Status : Parsing Completed : http://5j7saze5byfqccf3.onion/stretch/main/metainfo/gnome-tweak-tool.html
+THID : 36 : Thread Status : Fethcing From Same Host
+THID : 36 : Thread Status : Sending Url Request : http://oxwugzccvk3dk6tj.onion/player.php?v=/file_store/9e3dff010c6654937dc6abdf1640873f3968bdbc22796e1943f217005235a1dd.webm&t=wiesler-cri-April.webm&loop=1
+THID : 36 : Thread Status : Reqesting Onion URL : http://oxwugzccvk3dk6tj.onion/player.php?v=/file_store/9e3dff010c6654937dc6abdf1640873f3968bdbc22796e1943f217005235a1dd.webm&t=wiesler-cri-April.webm&loop=1
+THID : 19 : Thread Status : Found URL : http://athleticdvjcx5ca.onion/category/gennyj_doping/
+THID : 16 : Thread Status : Found URL : http://7gsvzcjvupypvz66.onion/tt/res/157.html
+THID : 19 : Thread Status : Parsing HTML : http://athleticdvjcx5ca.onion/category/gennyj_doping/
+THID : 19 : Thread Status : Extracting URLS
+THID : 16 : Thread Status : Parsing HTML : http://7gsvzcjvupypvz66.onion/tt/res/157.html
+THID : 16 : Thread Status : Extracting URLS
+THID : 19 : Thread Status : Extracted URLS : 7
+THID : 16 : Thread Status : Extracted URLS : 0
+THID : 19 : Thread Status : Saving Current URL : crawler.urlModel@704db0d6
+THID : 16 : Thread Status : Saving Current URL : crawler.urlModel@59e2de90
+THID : 31 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Sending Url Request : http://ahnkmbhxyx3bnzdq.onion/girls/4-bae/photosets/6-water-me
+THID : 31 : Thread Status : Reqesting Onion URL : http://ahnkmbhxyx3bnzdq.onion/girls/4-bae/photosets/6-water-me
+THID : 29 : Thread Status : Found URL : http://7lvd7fa5yfbdqaii.onion/subta/seguranca-holistica
+THID : 29 : Thread Status : Parsing HTML : http://7lvd7fa5yfbdqaii.onion/subta/seguranca-holistica
+THID : 29 : Thread Status : Extracting URLS
+THID : 29 : Thread Status : Extracted URLS : 0
+THID : 29 : Thread Status : Saving Current URL : crawler.urlModel@f3269e2
+THID : 42 : Thread Status : Fethcing From Same Host
+THID : 42 : Thread Status : Sending Url Request : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=delete_cookies&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Reqesting Onion URL : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=delete_cookies&sid=6d4033cf968b83c90196ede770e04f96
+THID : 18 : Thread Status : Thread Error : SOCKS: Host unreachable : http://auutwvp4pdnoknsd.onion
+THID : 36 : Thread Status : Found URL : http://oxwugzccvk3dk6tj.onion/player.php?v=/file_store/9e3dff010c6654937dc6abdf1640873f3968bdbc22796e1943f217005235a1dd.webm&t=wiesler-cri-April.webm&loop=1
+THID : 36 : Thread Status : Parsing HTML : http://oxwugzccvk3dk6tj.onion/player.php?v=/file_store/9e3dff010c6654937dc6abdf1640873f3968bdbc22796e1943f217005235a1dd.webm&t=wiesler-cri-April.webm&loop=1
+THID : 36 : Thread Status : Extracting URLS
+THID : 36 : Thread Status : Extracted URLS : 0
+THID : 36 : Thread Status : Saving Current URL : crawler.urlModel@5d692e9c
+THID : 20 : Thread Status : Fethcing From Same Host
+THID : 20 : Thread Status : Sending Url Request : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=3
+THID : 20 : Thread Status : Reqesting Onion URL : http://m.traditio3trziwpn.onion/w/index.php?title=%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D1%8F:%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8&action=edit&section=3
+THID : 31 : Thread Status : Found URL : http://ahnkmbhxyx3bnzdq.onion/girls/4-bae/photosets/6-water-me
+THID : 31 : Thread Status : Parsing HTML : http://ahnkmbhxyx3bnzdq.onion/girls/4-bae/photosets/6-water-me
+THID : 31 : Thread Status : Extracting URLS
+THID : 31 : Thread Status : Extracted URLS : 0
+THID : 31 : Thread Status : Saving Current URL : crawler.urlModel@61474e2
+THID : 19 : Thread Status : Parsing Completed : http://athleticdvjcx5ca.onion/category/gennyj_doping/
+THID : 16 : Thread Status : Parsing Completed : http://7gsvzcjvupypvz66.onion/tt/res/157.html
+THID : 29 : Thread Status : Parsing Completed : http://7lvd7fa5yfbdqaii.onion/subta/seguranca-holistica
+THID : 36 : Thread Status : Parsing Completed : http://oxwugzccvk3dk6tj.onion/player.php?v=/file_store/9e3dff010c6654937dc6abdf1640873f3968bdbc22796e1943f217005235a1dd.webm&t=wiesler-cri-April.webm&loop=1
+THID : 23 : Thread Status : Fethcing From Same Host
+THID : 31 : Thread Status : Parsing Completed : http://ahnkmbhxyx3bnzdq.onion/girls/4-bae/photosets/6-water-me
+THID : 23 : Thread Status : Sending Url Request : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/278.php
+THID : 23 : Thread Status : Reqesting Onion URL : http://kglddfz2wnvt7wiohbm6g6m5x5flufghnc4zxqdn76svdd3mtjr672id.onion/278.php
+THID : 42 : Thread Status : Found URL : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=delete_cookies&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Parsing HTML : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=delete_cookies&sid=6d4033cf968b83c90196ede770e04f96
+THID : 42 : Thread Status : Extracting URLS
+THID : 42 : Thread Status : Extracted URLS : 0
+THID : 42 : Thread Status : Saving Current URL : crawler.urlModel@2f1e742c
+THID : 13 : Thread Status : Fethcing From Same Host
+THID : 13 : Thread Status : Sending Url Request : http://cryptontd3uutyje.onion/charts/coin/BQX
+THID : 13 : Thread Status : Reqesting Onion URL : http://cryptontd3uutyje.onion/charts/coin/BQX
+THID : 42 : Thread Status : Parsing Completed : http://3dboysn3o5d7dk3i.onion/ucp.php?mode=delete_cookies&sid=6d4033cf968b83c90196ede770e04f96
+THID : 37 : Thread Status : Thread Error : SOCKS: Host unreachable : http://hurtmehpneqdprmj.onion
+THID : 34 : Thread Status : RE-Fethcing URL
+THID : 34 : Thread Status : URL Fethched : http://auutwvp5wqh3m6f3.onion
+THID : 34 : Thread Status : Fethcing From Same Host
+THID : 34 : Thread Status : Sending Url Request : http://auutwvp5wqh3m6f3.onionhttp://auutwvp5wqh3m6f3.onion
+THID : 34 : Thread Status : Reqesting Onion URL : http://auutwvp5wqh3m6f3.onionhttp://auutwvp5wqh3m6f3.onion
+THID : 22 : Thread Status : Fethcing From Same Host
+THID : 22 : Thread Status : Sending Url Request : https://blockchainbdgpzk.onion/tx/b1257e65860fa4fbc373352fda5d2d04134799a16f8c89d2948dfae95466fa59
+THID : 22 : Thread Status : Reqesting Onion URL : https://blockchainbdgpzk.onion/tx/b1257e65860fa4fbc373352fda5d2d04134799a16f8c89d2948dfae95466fa59
