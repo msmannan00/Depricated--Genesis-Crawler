@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Constants/preferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="396">
+              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -61,16 +61,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Constants/string.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="413">
               <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Application/webCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="-2285">
               <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -222,42 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
-              <item name="Application" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
-              <item name="Constants" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
-              <item name="crawler" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
-              <item name="logManager" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
-              <item name="Shared" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -315,6 +279,42 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="logManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
+              <item name="Application" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
+              <item name="Constants" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
+              <item name="crawler" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
+              <item name="logManager" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Tor Crawler" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tor Crawler" type="616d4139:PackageViewModuleNode" />
+              <item name="Shared" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -439,8 +439,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23521851" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24164525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -449,15 +450,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49678662" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49614397" visible="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32974428" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50321335" side_tool="true" visible="true" weight="0.30417228" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50385606" side_tool="true" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49871466" weight="0.32974428" />
       <window_info anchor="bottom" id="Problems" order="11" weight="0.32974428" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32974428" />
@@ -906,29 +907,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constants/preferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constants/string.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Application/webCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="-2285">
           <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1095#1096#0" expanded="true" />
             <element signature="e#1132#1133#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constants/string.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constants/preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
         </state>
       </provider>
     </entry>
