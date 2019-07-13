@@ -29,7 +29,7 @@ public class preferences
     public static int proxyPort = 9150;
     public static String networkType = "Onion";
     public static int connectionTimeOut = 210000;
-    public static int readTimeOut = 210000;
-    public static int httpScannerTimeOut = 210000;
+    public static int readTimeOut = 2100000;
+    public static int httpScannerTimeOut = 2100000;
 
 }

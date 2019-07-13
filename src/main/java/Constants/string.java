@@ -6,7 +6,7 @@ public class string
     /*Network*/
     public static String proxyIP = "127.0.0.1";
     public static String userAgent = "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:63.0) Gecko/20100101 Firefox/63.0";
-    public static String baseLink = "http://msydqstlz2kzerdg.onion/search/?q=onion+links";
+    public static String baseLink = "http://hss3uro2hsxfogfq.onion/index.php?q=onion+links&session=lSR3pY%2FlY6abz5AEFqbOYSPPdSDf2gRn4zE%2BKeNTDqA%3D&numRows=20&hostLimit=20&template=0";
     //public static String baseLink = "http://msydqstlz2kzerdg.onion/onions/";
 
     /*Constants*/

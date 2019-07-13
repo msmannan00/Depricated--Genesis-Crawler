@@ -52,7 +52,7 @@ public class applicationController
 
     /*HELPER FRONTEND LOG UI*/
     private static void logInitialization() throws Exception {
-        catagorizedCrawler.getInstance().initializeCatagorizedCrawler();
+        //catagorizedCrawler.getInstance().initializeCatagorizedCrawler();
         log.logMessage("Opening User Interface", "Application Status");
         logController.getInstance().showLogUI();
     }

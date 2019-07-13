@@ -42,8 +42,8 @@ public class catagorizedCrawler
         urlModel urlmodelNews = new urlModel("news.onion",preferences.maxUrlDepth-2, enumeration.UrlDataTypes.news);
         try
         {
-            //newsCrawler.parse_html(news_list,urlmodelNews,"-2");
-            //financeCrawler.parse_html(finance_list,urlmodelFinance,"-2");
+            newsCrawler.parse_html(news_list,urlmodelNews,"-2");
+            financeCrawler.parse_html(finance_list,urlmodelFinance,"-2");
         }
         catch (Exception e)
         {
