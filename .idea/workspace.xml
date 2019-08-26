@@ -43,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Application/webCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="1819">
               <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -57,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Application/applicationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="748">
               <caret line="54" column="71" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -83,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/crawler/crawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="612">
               <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Shared/webRequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
+            <state relative-caret-position="1054">
               <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/crawler/queueManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="1564">
               <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -269,17 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Tor Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tor Crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -301,7 +291,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Tor Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tor Crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,8 +421,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2577121" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26092544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -920,19 +921,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crawler/queueManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Application/webCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="1819">
           <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -942,9 +933,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Application/applicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="54" column="71" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crawler/crawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="612">
           <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -966,7 +967,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Shared/webRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
+        <state relative-caret-position="1054">
           <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -974,10 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Application/applicationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/crawler/queueManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="54" column="71" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="71" />
+        <state relative-caret-position="1564">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
